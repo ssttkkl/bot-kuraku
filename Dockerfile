@@ -17,6 +17,8 @@ ENV TZ=Asia/Shanghai
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
+RUN apk update && apk add git
+
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
