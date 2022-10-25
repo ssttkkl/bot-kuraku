@@ -16,7 +16,7 @@ nonebot-plugin-mahjong-utils = "^0.1.1"
 nb-cli = "^0.6.7"
 
 [tool.nonebot]
-plugins = ["nonebot_plugin_pixivbot", "nonebot-plugin-mahjong-utils"]
+plugins = ["nonebot_plugin_pixivbot", "nonebot_plugin_mahjong_utils"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
