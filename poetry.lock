@@ -532,18 +532,6 @@ apscheduler = ">=3.7.0,<4.0.0"
 nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
-name = "nonebot-plugin-help"
-version = "0.3.1"
-description = "A general help lister for nonebot2 plugins"
-category = "main"
-optional = false
-python-versions = ">=3.7.3,<4.0.0"
-
-[package.dependencies]
-nonebot-adapter-onebot = ">=2.0.0-beta.1,<3.0.0"
-nonebot2 = ">=2.0.0-beta.4,<3.0.0"
-
-[[package]]
 name = "nonebot-plugin-mahjong-utils"
 version = "0.1.3"
 description = ""
@@ -619,6 +607,17 @@ python-versions = ">=3.9,<4.0"
 [package.dependencies]
 nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 sqlalchemy = {version = ">=1.4.42,<2.0.0", extras = ["asyncio"]}
+
+[[package]]
+name = "nonebot-plugin-treehelp"
+version = "0.0.1"
+description = "适用于 Nonebot2 的树形帮助插件"
+category = "main"
+optional = false
+python-versions = ">=3.7.3,<4.0.0"
+
+[package.dependencies]
+nonebot2 = ">=2.0.0-beta.4,<3.0.0"
 
 [[package]]
 name = "nonebot2"
@@ -1101,7 +1100,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "3981462e9788310e64860446f5e57f57335120ec3c38eecd6af35349bda4eed4"
+content-hash = "f0ccb19edf13c0c5895e6c781518fe6272de52b29909398500b652012164ccf5"
 
 [metadata.files]
 aiofiles = [
@@ -1677,10 +1676,6 @@ nonebot-plugin-apscheduler = [
     {file = "nonebot-plugin-apscheduler-0.2.0.tar.gz", hash = "sha256:7b63e99a611b657533b48fcf1f8c6627c18c2eb3fa820a906cd4ec4666c0ceb0"},
     {file = "nonebot_plugin_apscheduler-0.2.0-py3-none-any.whl", hash = "sha256:9285ee84ca1cfa4db73c86cedb5911bbbd25a21ec0cd5f22447cd12f89e48fb4"},
 ]
-nonebot-plugin-help = [
-    {file = "nonebot-plugin-help-0.3.1.tar.gz", hash = "sha256:6cd19fd1f46588f72c8adf7cd0c5f8c553b9639567a5a41f249e12e5d42f6ed8"},
-    {file = "nonebot_plugin_help-0.3.1-py3-none-any.whl", hash = "sha256:b3656d0f0bd86fd377ba3f00a2affca549d3ec130c8d5022d2c46d9bd81f1fed"},
-]
 nonebot-plugin-mahjong-utils = [
     {file = "nonebot_plugin_mahjong_utils-0.1.3-py3-none-any.whl", hash = "sha256:9ffa90d33e0f9785c7b21b72197547cf47956aa33980691bcc766cec0a477c57"},
     {file = "nonebot_plugin_mahjong_utils-0.1.3.tar.gz", hash = "sha256:7b854ea64b169c794931540921e599d25b5c974c4abc125f8f6398692f4915b3"},
@@ -1700,6 +1695,10 @@ nonebot-plugin-pixivbot-onebot-v11 = [
 nonebot-plugin-sqlalchemy = [
     {file = "nonebot_plugin_sqlalchemy-0.1.1-py3-none-any.whl", hash = "sha256:11268a61bcd92bdef25e6199f6cfe8fad25265bf966aeb66586fb8b4396d4800"},
     {file = "nonebot_plugin_sqlalchemy-0.1.1.tar.gz", hash = "sha256:332bfb42ce3589b65ef1902f7b4d6ee6005387482ef4cb1a58c78256e528c414"},
+]
+nonebot-plugin-treehelp = [
+    {file = "nonebot-plugin-treehelp-0.0.1.tar.gz", hash = "sha256:82a3b1fed0f4552991a2edfe54c67ebb0a492a9bc660d0a12ee9bf01f2f84c14"},
+    {file = "nonebot_plugin_treehelp-0.0.1-py3-none-any.whl", hash = "sha256:537b500244e4783c3be7a0185f1521c10469b4930720104c9745a0e5446b78c4"},
 ]
 nonebot2 = [
     {file = "nonebot2-2.0.0rc1-py3-none-any.whl", hash = "sha256:99c70300b9d0755bba6ed50b7399f44f6213e119157bc026b960b3e157a38416"},
