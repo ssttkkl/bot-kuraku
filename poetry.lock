@@ -313,26 +313,29 @@ docs = ["Sphinx"]
 
 [[package]]
 name = "h11"
-version = "0.14.0"
+version = "0.12.0"
 description = "A pure-Python, bring-your-own-I/O implementation of HTTP/1.1"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.6"
 
 [[package]]
 name = "httpcore"
-version = "0.13.2"
+version = "0.15.0"
 description = "A minimal low-level HTTP client."
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
-h11 = "<1.0.0"
+anyio = ">=3.0.0,<4.0.0"
+certifi = "*"
+h11 = ">=0.11,<0.13"
 sniffio = ">=1.0.0,<2.0.0"
 
 [package.extras]
 http2 = ["h2 (>=3,<5)"]
+socks = ["socksio (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "httptools"
@@ -347,21 +350,23 @@ test = ["Cython (>=0.29.24,<0.30.0)"]
 
 [[package]]
 name = "httpx"
-version = "0.18.1"
+version = "0.23.0"
 description = "The next generation HTTP client."
 category = "dev"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 
 [package.dependencies]
 certifi = "*"
-httpcore = ">=0.13.0,<0.14.0"
+httpcore = ">=0.15.0,<0.16.0"
 rfc3986 = {version = ">=1.3,<2", extras = ["idna2008"]}
 sniffio = "*"
 
 [package.extras]
-brotli = ["brotlicffi (>=1.0.0,<2.0.0)"]
-http2 = ["h2 (>=3.0.0,<4.0.0)"]
+brotli = ["brotli", "brotlicffi"]
+cli = ["click (>=8.0.0,<9.0.0)", "pygments (>=2.0.0,<3.0.0)", "rich (>=10,<13)"]
+http2 = ["h2 (>=3,<5)"]
+socks = ["socksio (>=1.0.0,<2.0.0)"]
 
 [[package]]
 name = "idna"
@@ -422,6 +427,18 @@ win32-setctime = {version = ">=1.0.0", markers = "sys_platform == \"win32\""}
 
 [package.extras]
 dev = ["Sphinx (>=4.1.1)", "black (>=19.10b0)", "colorama (>=0.3.4)", "docutils (==0.16)", "flake8 (>=3.7.7)", "isort (>=5.1.1)", "pytest (>=4.6.2)", "pytest-cov (>=2.7.1)", "sphinx-autobuild (>=0.7.1)", "sphinx-rtd-theme (>=0.4.3)", "tox (>=3.9.0)"]
+
+[[package]]
+name = "mahjong-utils"
+version = "0.1.0a5"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+lazy = ">=1.5,<2.0"
+pydantic = ">=1.9.0,<2.0.0"
 
 [[package]]
 name = "markupsafe"
@@ -527,6 +544,18 @@ nonebot-adapter-onebot = ">=2.0.0-beta.1,<3.0.0"
 nonebot2 = ">=2.0.0-beta.4,<3.0.0"
 
 [[package]]
+name = "nonebot-plugin-mahjong-utils"
+version = "0.1.3"
+description = ""
+category = "main"
+optional = false
+python-versions = ">=3.9,<4.0"
+
+[package.dependencies]
+mahjong-utils = ">=0.1.0a4,<0.2.0"
+nonebot2 = ">=2.0.0rc1,<3.0.0"
+
+[[package]]
 name = "nonebot-plugin-onebot-monitor"
 version = "0.1.0"
 description = ""
@@ -543,7 +572,7 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.4.0rc2"
+version = "1.4.0rc3"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
@@ -1072,7 +1101,7 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "0e0f377b214610c18414176e8343e3e082b7ed2ce5563f596c7dc5cbf1dd71eb"
+content-hash = "3981462e9788310e64860446f5e57f57335120ec3c38eecd6af35349bda4eed4"
 
 [metadata.files]
 aiofiles = [
@@ -1397,12 +1426,12 @@ greenlet = [
     {file = "greenlet-1.1.3.post0.tar.gz", hash = "sha256:f5e09dc5c6e1796969fd4b775ea1417d70e49a5df29aaa8e5d10675d9e11872c"},
 ]
 h11 = [
-    {file = "h11-0.14.0-py3-none-any.whl", hash = "sha256:e3fe4ac4b851c468cc8363d500db52c2ead036020723024a109d37346efaa761"},
-    {file = "h11-0.14.0.tar.gz", hash = "sha256:8f19fbbe99e72420ff35c00b27a34cb9937e902a8b810e2c88300c6f0a3b699d"},
+    {file = "h11-0.12.0-py3-none-any.whl", hash = "sha256:36a3cb8c0a032f56e2da7084577878a035d3b61d104230d4bd49c0c6b555a9c6"},
+    {file = "h11-0.12.0.tar.gz", hash = "sha256:47222cb6067e4a307d535814917cd98fd0a57b6788ce715755fa2b6c28b56042"},
 ]
 httpcore = [
-    {file = "httpcore-0.13.2-py3-none-any.whl", hash = "sha256:52b7d9413f6f5592a667de9209d70d4d41aba3fb0540dd7c93475c78b85941e9"},
-    {file = "httpcore-0.13.2.tar.gz", hash = "sha256:c16efbdf643e1b57bde0adc12c53b08645d7d92d6d345a3f71adfc2a083e7fd2"},
+    {file = "httpcore-0.15.0-py3-none-any.whl", hash = "sha256:1105b8b73c025f23ff7c36468e4432226cbb959176eab66864b8e31c4ee27fa6"},
+    {file = "httpcore-0.15.0.tar.gz", hash = "sha256:18b68ab86a3ccf3e7dc0f43598eaddcf472b602aba29f9aa6ab85fe2ada3980b"},
 ]
 httptools = [
     {file = "httptools-0.5.0-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:8f470c79061599a126d74385623ff4744c4e0f4a0997a353a44923c0b561ee51"},
@@ -1448,8 +1477,8 @@ httptools = [
     {file = "httptools-0.5.0.tar.gz", hash = "sha256:295874861c173f9101960bba332429bb77ed4dcd8cdf5cee9922eb00e4f6bc09"},
 ]
 httpx = [
-    {file = "httpx-0.18.1-py3-none-any.whl", hash = "sha256:ad2e3db847be736edc4b272c4d5788790a7e5789ef132fc6b5fef8aeb9e9f6e0"},
-    {file = "httpx-0.18.1.tar.gz", hash = "sha256:0a2651dd2b9d7662c70d12ada5c290abcf57373b9633515fe4baa9f62566086f"},
+    {file = "httpx-0.23.0-py3-none-any.whl", hash = "sha256:42974f577483e1e932c3cdc3cd2303e883cbfba17fe228b0f63589764d7b9c4b"},
+    {file = "httpx-0.23.0.tar.gz", hash = "sha256:f28eac771ec9eb4866d3fb4ab65abd42d38c424739e80c08d8d20570de60b0ef"},
 ]
 idna = [
     {file = "idna-3.4-py3-none-any.whl", hash = "sha256:90b77e79eaa3eba6de819a0c442c0b4ceefc341a7a2ab77d7562bf49f425c5c2"},
@@ -1470,6 +1499,10 @@ lazy = [
 loguru = [
     {file = "loguru-0.6.0-py3-none-any.whl", hash = "sha256:4e2414d534a2ab57573365b3e6d0234dfb1d84b68b7f3b948e6fb743860a77c3"},
     {file = "loguru-0.6.0.tar.gz", hash = "sha256:066bd06758d0a513e9836fd9c6b5a75bfb3fd36841f4b996bc60b547a309d41c"},
+]
+mahjong-utils = [
+    {file = "mahjong_utils-0.1.0a5-py3-none-any.whl", hash = "sha256:74fd2319bbfcd1d08628047491f019db5ca1d40e381f2a72bc7931bf799b63d9"},
+    {file = "mahjong_utils-0.1.0a5.tar.gz", hash = "sha256:6db8bc4844693d7ffac5ec936d11ab18e13d39b8f8d674a427ead8a6bd652d20"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.1.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:86b1f75c4e7c2ac2ccdaec2b9022845dbb81880ca318bb7a0a01fbf7813e3812"},
@@ -1648,13 +1681,17 @@ nonebot-plugin-help = [
     {file = "nonebot-plugin-help-0.3.1.tar.gz", hash = "sha256:6cd19fd1f46588f72c8adf7cd0c5f8c553b9639567a5a41f249e12e5d42f6ed8"},
     {file = "nonebot_plugin_help-0.3.1-py3-none-any.whl", hash = "sha256:b3656d0f0bd86fd377ba3f00a2affca549d3ec130c8d5022d2c46d9bd81f1fed"},
 ]
+nonebot-plugin-mahjong-utils = [
+    {file = "nonebot_plugin_mahjong_utils-0.1.3-py3-none-any.whl", hash = "sha256:9ffa90d33e0f9785c7b21b72197547cf47956aa33980691bcc766cec0a477c57"},
+    {file = "nonebot_plugin_mahjong_utils-0.1.3.tar.gz", hash = "sha256:7b854ea64b169c794931540921e599d25b5c974c4abc125f8f6398692f4915b3"},
+]
 nonebot-plugin-onebot-monitor = [
     {file = "nonebot_plugin_onebot_monitor-0.1.0-py3-none-any.whl", hash = "sha256:95eef90b7a0a186ff8841e037a31c41bd6a24373a16f748cfa7a4dac7979ac1b"},
     {file = "nonebot_plugin_onebot_monitor-0.1.0.tar.gz", hash = "sha256:cd2f7823a223f04bf2e7404afafa960b714b16324bb6529752022590b154a2e4"},
 ]
 nonebot-plugin-pixivbot = [
-    {file = "nonebot_plugin_pixivbot-1.4.0rc2-py3-none-any.whl", hash = "sha256:122af27422ca300b7a69363fba3640f77df85b879f06294ac0e7895d1bb561ed"},
-    {file = "nonebot_plugin_pixivbot-1.4.0rc2.tar.gz", hash = "sha256:50b68e323214cb2cb6c9d778880bd0b6e06fbe591ee20f2da35713ff7d37d5f6"},
+    {file = "nonebot_plugin_pixivbot-1.4.0rc3-py3-none-any.whl", hash = "sha256:a1fd913c88d3fd79643b96fe23b2fc65db9ff4b93ab33552e688b0b2ca4d8502"},
+    {file = "nonebot_plugin_pixivbot-1.4.0rc3.tar.gz", hash = "sha256:db32fe09d26387e41bb638ed106ce7a068e3440b8ed88cbe00ec04ddfd31d60a"},
 ]
 nonebot-plugin-pixivbot-onebot-v11 = [
     {file = "nonebot_plugin_pixivbot_onebot_v11-1.3.1-py3-none-any.whl", hash = "sha256:ddd30a53fcea907c6a8968be0fd3e187e0a831e9f23ecfec89339d38c4bb2dc6"},
