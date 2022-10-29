@@ -13,7 +13,7 @@ nonebot-plugin-pixivbot = {extras = ["onebot"], version = "^1.4.0"}
 nonebot-plugin-mahjong-utils = "^0.1.6"
 nonebot-plugin-onebot-monitor = "^0.1.0"
 nonebot-plugin-treehelp = ">=0.0.1"
-nonebot-plugin-mahjong-scoreboard = "^0.1.0"
+nonebot-plugin-mahjong-scoreboard = "^0.1.1"
 
 [tool.poetry.dev-dependencies]
 nb-cli = "^0.6.7"
