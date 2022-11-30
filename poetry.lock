@@ -455,7 +455,7 @@ dev = ["Sphinx (>=4.1.1)", "black (>=19.10b0)", "colorama (>=0.3.4)", "docutils 
 
 [[package]]
 name = "mahjong-utils"
-version = "0.2.0.post2"
+version = "0.2.1.post1"
 description = "立直麻将小工具"
 category = "main"
 optional = false
@@ -576,14 +576,14 @@ tzlocal = ">=4.2,<5.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-utils"
-version = "0.2.2"
+version = "0.2.3.post1"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 
 [package.dependencies]
-mahjong-utils = ">=0.2.0a2,<0.3.0"
+mahjong-utils = ">=0.2.1,<0.3.0"
 nonebot2 = ">=2.0.0rc1,<3.0.0"
 
 [[package]]
@@ -1685,10 +1685,10 @@ loguru = [
     {file = "loguru-0.6.0.tar.gz", hash = "sha256:066bd06758d0a513e9836fd9c6b5a75bfb3fd36841f4b996bc60b547a309d41c"},
 ]
 mahjong-utils = [
-    {file = "mahjong-utils-0.2.0.post2.tar.gz", hash = "sha256:71a454051a5344e4d0b1a7424ddc3f62bb12da191ac161bdda98275d04d2984e"},
-    {file = "mahjong_utils-0.2.0.post2-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:9d621e3213ef5feac699a718377f7ec9a218e0a5fdae083655406ad4af2caa61"},
-    {file = "mahjong_utils-0.2.0.post2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:bcb439ce2a33bf9b20aecc4f516389e1ff1b613d08aa48cf131fab95a28ca5a4"},
-    {file = "mahjong_utils-0.2.0.post2-py3-none-win_amd64.whl", hash = "sha256:35261a56c46d3cc134e44c9f4e98130cd99d3dfa1ef75fe72d194e14f3766bdb"},
+    {file = "mahjong-utils-0.2.1.post1.tar.gz", hash = "sha256:d97aca18549fe9d5b3fc9e238eb28219bfd92f222b057b7f94365ae0ad06a8d6"},
+    {file = "mahjong_utils-0.2.1.post1-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:9c7c4c62dea8cec03ff0e47f1a5e04ca9b027d210a03acb40df4cdc173770b6f"},
+    {file = "mahjong_utils-0.2.1.post1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:0a78a5e9525bb797e82d7014c8870b1d312b75ee172c609825179befd9988d86"},
+    {file = "mahjong_utils-0.2.1.post1-py3-none-win_amd64.whl", hash = "sha256:06917b86f8dcfb01aa2789501bc93701017d9b3e253234af9141bf83b8067926"},
 ]
 markupsafe = [
     {file = "MarkupSafe-2.1.1-cp310-cp310-macosx_10_9_universal2.whl", hash = "sha256:86b1f75c4e7c2ac2ccdaec2b9022845dbb81880ca318bb7a0a01fbf7813e3812"},
@@ -1868,8 +1868,8 @@ nonebot-plugin-mahjong-scoreboard = [
     {file = "nonebot_plugin_mahjong_scoreboard-0.1.8.post3.tar.gz", hash = "sha256:3745bc7b93422bdff6b1173d3e5b332ee68d15c6ccf9d7237985e30141dfb06e"},
 ]
 nonebot-plugin-mahjong-utils = [
-    {file = "nonebot_plugin_mahjong_utils-0.2.2-py3-none-any.whl", hash = "sha256:46b695bf8a973d6bedceca216037ed8ebfad5a45e795bdf6a4d8a52aec98f4e4"},
-    {file = "nonebot_plugin_mahjong_utils-0.2.2.tar.gz", hash = "sha256:c60e179b25a368e6aa6aa9f1f5ad308253702cd27754733506fe9a36d8d60278"},
+    {file = "nonebot_plugin_mahjong_utils-0.2.3.post1-py3-none-any.whl", hash = "sha256:5b5951cfad427219a0fd258dafd57205da18bb8fd4b0541343392c3287f825cb"},
+    {file = "nonebot_plugin_mahjong_utils-0.2.3.post1.tar.gz", hash = "sha256:d61743951493a54b86999e1005a53f5acb4c8880978a1a4ae54954fa9574761c"},
 ]
 nonebot-plugin-onebot-monitor = [
     {file = "nonebot_plugin_onebot_monitor-0.1.2-py3-none-any.whl", hash = "sha256:0ba154c87c6fdf3482e7371db40303001775f3d473b83824d79a47ea2558bb1c"},
