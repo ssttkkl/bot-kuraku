@@ -153,8 +153,8 @@ tests-no-zope = ["cloudpickle", "coverage[toml] (>=5.0.2)", "hypothesis", "mypy 
 
 [[package]]
 name = "beanie"
-version = "1.13.1"
-description = "Python ODM for MongoDB"
+version = "1.15.4"
+description = "Asynchronous Python ODM for MongoDB"
 category = "main"
 optional = false
 python-versions = ">=3.7,<4.0"
@@ -603,7 +603,7 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.5.2.post1"
+version = "1.5.3.post1"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
@@ -612,7 +612,7 @@ python-versions = ">=3.9,<4.0"
 [package.dependencies]
 aiohttp-socks = ">=0.7.1,<0.8.0"
 aiosqlite = ">=0.17.0,<0.18.0"
-beanie = {version = ">=1.13.1,<1.14.0", optional = true, markers = "extra == \"mongo\""}
+beanie = {version = ">=1.13.1,<2.0.0", optional = true, markers = "extra == \"mongo\""}
 cachetools = ">=5.2.0,<6.0.0"
 frozendict = ">=2.3.4,<3.0.0"
 lazy = ">=1.4,<2.0"
@@ -628,7 +628,7 @@ tzlocal = ">=4.2,<5.0"
 
 [package.extras]
 kook = ["nonebot-plugin-pixivbot-kook (>=1.4.0,<2.0.0)"]
-mongo = ["beanie (>=1.13.1,<1.14.0)", "motor (>=3.0.0,<4.0.0)"]
+mongo = ["beanie (>=1.13.1,<2.0.0)", "motor (>=3.0.0,<4.0.0)"]
 onebot = ["nonebot-plugin-pixivbot-onebot-v11 (>=1.5.0,<2.0.0)"]
 telegram = ["nonebot-plugin-pixivbot-telegram (>=1.5.0,<2.0.0)"]
 
@@ -1041,7 +1041,7 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "tzdata"
-version = "2022.6"
+version = "2022.7"
 description = "Provider of IANA time zone data"
 category = "main"
 optional = false
@@ -1339,8 +1339,8 @@ attrs = [
     {file = "attrs-22.1.0.tar.gz", hash = "sha256:29adc2665447e5191d0e7c568fde78b21f9672d344281d0c6e1ab085429b22b6"},
 ]
 beanie = [
-    {file = "beanie-1.13.1-py3-none-any.whl", hash = "sha256:954e33ffc7b6b79eec87b61a20c36e296dab98fe021e6798f3f2de752f35f9a6"},
-    {file = "beanie-1.13.1.tar.gz", hash = "sha256:3aae32ba6bd40c3768ca1126a07725577d45133d240cca50ef1e6a35699f6063"},
+    {file = "beanie-1.15.4-py3-none-any.whl", hash = "sha256:efb1ee60afaec44e6b9b460bfaaab2ca7b031e030fab4d595962061e08df847a"},
+    {file = "beanie-1.15.4.tar.gz", hash = "sha256:17ac47cd0b0bb7427bb0b7aa62ab6da900de18d59ea5063248608a8bf34aed87"},
 ]
 binaryornot = [
     {file = "binaryornot-0.4.4-py2.py3-none-any.whl", hash = "sha256:b8b71173c917bddcd2c16070412e369c3ed7f0528926f70cac18a6c97fd563e4"},
@@ -1876,8 +1876,8 @@ nonebot-plugin-onebot-monitor = [
     {file = "nonebot_plugin_onebot_monitor-0.1.2.tar.gz", hash = "sha256:379f90a4408492bad3204ef208fafc86526e4c8a16909e7b9d2e4d80868ce718"},
 ]
 nonebot-plugin-pixivbot = [
-    {file = "nonebot_plugin_pixivbot-1.5.2.post1-py3-none-any.whl", hash = "sha256:3e7e0c4574dcb9999de967189f5d91a8f775a5b2a2e8ed17036a385aa153b2f3"},
-    {file = "nonebot_plugin_pixivbot-1.5.2.post1.tar.gz", hash = "sha256:43e7ba2898de562b140533045b024ee2ebe8a4e573a75bad1679cece566e3a57"},
+    {file = "nonebot_plugin_pixivbot-1.5.3.post1-py3-none-any.whl", hash = "sha256:c0c55e8a1a6f85c9f4f15d9087a00de654ee5a49119ca26f5222b8a13d38a7b4"},
+    {file = "nonebot_plugin_pixivbot-1.5.3.post1.tar.gz", hash = "sha256:16af2c3f2932355bae50e7339144f9530af0615d518f6ce97e2722c41cdbbcbd"},
 ]
 nonebot-plugin-pixivbot-onebot-v11 = [
     {file = "nonebot_plugin_pixivbot_onebot_v11-1.5.1-py3-none-any.whl", hash = "sha256:56246a079b3eaea9321e876121155b9034e34e725b425ba175e3365ad0b66743"},
@@ -2283,8 +2283,8 @@ typing-extensions = [
     {file = "typing_extensions-4.4.0.tar.gz", hash = "sha256:1511434bb92bf8dd198c12b1cc812e800d4181cfcb867674e0f8279cc93087aa"},
 ]
 tzdata = [
-    {file = "tzdata-2022.6-py2.py3-none-any.whl", hash = "sha256:04a680bdc5b15750c39c12a448885a51134a27ec9af83667663f0b3a1bf3f342"},
-    {file = "tzdata-2022.6.tar.gz", hash = "sha256:91f11db4503385928c15598c98573e3af07e7229181bee5375bd30f1695ddcae"},
+    {file = "tzdata-2022.7-py2.py3-none-any.whl", hash = "sha256:2b88858b0e3120792a3c0635c23daf36a7d7eeeca657c323da299d2094402a0d"},
+    {file = "tzdata-2022.7.tar.gz", hash = "sha256:fe5f866eddd8b96e9fcba978f8e503c909b19ea7efda11e52e39494bad3a7bfa"},
 ]
 tzlocal = [
     {file = "tzlocal-4.2-py3-none-any.whl", hash = "sha256:89885494684c929d9191c57aa27502afc87a579be5cdd3225c77c463ea043745"},
