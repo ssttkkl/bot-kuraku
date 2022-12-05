@@ -603,7 +603,7 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.5.4.post1"
+version = "1.5.4.post2"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
@@ -1892,8 +1892,8 @@ nonebot-plugin-onebot-monitor = [
     {file = "nonebot_plugin_onebot_monitor-0.1.2.tar.gz", hash = "sha256:379f90a4408492bad3204ef208fafc86526e4c8a16909e7b9d2e4d80868ce718"},
 ]
 nonebot-plugin-pixivbot = [
-    {file = "nonebot_plugin_pixivbot-1.5.4.post1-py3-none-any.whl", hash = "sha256:fddb430a6df19281553d40f385468d4b5f33b0f5a0b90c9cb174c9648b1084c9"},
-    {file = "nonebot_plugin_pixivbot-1.5.4.post1.tar.gz", hash = "sha256:274105e99bd6ed8881b17b2a70e155a3e7161df722ef3d0ae2e46d3d686965d5"},
+    {file = "nonebot_plugin_pixivbot-1.5.4.post2-py3-none-any.whl", hash = "sha256:98ddc6373947778b0a1daabee4a6e23f992d06d72478cb1cb8f60321547ce6ce"},
+    {file = "nonebot_plugin_pixivbot-1.5.4.post2.tar.gz", hash = "sha256:ad258e9e7595c9a520b0b0175e4706d04f31eb97c6a475ce725963dec59275b7"},
 ]
 nonebot-plugin-pixivbot-onebot-v11 = [
     {file = "nonebot_plugin_pixivbot_onebot_v11-1.5.1-py3-none-any.whl", hash = "sha256:56246a079b3eaea9321e876121155b9034e34e725b425ba175e3365ad0b66743"},
