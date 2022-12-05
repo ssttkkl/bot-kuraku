@@ -16,8 +16,6 @@ nonebot-plugin-treehelp = ">=0.0.1"
 nonebot-plugin-mahjong-scoreboard = "^0.1.7.post2"
 nonebot-plugin-majsoul = "^0.0.4"
 asyncpg = "^0.27.0"
-
-[tool.poetry.dev-dependencies]
 nb-cli = "^0.6.7"
 
 [tool.nonebot]
