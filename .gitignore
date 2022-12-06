@@ -144,3 +144,5 @@ dmypy.json
 
 .env.prod
 .env.dev
+
+*.db

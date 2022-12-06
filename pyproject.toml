@@ -19,7 +19,7 @@ asyncpg = "^0.27.0"
 nb-cli = "^0.6.7"
 
 [tool.nonebot]
-plugins = ["nonebot_plugin_treehelp", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_pixivbot",
+plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_pixivbot",
     "nonebot_plugin_mahjong_utils", "nonebot_plugin_onebot_monitor", "nonebot_plugin_majsoul"]
 
 [build-system]
