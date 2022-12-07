@@ -125,6 +125,17 @@ optional = false
 python-versions = ">=3.6"
 
 [[package]]
+name = "asyncache"
+version = "0.3.1"
+description = "Helpers to use cachetools with async code."
+category = "main"
+optional = false
+python-versions = ">=3.8,<4.0"
+
+[package.dependencies]
+cachetools = ">=5.2.0,<6.0.0"
+
+[[package]]
 name = "asyncpg"
 version = "0.27.0"
 description = "An asyncio PostgreSQL driver"
@@ -553,11 +564,11 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "nb-cli"
-version = "0.6.7"
+version = "0.6.8"
 description = "CLI for nonebot2"
 category = "main"
 optional = false
-python-versions = ">=3.7.3,<4.0.0"
+python-versions = ">=3.8,<4.0"
 
 [package.dependencies]
 click = ">=8.0.0,<9.0.0"
@@ -567,7 +578,7 @@ httpx = ">=0.18.0,<1.0.0"
 nonebot2 = ">=2.0.0-beta.1,<3.0.0"
 prompt-toolkit = ">=3.0.19,<4.0.0"
 pyfiglet = ">=0.8.post1,<0.9"
-tomlkit = ">=0.10.0,<0.11.0"
+tomlkit = ">=0.11.1,<0.11.2 || >0.11.2,<0.11.3 || >0.11.3,<1.0.0"
 wcwidth = ">=0.2.5,<0.3.0"
 
 [package.extras]
@@ -662,7 +673,7 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.5.4.post2"
+version = "1.6.0"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
@@ -671,12 +682,13 @@ python-versions = ">=3.9,<4.0"
 [package.dependencies]
 aiohttp-socks = ">=0.7.1,<0.8.0"
 aiosqlite = ">=0.17.0,<0.18.0"
+asyncache = ">=0.3.1,<0.4.0"
 asyncpg = {version = ">=0.27.0,<0.28.0", optional = true, markers = "extra == \"postgresql\""}
 cachetools = ">=5.2.0,<6.0.0"
 frozendict = ">=2.3.4,<3.0.0"
 lazy = ">=1.4,<2.0"
+nonebot-adapter-onebot = {version = ">=2.1.1,<3.0.0", optional = true, markers = "extra == \"onebot\""}
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-pixivbot-onebot-v11 = {version = ">=1.5.0,<2.0.0", optional = true, markers = "extra == \"onebot\""}
 numpy = ">=1.23.1,<2.0.0"
 Pillow = ">=9.2.0,<10.0.0"
 PixivPy-Async = ">=1.2.14,<2.0.0"
@@ -685,23 +697,11 @@ sqlalchemy = {version = ">=1.4.42,<2.0.0", extras = ["asyncio"]}
 tzlocal = ">=4.2,<5.0"
 
 [package.extras]
-kook = ["nonebot-plugin-pixivbot-kook (>=1.4.0,<2.0.0)"]
+kook = ["nonebot-adapter-kaiheila (>=0.1.0,<0.2.0)"]
 mongo = ["beanie (>=1.13.1,<2.0.0)", "motor (>=3.0.0,<4.0.0)"]
-onebot = ["nonebot-plugin-pixivbot-onebot-v11 (>=1.5.0,<2.0.0)"]
+onebot = ["nonebot-adapter-onebot (>=2.1.1,<3.0.0)"]
 postgresql = ["asyncpg (>=0.27.0,<0.28.0)"]
-telegram = ["nonebot-plugin-pixivbot-telegram (>=1.5.0,<2.0.0)"]
-
-[[package]]
-name = "nonebot-plugin-pixivbot-onebot-v11"
-version = "1.5.1"
-description = "Nonebot Plugin PixivBot (Onebot V11)"
-category = "main"
-optional = false
-python-versions = ">=3.9,<4.0"
-
-[package.dependencies]
-nonebot-adapter-onebot = ">=2.1.1,<3.0.0"
-nonebot2 = ">=2.0.0rc1,<3.0.0"
+telegram = ["nonebot-adapter-telegram (>=0.1.0b3,<0.2.0)"]
 
 [[package]]
 name = "nonebot-plugin-sqlalchemy"
@@ -805,7 +805,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
 [[package]]
 name = "prompt-toolkit"
-version = "3.0.33"
+version = "3.0.36"
 description = "Library for building powerful interactive command lines in Python"
 category = "main"
 optional = false
@@ -1105,11 +1105,11 @@ python-versions = ">=3.7"
 
 [[package]]
 name = "tomlkit"
-version = "0.10.2"
+version = "0.11.6"
 description = "Style preserving TOML library"
 category = "main"
 optional = false
-python-versions = ">=3.6,<4.0"
+python-versions = ">=3.6"
 
 [[package]]
 name = "typing-extensions"
@@ -1375,6 +1375,10 @@ arrow = [
 async-timeout = [
     {file = "async-timeout-4.0.2.tar.gz", hash = "sha256:2163e1640ddb52b7a8c80d0a67a08587e5d245cc9c553a74a847056bc2976b15"},
     {file = "async_timeout-4.0.2-py3-none-any.whl", hash = "sha256:8ca1e4fcf50d07413d66d1a5e416e42cfdf5851c981d679a09851a6853383b3c"},
+]
+asyncache = [
+    {file = "asyncache-0.3.1-py3-none-any.whl", hash = "sha256:ef20a1024d265090dd1e0785c961cf98b9c32cc7d9478973dcf25ac1b80011f5"},
+    {file = "asyncache-0.3.1.tar.gz", hash = "sha256:9a1e60a75668e794657489bdea6540ee7e3259c483517b934670db7600bf5035"},
 ]
 asyncpg = [
     {file = "asyncpg-0.27.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:fca608d199ffed4903dce1bcd97ad0fe8260f405c1c225bdf0002709132171c2"},
@@ -2135,8 +2139,8 @@ multidict = [
     {file = "multidict-6.0.3.tar.gz", hash = "sha256:2523a29006c034687eccd3ee70093a697129a3ffe8732535d3b2df6a4ecc279d"},
 ]
 nb-cli = [
-    {file = "nb-cli-0.6.7.tar.gz", hash = "sha256:394bf65eabbda6aa7c410961b901e9f7320fae12143818b1c078fc43f060fa0e"},
-    {file = "nb_cli-0.6.7-py3-none-any.whl", hash = "sha256:693342ebcf4dce14fd7be4555c65e5da41707a67e5de73d7d7fe67a716a1cad9"},
+    {file = "nb_cli-0.6.8-py3-none-any.whl", hash = "sha256:f024fc68cc38c9d98b57874eb22f613b1b892cdc842e3450efb3d2ed9445b6d5"},
+    {file = "nb_cli-0.6.8.tar.gz", hash = "sha256:c38bb6a5ebd3fed69b604864b6cf17e7f24240d035c87220355802c82e3ed6b0"},
 ]
 nonebot-adapter-onebot = [
     {file = "nonebot_adapter_onebot-2.1.5-py3-none-any.whl", hash = "sha256:d2a46694c402d5f3c5f6951955a78bbf779e17039d282c612cc1fcff77bc6044"},
@@ -2163,12 +2167,8 @@ nonebot-plugin-onebot-monitor = [
     {file = "nonebot_plugin_onebot_monitor-0.1.2.tar.gz", hash = "sha256:379f90a4408492bad3204ef208fafc86526e4c8a16909e7b9d2e4d80868ce718"},
 ]
 nonebot-plugin-pixivbot = [
-    {file = "nonebot_plugin_pixivbot-1.5.4.post2-py3-none-any.whl", hash = "sha256:98ddc6373947778b0a1daabee4a6e23f992d06d72478cb1cb8f60321547ce6ce"},
-    {file = "nonebot_plugin_pixivbot-1.5.4.post2.tar.gz", hash = "sha256:ad258e9e7595c9a520b0b0175e4706d04f31eb97c6a475ce725963dec59275b7"},
-]
-nonebot-plugin-pixivbot-onebot-v11 = [
-    {file = "nonebot_plugin_pixivbot_onebot_v11-1.5.1-py3-none-any.whl", hash = "sha256:56246a079b3eaea9321e876121155b9034e34e725b425ba175e3365ad0b66743"},
-    {file = "nonebot_plugin_pixivbot_onebot_v11-1.5.1.tar.gz", hash = "sha256:4c8f380a5f01d128658fa483607320cc9480913d18955971b3febacd00b52639"},
+    {file = "nonebot_plugin_pixivbot-1.6.0-py3-none-any.whl", hash = "sha256:4ee44256a674ce102baf6e2c72bd377a48e002ce61af475367e8c0684182350b"},
+    {file = "nonebot_plugin_pixivbot-1.6.0.tar.gz", hash = "sha256:dd2aa5af094b16c8833cbcf1983bf96402186ca810db0951334e515ec2ef0322"},
 ]
 nonebot-plugin-sqlalchemy = [
     {file = "nonebot_plugin_sqlalchemy-0.1.4.post1-py3-none-any.whl", hash = "sha256:cdad86b411dc221645d619855557d4c82b3be1b6937e587bbeb5c8d95f7b2ab3"},
@@ -2288,8 +2288,8 @@ poyo = [
     {file = "poyo-0.5.0.tar.gz", hash = "sha256:e26956aa780c45f011ca9886f044590e2d8fd8b61db7b1c1cf4e0869f48ed4dd"},
 ]
 prompt-toolkit = [
-    {file = "prompt_toolkit-3.0.33-py3-none-any.whl", hash = "sha256:ced598b222f6f4029c0800cefaa6a17373fb580cd093223003475ce32805c35b"},
-    {file = "prompt_toolkit-3.0.33.tar.gz", hash = "sha256:535c29c31216c77302877d5120aef6c94ff573748a5b5ca5b1b1f76f5e700c73"},
+    {file = "prompt_toolkit-3.0.36-py3-none-any.whl", hash = "sha256:aa64ad242a462c5ff0363a7b9cfe696c20d55d9fc60c11fd8e632d064804d305"},
+    {file = "prompt_toolkit-3.0.36.tar.gz", hash = "sha256:3e163f254bef5a03b146397d7c1963bd3e2812f0964bb9a24e6ec761fd28db63"},
 ]
 pycparser = [
     {file = "pycparser-2.21-py2.py3-none-any.whl", hash = "sha256:8ee45429555515e1f6b185e78100aea234072576aa43ab53aefcae078162fca9"},
@@ -2498,8 +2498,8 @@ tomli = [
     {file = "tomli-2.0.1.tar.gz", hash = "sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f"},
 ]
 tomlkit = [
-    {file = "tomlkit-0.10.2-py3-none-any.whl", hash = "sha256:905cf92c2111ef80d355708f47ac24ad1b6fc2adc5107455940088c9bbecaedb"},
-    {file = "tomlkit-0.10.2.tar.gz", hash = "sha256:30d54c0b914e595f3d10a87888599eab5321a2a69abc773bbefff51599b72db6"},
+    {file = "tomlkit-0.11.6-py3-none-any.whl", hash = "sha256:07de26b0d8cfc18f871aec595fda24d95b08fef89d147caa861939f37230bf4b"},
+    {file = "tomlkit-0.11.6.tar.gz", hash = "sha256:71b952e5721688937fb02cf9d354dbcf0785066149d2855e44531ebdd2b65d73"},
 ]
 typing-extensions = [
     {file = "typing_extensions-4.4.0-py3-none-any.whl", hash = "sha256:16fa4864408f655d35ec496218b85f79b3437c829e93320c7c9215ccfd92489e"},
