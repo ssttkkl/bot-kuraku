@@ -15,6 +15,7 @@ nonebot-plugin-onebot-monitor = "^0.1.2"
 nonebot-plugin-treehelp = ">=0.0.1"
 nonebot-plugin-mahjong-scoreboard = "^0.1.7.post2"
 nonebot-plugin-majsoul = "^0.0.4"
+nonebot-plugin-access-control = ">=0.0.1"
 asyncpg = "^0.27.0"
 nb-cli = "^0.6.7"
 
