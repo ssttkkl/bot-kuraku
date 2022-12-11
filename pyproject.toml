@@ -14,7 +14,7 @@ nonebot-plugin-mahjong-utils = "^0.2.2"
 nonebot-plugin-onebot-monitor = "^0.1.2"
 nonebot-plugin-mahjong-scoreboard = "^0.1.7.post2"
 nonebot-plugin-majsoul = ">=0.0.6"
-nonebot-plugin-access-control = ">=0.0.2"
+nonebot-plugin-access-control = "^0.1.0"
 asyncpg = "^0.27.0"
 nb-cli = "^0.6.7"
 
