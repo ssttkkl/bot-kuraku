@@ -2,8 +2,10 @@ from io import StringIO
 from typing import Optional
 
 import nonebot
-from nonebot import logger
+from nonebot import logger, Bot
+from nonebot.internal.adapter import Event
 from nonebot.plugin import PluginMetadata
+from nonebot_plugin_access_control.service import get_plugin_service
 
 from .config import help_conf
 from .utils import default_cmd_start
@@ -42,13 +44,15 @@ def _get_real_plugin_name(raw: str) -> Optional[str]:
     return _plugin_name_mapping.get(raw, None)
 
 
-def _build_general_help_text():
-    logger.trace("building general help text...")
-
+async def general_help_text(bot: Bot, event: Event) -> str:
     plugin_metadata = []
     for plugin in nonebot.plugin.get_loaded_plugins():
         metadata = _get_metadata(plugin.name)
         if metadata is None:
+            continue
+
+        plugin_service = get_plugin_service(plugin.name)
+        if not await plugin_service.check(bot, event):
             continue
 
         plugin_metadata.append(metadata)
@@ -72,17 +76,6 @@ def _build_general_help_text():
             sio.write('\n')
 
         return sio.getvalue().strip()
-
-
-_general_help_text_cache = None
-
-
-def general_help_text() -> str:
-    global _general_help_text_cache
-
-    if _general_help_text_cache is None:
-        _general_help_text_cache = _build_general_help_text()
-    return _general_help_text_cache
 
 
 def _build_plugin_help_text(plugin_name: str) -> Optional[str]:
@@ -110,9 +103,13 @@ def _build_plugin_help_text(plugin_name: str) -> Optional[str]:
 _plugin_help_text_cache = {}
 
 
-def plugin_help_text(plugin_name: str) -> Optional[str]:
+async def plugin_help_text(plugin_name: str, bot: Bot, event: Event) -> Optional[str]:
     plugin_name = _get_real_plugin_name(plugin_name)
     if plugin_name is None:
+        return None
+
+    plugin_service = get_plugin_service(plugin_name)
+    if not await plugin_service.check(bot, event):
         return None
 
     if plugin_name in _plugin_help_text_cache:
