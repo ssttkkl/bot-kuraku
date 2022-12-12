@@ -1159,16 +1159,16 @@ dev = ["Sphinx (>=4.1.1)", "black (>=19.10b0)", "colorama (>=0.3.4)", "docutils 
 
 [[package]]
 name = "mahjong-utils"
-version = "0.2.2.post1"
+version = "0.2.2.post2"
 description = "立直麻将小工具"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "mahjong-utils-0.2.2.post1.tar.gz", hash = "sha256:fa136c2dbe3deaa173c6b894106b70eb924d54f499842552ba12a116b86bb23d"},
-    {file = "mahjong_utils-0.2.2.post1-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:b9a042aa36c20d864e9222fcfbd204324587a5ae1fe950d86d6ec37d0f4398ed"},
-    {file = "mahjong_utils-0.2.2.post1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:edb63458227aa0162459f45ad549ef46671b5f79e227775745355243b7b27f80"},
-    {file = "mahjong_utils-0.2.2.post1-py3-none-win_amd64.whl", hash = "sha256:93ff7817a65041d3adbbfca55cc72f4cbc054aa0b187d25dff8e4d63304da1b8"},
+    {file = "mahjong-utils-0.2.2.post2.tar.gz", hash = "sha256:295ad7e89e13323d521c4e7295b6f942f269816589642b2ed9cfe941175d608f"},
+    {file = "mahjong_utils-0.2.2.post2-py3-none-macosx_10_15_x86_64.whl", hash = "sha256:c966457c8fd6f40d735283fd9ac31d9a0c13ef47c6a9db7cad713bd98411ebc7"},
+    {file = "mahjong_utils-0.2.2.post2-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:3a1fa9f27de6c086e4074370ca0b72bc301c1c10f23021ddc90392a02138cd2b"},
+    {file = "mahjong_utils-0.2.2.post2-py3-none-win_amd64.whl", hash = "sha256:d14f87263fcd98caeea503295dec6963837c7c3005499352fcfba746ae4cc389"},
 ]
 
 [package.dependencies]
