@@ -1561,14 +1561,14 @@ nonebot2 = ">=2.0.0rc1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.1.1-py3-none-any.whl", hash = "sha256:965845e0df39e13b0304350341077996a4c4000374ae1cefe7a2d74a473277a4"},
-    {file = "nonebot_plugin_majsoul-0.1.1.tar.gz", hash = "sha256:c1ec9d9213812c4ee77a6b64f3c1707e0b2817208908dcbe635f778eecb7af25"},
+    {file = "nonebot_plugin_majsoul-0.1.2-py3-none-any.whl", hash = "sha256:6a103d9749e6fa5169717ece4c057072dca7ef5cf2d02ca3b5ff15e29e0f49af"},
+    {file = "nonebot_plugin_majsoul-0.1.2.tar.gz", hash = "sha256:2bcc3c25592e1230d780af23fa365867828f5cedf00b2d9f09ef8929f39acfcb"},
 ]
 
 [package.dependencies]
