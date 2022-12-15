@@ -1603,14 +1603,14 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.6.2.post1"
+version = "1.6.3"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-1.6.2.post1-py3-none-any.whl", hash = "sha256:f60c911c010b8f08a40f2b94a1326c701adfc6cabffbdf3b7ae1eeb059caa65f"},
-    {file = "nonebot_plugin_pixivbot-1.6.2.post1.tar.gz", hash = "sha256:66ba3051249a0d6ed9bb0fe5e3ec78a2ccded001d45dce37b52110ac959a6a46"},
+    {file = "nonebot_plugin_pixivbot-1.6.3-py3-none-any.whl", hash = "sha256:4c6fac7e8b1d6afe18cf395dcac0462fd71690d56457a1b827d601399f536e8b"},
+    {file = "nonebot_plugin_pixivbot-1.6.3.tar.gz", hash = "sha256:64bbeb46ac8073fa5d6571cb95682b467514829b73fd00eeab37889c1db81197"},
 ]
 
 [package.dependencies]
