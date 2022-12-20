@@ -2007,14 +2007,14 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "python-socks"
-version = "2.1.0"
+version = "2.1.1"
 description = "Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "python-socks-2.1.0.tar.gz", hash = "sha256:7a94044d05bb3d1dac6a7531a724e111deb6dfa6f5e4825264b3a195b5996644"},
-    {file = "python_socks-2.1.0-py3-none-any.whl", hash = "sha256:ecfbec941cc2989f82ce70b44799b02536edb357acd7e671344da33dc55c08fb"},
+    {file = "python-socks-2.1.1.tar.gz", hash = "sha256:3bb68964c97690d5a3eab6c12a772f415725f295b148cbe1ca8870cb47ebcb96"},
+    {file = "python_socks-2.1.1-py3-none-any.whl", hash = "sha256:6174278b0e005bd36b5d43681a0a3d816922852c9bccc2eceb17c60f4c8d4048"},
 ]
 
 [package.dependencies]
