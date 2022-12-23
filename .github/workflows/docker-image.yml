@@ -1,11 +1,7 @@
 name: Publish Docker Image
 
 on:
-  schedule:
-    - cron: '0 7 * * *'
   push:
-    branches: [ "main" ]
-  pull_request:
     branches: [ "main" ]
   workflow_dispatch:
 
@@ -56,10 +52,8 @@ jobs:
         with:
           images: ${{ env.IMAGE_NAME }}
           tags: |
-            type=ref,event=branch
-            type=pep440,pattern={{version}}
-            type=pep440,pattern={{major}}.{{minor}}
-            type=pep440,pattern={{major}}
+            type=raw,value=latest
+            type=schedule,pattern={{date 'YYYYMMDD'}}
             
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
