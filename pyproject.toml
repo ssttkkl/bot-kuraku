@@ -15,13 +15,14 @@ nonebot-plugin-onebot-monitor = "^0.1.2"
 nonebot-plugin-mahjong-scoreboard = "^0.1.7.post2"
 nonebot-plugin-majsoul = ">=0.0.6"
 nonebot-plugin-access-control = "^0.1.0"
+nonebot_plugin_picstatus = "^0.3.0"
 asyncpg = "^0.27.0"
 nb-cli = "^0.6.7"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
     "nonebot_plugin_pixivbot",
-    "nonebot_plugin_onebot_monitor", "nonebot_plugin_access_control"]
+    "nonebot_plugin_onebot_monitor", "nonebot_plugin_access_control", "nonebot_plugin_picstatus"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
