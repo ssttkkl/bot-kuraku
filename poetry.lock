@@ -1691,14 +1691,14 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "0.3.1"
+version = "0.3.2"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_picstatus-0.3.1-py3-none-any.whl", hash = "sha256:3ec943bbc7ee4da72720887f4812d81f6a2f01e3d22348e3241d10c18a60d541"},
-    {file = "nonebot_plugin_picstatus-0.3.1.tar.gz", hash = "sha256:7ed49ee96f347a8d1af88aa9b606fdff3f09196fc713e842ac00e23c332b1241"},
+    {file = "nonebot_plugin_picstatus-0.3.2-py3-none-any.whl", hash = "sha256:f7bb1daf4d493469c9459164d20ff262645697437c5dfd2359b6cdcda3165d53"},
+    {file = "nonebot_plugin_picstatus-0.3.2.tar.gz", hash = "sha256:f467059445825977e9faa68f3b56565af2b7da902fddd40d463de0437ff04de8"},
 ]
 
 [package.dependencies]
