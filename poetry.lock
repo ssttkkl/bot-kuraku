@@ -1110,16 +1110,16 @@ dev = ["Sphinx (>=4.1.1)", "black (>=19.10b0)", "colorama (>=0.3.4)", "docutils 
 
 [[package]]
 name = "mahjong-utils"
-version = "0.2.3"
+version = "0.2.5"
 description = "立直麻将小工具"
 category = "main"
 optional = false
 python-versions = "*"
 files = [
-    {file = "mahjong-utils-0.2.3.tar.gz", hash = "sha256:b2c4e5e9d6ddc04bb5fd901c4ed489d7391f6c6877c456e607c48676ec6bd28a"},
-    {file = "mahjong_utils-0.2.3-py3-none-macosx_11_7_x86_64.whl", hash = "sha256:4195ba546580054265e48496b97ac45088202041b3f3c2f6802a7ccc63086ab4"},
-    {file = "mahjong_utils-0.2.3-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:01c7611f67cbbdaebd9d13879dc5377345fcb0cd87a9dbf5b5272917ecc4e706"},
-    {file = "mahjong_utils-0.2.3-py3-none-win_amd64.whl", hash = "sha256:99f4ccbf925c739bc618560b4c7b48ce2f5da2358f5202b811c74874eaa571f9"},
+    {file = "mahjong-utils-0.2.5.tar.gz", hash = "sha256:4eda06206274349864fca41c3e3f41301be84f14426bfb1c36a3bd4e6bbf1872"},
+    {file = "mahjong_utils-0.2.5-py3-none-macosx_11_7_x86_64.whl", hash = "sha256:60d4228918904bb032cb2b4df261ad3f3e9ebf9dc62d2d51ffd57a9a71cbded8"},
+    {file = "mahjong_utils-0.2.5-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:cdcf5ec51710ae0806c9f923abfa7bf5989c4410033286804a91a8fca6cee99f"},
+    {file = "mahjong_utils-0.2.5-py3-none-win_amd64.whl", hash = "sha256:ca35138fb31dd8570e2aceb9bd0d1ad5458eb4d05f1a361544cc37f6513d7af6"},
 ]
 
 [package.dependencies]
@@ -2186,14 +2186,14 @@ idna2008 = ["idna"]
 
 [[package]]
 name = "setuptools"
-version = "67.1.0"
+version = "67.2.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "setuptools-67.1.0-py3-none-any.whl", hash = "sha256:a7687c12b444eaac951ea87a9627c4f904ac757e7abdc5aac32833234af90378"},
-    {file = "setuptools-67.1.0.tar.gz", hash = "sha256:e261cdf010c11a41cb5cb5f1bf3338a7433832029f559a6a7614bd42a967c300"},
+    {file = "setuptools-67.2.0-py3-none-any.whl", hash = "sha256:16ccf598aab3b506593c17378473978908a2734d7336755a8769b480906bec1c"},
+    {file = "setuptools-67.2.0.tar.gz", hash = "sha256:b440ee5f7e607bb8c9de15259dba2583dd41a38879a7abc1d43a71c59524da48"},
 ]
 
 [package.extras]
