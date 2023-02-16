@@ -52,7 +52,7 @@ async def general_help_text(bot: Bot, event: Event) -> str:
             continue
 
         plugin_service = get_plugin_service(plugin.name)
-        if not await plugin_service.check(bot, event):
+        if not await plugin_service.check(bot, event, acquire_rate_limit_token=False):
             continue
 
         plugin_metadata.append(metadata)
@@ -109,7 +109,7 @@ async def plugin_help_text(plugin_name: str, bot: Bot, event: Event) -> Optional
         return None
 
     plugin_service = get_plugin_service(plugin_name)
-    if not await plugin_service.check(bot, event):
+    if not await plugin_service.check(bot, event, acquire_rate_limit_token=False):
         return None
 
     if plugin_name in _plugin_help_text_cache:
