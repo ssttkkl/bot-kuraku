@@ -1555,13 +1555,14 @@ nonebot2 = ">=2.0.0-beta.3,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.3.0"
+version = "0.3.1"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.3.0-py3-none-any.whl", hash = "sha256:cb4f47f4a6e2514a046025f1b98c53e7405c37b6bec9f9c0153d33f4eeef0331"},
+    {file = "nonebot_plugin_access_control-0.3.1-py3-none-any.whl", hash = "sha256:7d1d52ca458bd95c34c4661b0400f2fa2ec8b73ef56f194fc07546685e9174c0"},
+    {file = "nonebot_plugin_access_control-0.3.1.tar.gz", hash = "sha256:ec6794bc79659eb0cf1be73367efcb0e9c04f3fbb806bbf9e343e1d0d0b36678"},
 ]
 
 [package.dependencies]
