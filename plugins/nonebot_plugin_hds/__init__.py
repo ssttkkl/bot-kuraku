@@ -63,6 +63,6 @@ async def update_count(bot: Bot, event: Event, matcher: Matcher, args: Message =
             n1 = int(plain_text)
             hds.set(n1)
     except ValueError:
-        await matcher.finish(event=event, message="命令格式错误")
+        await matcher.finish(message="命令格式错误")
 
     await bot.send(event=event, message="更新成功，现活动室人数为" + str(hds.count))
