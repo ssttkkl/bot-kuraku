@@ -169,6 +169,25 @@ files = [
 typing_extensions = ">=3.7.2"
 
 [[package]]
+name = "alembic"
+version = "1.9.4"
+description = "A database migration tool for SQLAlchemy."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "alembic-1.9.4-py3-none-any.whl", hash = "sha256:6f1c2207369bf4f49f952057a33bb017fbe5c148c2a773b46906b806ea6e825f"},
+    {file = "alembic-1.9.4.tar.gz", hash = "sha256:4d3bd32ecdbb7bbfb48a9fe9e6d6fd6a831a1b59d03e26e292210237373e7db5"},
+]
+
+[package.dependencies]
+Mako = "*"
+SQLAlchemy = ">=1.3.0"
+
+[package.extras]
+tz = ["python-dateutil"]
+
+[[package]]
 name = "anyio"
 version = "3.6.2"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
@@ -1229,6 +1248,26 @@ pydantic = ">=1.9.0"
 stringcase = ">=1.2.0"
 
 [[package]]
+name = "mako"
+version = "1.2.4"
+description = "A super-fast templating language that borrows the best ideas from the existing templating languages."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "Mako-1.2.4-py3-none-any.whl", hash = "sha256:c97c79c018b9165ac9922ae4f32da095ffd3c4e6872b45eded42926deea46818"},
+    {file = "Mako-1.2.4.tar.gz", hash = "sha256:d60a3903dc3bb01a18ad6a89cdbe2e4eadc69c0bc8ef1e3773ba53d44c3f7a34"},
+]
+
+[package.dependencies]
+MarkupSafe = ">=0.9.2"
+
+[package.extras]
+babel = ["Babel"]
+lingua = ["lingua"]
+testing = ["pytest"]
+
+[[package]]
 name = "markupsafe"
 version = "2.1.2"
 description = "Safely add untrusted strings to HTML/XML markup."
@@ -1554,19 +1593,19 @@ nonebot2 = ">=2.0.0-beta.3,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.3.1"
+version = "0.3.5"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.3.1-py3-none-any.whl", hash = "sha256:7d1d52ca458bd95c34c4661b0400f2fa2ec8b73ef56f194fc07546685e9174c0"},
-    {file = "nonebot_plugin_access_control-0.3.1.tar.gz", hash = "sha256:ec6794bc79659eb0cf1be73367efcb0e9c04f3fbb806bbf9e343e1d0d0b36678"},
+    {file = "nonebot_plugin_access_control-0.3.5-py3-none-any.whl", hash = "sha256:bacbb6b55a62c7b6228daa1761c9daf5c143655bd00fe216d7662db0873373d8"},
+    {file = "nonebot_plugin_access_control-0.3.5.tar.gz", hash = "sha256:09cdfef1976d629b11b0c50ba0a7a5d2b479dfc5530425f9311e468c81043211"},
 ]
 
 [package.dependencies]
 nonebot-plugin-apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-datastore = ">=0.4.0,<0.5.0"
+nonebot-plugin-datastore = ">=0.5.8,<0.6.0"
 nonebot2 = ">=2.0.0rc2,<3.0.0"
 shortuuid = ">=1.0.11,<2.0.0"
 
@@ -1588,21 +1627,25 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-datastore"
-version = "0.4.0"
+version = "0.5.8"
 description = "适用于 Nonebot2 的数据存储插件"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot-plugin-datastore-0.4.0.tar.gz", hash = "sha256:1171a9821bd2ebd1da394b641ed8e7ff82aa6bcaf359eec3d1f61b70f11c5a03"},
-    {file = "nonebot_plugin_datastore-0.4.0-py3-none-any.whl", hash = "sha256:34cf6c61ad9073650e3cb722ea4d89eb782ab3bb5013ee7d2b9976dd1925c5e4"},
+    {file = "nonebot_plugin_datastore-0.5.8-py3-none-any.whl", hash = "sha256:4a5635d2b5e6fc9646602b165f18661d4cb8b53e465b76fa30ed96a516cf4bf9"},
+    {file = "nonebot_plugin_datastore-0.5.8.tar.gz", hash = "sha256:f71c1c185012c0ba0f2a3b3fd13f5814c84f8a08aaf81691ec550862d1d118d7"},
 ]
 
 [package.dependencies]
-aiosqlite = ">=0.17.0,<0.18.0"
-nonebot-plugin-localstore = ">=0.2.0,<0.3.0"
+aiosqlite = ">=0.17,<0.19"
+alembic = ">=1.9.1,<2.0.0"
+nonebot-plugin-localstore = ">=0.2.0,<0.3.0 || >0.3.0,<0.4.0"
 nonebot2 = {version = ">=2.0.0-rc.1,<3.0.0", extras = ["httpx"]}
 sqlmodel = ">=0.0.8,<0.1.0"
+
+[package.extras]
+cli = ["anyio (>=3.6)", "click (>=8.0)", "typing-extensions (>=4.4)"]
 
 [[package]]
 name = "nonebot-plugin-gocqhttp-cross-machine-upload-file"
@@ -1623,14 +1666,14 @@ nonebot2 = ">=2.0.0rc1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-localstore"
-version = "0.2.0"
+version = "0.3.1"
 description = "Local Storage Support for NoneBot2"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot-plugin-localstore-0.2.0.tar.gz", hash = "sha256:f8a922c834440604bc10b3a7661aa1dcc00a92d36ea44096fd391f45a4c7b19a"},
-    {file = "nonebot_plugin_localstore-0.2.0-py3-none-any.whl", hash = "sha256:90cd37a878c75f7fd40a142ee3ddaae29656605c7b411095ca7252076ba40df3"},
+    {file = "nonebot_plugin_localstore-0.3.1-py3-none-any.whl", hash = "sha256:5a03e731a354105741852121fa6fa30508ad9c1b93eb9f42f8ba02924128a985"},
+    {file = "nonebot_plugin_localstore-0.3.1.tar.gz", hash = "sha256:fa332f5b887d8a77aaffc48a30e8f57a8c668bb761b678822f64075eec3dfa4e"},
 ]
 
 [package.dependencies]
