@@ -1627,20 +1627,20 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-datastore"
-version = "0.5.8"
+version = "0.5.9"
 description = "适用于 Nonebot2 的数据存储插件"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_datastore-0.5.8-py3-none-any.whl", hash = "sha256:4a5635d2b5e6fc9646602b165f18661d4cb8b53e465b76fa30ed96a516cf4bf9"},
-    {file = "nonebot_plugin_datastore-0.5.8.tar.gz", hash = "sha256:f71c1c185012c0ba0f2a3b3fd13f5814c84f8a08aaf81691ec550862d1d118d7"},
+    {file = "nonebot_plugin_datastore-0.5.9-py3-none-any.whl", hash = "sha256:fe23c791133eba59bb1f7aaa382841fa621687563dda2bfbf67f51fc0f010d7c"},
+    {file = "nonebot_plugin_datastore-0.5.9.tar.gz", hash = "sha256:1093929fe87ae386a2fab58d0e095d3b5bef049e8bbf63b9d28d4b0ae587804b"},
 ]
 
 [package.dependencies]
 aiosqlite = ">=0.17,<0.19"
 alembic = ">=1.9.1,<2.0.0"
-nonebot-plugin-localstore = ">=0.2.0,<0.3.0 || >0.3.0,<0.4.0"
+nonebot-plugin-localstore = ">=0.2.0,<0.3.0 || >0.3.0,<0.4.0 || >0.4.0,<0.5.0"
 nonebot2 = {version = ">=2.0.0-rc.1,<3.0.0", extras = ["httpx"]}
 sqlmodel = ">=0.0.8,<0.1.0"
 
@@ -1666,29 +1666,30 @@ nonebot2 = ">=2.0.0rc1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-localstore"
-version = "0.3.1"
+version = "0.4.1"
 description = "Local Storage Support for NoneBot2"
 category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_localstore-0.3.1-py3-none-any.whl", hash = "sha256:5a03e731a354105741852121fa6fa30508ad9c1b93eb9f42f8ba02924128a985"},
-    {file = "nonebot_plugin_localstore-0.3.1.tar.gz", hash = "sha256:fa332f5b887d8a77aaffc48a30e8f57a8c668bb761b678822f64075eec3dfa4e"},
+    {file = "nonebot_plugin_localstore-0.4.1-py3-none-any.whl", hash = "sha256:dea442fcf8baa5898c15ccea761703cdde46e6fc6bb1c886261b0ab793db8193"},
+    {file = "nonebot_plugin_localstore-0.4.1.tar.gz", hash = "sha256:9b6dcb98f6a4e48c5c80b2319acc2e1c424462261a210491d437f5b96abb5d67"},
 ]
 
 [package.dependencies]
 nonebot2 = ">=2.0.0-rc.1,<3.0.0"
+typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.1.10"
+version = "0.2.0"
 description = "日麻寄分器（NoneBot插件）"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.1.10-py3-none-any.whl", hash = "sha256:e033b63fa977a49ccf3a840347e75f8fc38edd42b1ec58c575d35479496d39cd"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.1.10.tar.gz", hash = "sha256:4b8e9e1553c93ab829c24733c4b5fe2853a2a7bc842867eb8752afedfcaaa7e3"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.2.0-py3-none-any.whl", hash = "sha256:64d8cc30e156c8d418b2e82830811302f4b55fb5aa6d40825da5382525cfa940"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.2.0.tar.gz", hash = "sha256:bbd7f4be729b4e491e4e17ebed3e882be251c01b1d91149969e45d6e36d67290"},
 ]
 
 [package.dependencies]
@@ -1696,8 +1697,8 @@ aiosqlite = ">=0.17,<0.19"
 cachetools = ">=5.2.0,<6.0.0"
 nonebot-adapter-onebot = ">=2.1.5,<3.0.0"
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.0,<0.2.0"
-nonebot-plugin-sqlalchemy = ">=0.1.4,<0.2.0"
+nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.2,<0.2.0"
+nonebot-plugin-sqlalchemy = ">=0.1.7,<0.2.0"
 nonebot2 = ">=2.0.0rc1,<3.0.0"
 tzlocal = ">=4.2,<5.0"
 
@@ -1781,14 +1782,14 @@ psutil = ">=5.9.2,<6.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.7.4"
+version = "1.7.5"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-1.7.4-py3-none-any.whl", hash = "sha256:fa96faf3a3bce6abb9a3b9f05b0c536fd4fa90f2a0347be457e36ae3a0ea9823"},
-    {file = "nonebot_plugin_pixivbot-1.7.4.tar.gz", hash = "sha256:b5ef14e3d5f5948adfef88ab837c8c41f8c8e66e4ee9d57f07cd83d1860e47fe"},
+    {file = "nonebot_plugin_pixivbot-1.7.5-py3-none-any.whl", hash = "sha256:96a78f9a31c45ade5d1fca9820f9e92821996ae06e098bac5876955a3c44e878"},
+    {file = "nonebot_plugin_pixivbot-1.7.5.tar.gz", hash = "sha256:ede93b458389defef29c6c9102020e68d9a2187c6c38bd39b3bd40e11ce5fd42"},
 ]
 
 [package.dependencies]
@@ -1853,14 +1854,14 @@ Pillow = ">=9.2.0,<10.0.0"
 
 [[package]]
 name = "nonebot-plugin-sqlalchemy"
-version = "0.1.6"
+version = "0.1.7"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_sqlalchemy-0.1.6-py3-none-any.whl", hash = "sha256:9e04bf5de23fe0556a8da990fffe17a205d2800229cf19faa2fee1f3f73e6c4f"},
-    {file = "nonebot_plugin_sqlalchemy-0.1.6.tar.gz", hash = "sha256:8a89f0c3e0d5a3fac3c2b9da5d5c2b0558397fda0ae2956707486b9673e73118"},
+    {file = "nonebot_plugin_sqlalchemy-0.1.7-py3-none-any.whl", hash = "sha256:ee2592586e1b78225ae3e58aa76e085532f2d4ee44d8a7e2a38cce74946c6e69"},
+    {file = "nonebot_plugin_sqlalchemy-0.1.7.tar.gz", hash = "sha256:5707f4e8fec837ac53d416776801798ccc5e76ae48120cfcab08dd9c07304692"},
 ]
 
 [package.dependencies]
@@ -2230,14 +2231,14 @@ six = ">=1.5"
 
 [[package]]
 name = "python-dotenv"
-version = "0.21.1"
+version = "1.0.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
 category = "main"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "python-dotenv-0.21.1.tar.gz", hash = "sha256:1c93de8f636cde3ce377292818d0e440b6e45a82f215c3744979151fa8151c49"},
-    {file = "python_dotenv-0.21.1-py3-none-any.whl", hash = "sha256:41e12e0318bebc859fcc4d97d4db8d20ad21721a6aa5047dd59f090391cb549a"},
+    {file = "python-dotenv-1.0.0.tar.gz", hash = "sha256:a8df96034aae6d2d50a4ebe8216326c61c3eb64836776504fcca410e5937a3ba"},
+    {file = "python_dotenv-1.0.0-py3-none-any.whl", hash = "sha256:f5971a9226b701070a4bf2c38c89e5a3f0d64de8debda981d1db98583009122a"},
 ]
 
 [package.extras]
@@ -2245,14 +2246,14 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "python-slugify"
-version = "8.0.0"
+version = "8.0.1"
 description = "A Python slugify application that also handles Unicode"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "python-slugify-8.0.0.tar.gz", hash = "sha256:f1da83f3c7ab839b3f84543470cd95bdb5a81f1a0b80fed502f78b7dca256062"},
-    {file = "python_slugify-8.0.0-py2.py3-none-any.whl", hash = "sha256:51f217508df20a6c166c7821683384b998560adcf8f19a6c2ca8b460528ccd9c"},
+    {file = "python-slugify-8.0.1.tar.gz", hash = "sha256:ce0d46ddb668b3be82f4ed5e503dbc33dd815d83e2eb6824211310d3fb172a27"},
+    {file = "python_slugify-8.0.1-py2.py3-none-any.whl", hash = "sha256:70ca6ea68fe63ecc8fa4fcf00ae651fc8a5d02d93dcd12ae6d4fc7ca46c4d395"},
 ]
 
 [package.dependencies]
@@ -2796,19 +2797,19 @@ multidict = ">=4.0"
 
 [[package]]
 name = "zipp"
-version = "3.14.0"
+version = "3.15.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "zipp-3.14.0-py3-none-any.whl", hash = "sha256:188834565033387710d046e3fe96acfc9b5e86cbca7f39ff69cf21a4128198b7"},
-    {file = "zipp-3.14.0.tar.gz", hash = "sha256:9e5421e176ef5ab4c0ad896624e87a7b2f07aca746c9b2aa305952800cb8eecb"},
+    {file = "zipp-3.15.0-py3-none-any.whl", hash = "sha256:48904fc76a60e542af151aded95726c1a5c34ed43ab4134b597665c86d7ad556"},
+    {file = "zipp-3.15.0.tar.gz", hash = "sha256:112929ad649da941c23de50f356a2b5570c954b65150642bccdd66bf194d224b"},
 ]
 
 [package.extras]
 docs = ["furo", "jaraco.packaging (>=9)", "jaraco.tidelift (>=1.4)", "rst.linker (>=1.9)", "sphinx (>=3.5)", "sphinx-lint"]
-testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools", "more-itertools", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
+testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more-itertools", "pytest (>=6)", "pytest-black (>=0.3.7)", "pytest-checkdocs (>=2.4)", "pytest-cov", "pytest-enabler (>=1.3)", "pytest-flake8", "pytest-mypy (>=0.9.1)"]
 
 [metadata]
 lock-version = "2.0"
