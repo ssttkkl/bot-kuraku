@@ -1593,14 +1593,14 @@ nonebot2 = ">=2.0.0-beta.3,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.3.6"
+version = "0.3.8"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.3.6-py3-none-any.whl", hash = "sha256:ec4fe2bfc779846d00f321c122ce47c31aaff0b8bdd06d449a92b58865628c7f"},
-    {file = "nonebot_plugin_access_control-0.3.6.tar.gz", hash = "sha256:5d6d24dbc12c87de32f094327b86260a5bfa247f2f5f19de8be42457aff49367"},
+    {file = "nonebot_plugin_access_control-0.3.8-py3-none-any.whl", hash = "sha256:19b0d19209bcf3161782ae547c968417eab621d9814489c2d0496a4199b921ca"},
+    {file = "nonebot_plugin_access_control-0.3.8.tar.gz", hash = "sha256:76e78fd92e7559d0e6ac19de2e03e75687779009a5cd284be888fdd247e9d052"},
 ]
 
 [package.dependencies]
@@ -1682,14 +1682,14 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.2.1"
+version = "0.2.2"
 description = "日麻寄分器（NoneBot插件）"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.2.1-py3-none-any.whl", hash = "sha256:656a596722db0d67a5233d45e0772718f3b234f64593b046ed7ddc0636b771df"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.2.1.tar.gz", hash = "sha256:7632b00b11de6d4552b40dc65d984a66df6a7c3f0eeb342c7c8442bccffff760"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.2.2-py3-none-any.whl", hash = "sha256:4e743c04f31dca96706b8b4f70d969597c9a5dcc7624e9b6479ae561a49665bf"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.2.2.tar.gz", hash = "sha256:04aba87038d31400688134716a289decc7510ed58efb28050c258fc9fbe1c5d0"},
 ]
 
 [package.dependencies]
@@ -1697,7 +1697,7 @@ aiosqlite = ">=0.17,<0.19"
 cachetools = ">=5.2.0,<6.0.0"
 nonebot-adapter-onebot = ">=2.1.5,<3.0.0"
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.2,<0.2.0"
+nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.3,<0.2.0"
 nonebot-plugin-sqlalchemy = ">=0.1.7,<0.2.0"
 nonebot2 = ">=2.0.0rc1,<3.0.0"
 tzlocal = ">=4.2,<5.0"
@@ -1782,14 +1782,14 @@ psutil = ">=5.9.2,<6.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.7.5"
+version = "1.7.7"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-1.7.5-py3-none-any.whl", hash = "sha256:96a78f9a31c45ade5d1fca9820f9e92821996ae06e098bac5876955a3c44e878"},
-    {file = "nonebot_plugin_pixivbot-1.7.5.tar.gz", hash = "sha256:ede93b458389defef29c6c9102020e68d9a2187c6c38bd39b3bd40e11ce5fd42"},
+    {file = "nonebot_plugin_pixivbot-1.7.7-py3-none-any.whl", hash = "sha256:f587bf840b1accfcca913f951a0abe7c70aff95a3a8f01a104ae5699d3c4b9ba"},
+    {file = "nonebot_plugin_pixivbot-1.7.7.tar.gz", hash = "sha256:f4a671bec677cdb9d74e77b4dcaece04689822f6349e65e7ab4eeb1f51fcee5d"},
 ]
 
 [package.dependencies]
@@ -1801,7 +1801,7 @@ cachetools = ">=5.2.0,<6.0.0"
 frozendict = ">=2.3.4,<3.0.0"
 lazy = ">=1.4,<2.0"
 nonebot-adapter-onebot = {version = ">=2.1.1,<3.0.0", optional = true, markers = "extra == \"onebot\""}
-nonebot-plugin-access-control = ">=0.3.0,<0.4.0"
+nonebot-plugin-access-control = ">=0.3.8,<0.4.0"
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
 nonebot2 = ">=2.0.0rc2,<3.0.0"
 numpy = ">=1.23.1,<2.0.0"
@@ -2825,4 +2825,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.9"
-content-hash = "018d9994f336afb339ca82924ec8f11129b1bf95fe3a87e2f8ee9a0ad7956fd0"
+content-hash = "9ce858afd470c324bf487070d48f77e9ddb733eb8968806c4f2bb39d5e261cf5"
