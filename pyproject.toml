@@ -24,7 +24,7 @@ nonebot-plugin-savor = ">=0.2.1"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
-    "nonebot_plugin_pixivbot", "nonebot-plugin-savor",
+    "nonebot_plugin_pixivbot", "nonebot_plugin_savor",
     "nonebot_plugin_onebot_monitor", "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke"]
 
 [build-system]
