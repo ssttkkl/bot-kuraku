@@ -51,7 +51,7 @@ class Place:
         if self.update_time.date() != datetime.now().date():
             msg = f"{self.place_name}现在0人 (今日未更新数据，更新数据请使用“/{self.place_name}3”或“/{self.place_shortname}+1”。)"
         else:
-            msg = f"{self.place_name}现在{self.place.count}人 (更新于{self.place.update_time.strftime('%H:%M')}，更新数据请使用“/{self.place_name}3”或“/{self.place_shortname}+1”。)"
+            msg = f"{self.place_name}现在{self.count}人 (更新于{self.update_time.strftime('%H:%M')}，更新数据请使用“/{self.place_name}3”或“/{self.place_shortname}+1”。)"
         await bot.send(event=event, message=msg)
 
     async def update_count(self, bot: Bot, event: Event, matcher: Matcher, args: Message = CommandArg()):
@@ -69,7 +69,7 @@ class Place:
         except ValueError:
             await matcher.finish(message="命令格式错误")
 
-        await bot.send(event=event, message=f"更新成功，现{self.place_name}人数为{self.place.count}")
+        await bot.send(event=event, message=f"更新成功，现{self.place_name}人数为{self.count}")
 
 
 hds = Place("活动室", "hds")
