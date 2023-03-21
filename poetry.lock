@@ -1761,14 +1761,14 @@ psutil = ">=5.9.2,<6.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "1.8.0a5"
+version = "1.8.0a6"
 description = "Nonebot Plugin PixivBot"
 category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-1.8.0a5-py3-none-any.whl", hash = "sha256:ca6ae5ce537b0bbfefd9d71f84722cb53f1d82a3834c17d38b2631d0c86e15ba"},
-    {file = "nonebot_plugin_pixivbot-1.8.0a5.tar.gz", hash = "sha256:af7463272bf9ea33d7b4d771231944ec0b5dbc0c62277873c0c732ca57988e12"},
+    {file = "nonebot_plugin_pixivbot-1.8.0a6-py3-none-any.whl", hash = "sha256:a4f835a3b45a080f5dd38a7b1336ac6552ba8802818d58d6731d85da6b73a44f"},
+    {file = "nonebot_plugin_pixivbot-1.8.0a6.tar.gz", hash = "sha256:f6acbc05335835df5a82607bef1b297edbfbaaec35cf0ed14b47785038b3d2ab"},
 ]
 
 [package.dependencies]
