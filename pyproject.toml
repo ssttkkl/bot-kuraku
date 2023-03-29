@@ -6,7 +6,7 @@ authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.10"
 nonebot2 = "^2.0.0rc2"
 nb-cli = "^0.6.7"
 asyncpg = "^0.27.0"
