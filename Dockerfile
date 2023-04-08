@@ -21,7 +21,7 @@ ENV LC_ALL zh_CN.UTF-8
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
-RUN apt update && apt install git && pip install playwright && playwright install chromium && playwright install-deps
+RUN apt update && apt install git -y && pip install playwright && playwright install chromium && playwright install-deps
 
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
