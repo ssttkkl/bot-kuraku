@@ -21,8 +21,6 @@ nonebot-plugin-access-control = ">=0.4.0"
 nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-savor = ">=0.2.1"
-nonebot-plugin-postoffice = {git = "https://github.com/ssttkkl/nonebot-plugin-postoffice"}
-nonebot-plugin-send-anything-anywhere = {git = "https://github.com/ssttkkl/nonebot-plugin-send-anything-anywhere"}
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
