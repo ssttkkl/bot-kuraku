@@ -330,22 +330,22 @@ test = ["flake8 (>=5.0.4,<5.1.0)", "uvloop (>=0.15.3)"]
 
 [[package]]
 name = "attrs"
-version = "22.2.0"
+version = "23.1.0"
 description = "Classes Without Boilerplate"
 category = "main"
 optional = false
-python-versions = ">=3.6"
+python-versions = ">=3.7"
 files = [
-    {file = "attrs-22.2.0-py3-none-any.whl", hash = "sha256:29e95c7f6778868dbd49170f98f8818f78f3dc5e0e37c0b1f474e3561b240836"},
-    {file = "attrs-22.2.0.tar.gz", hash = "sha256:c9227bfc2f01993c03f68db37d1d15c9690188323c067c641f1a35ca58185f99"},
+    {file = "attrs-23.1.0-py3-none-any.whl", hash = "sha256:1f28b4522cdc2fb4256ac1a020c78acf9cba2c6b461ccd2c126f3aa8e8335d04"},
+    {file = "attrs-23.1.0.tar.gz", hash = "sha256:6279836d581513a26f1bf235f9acd333bc9115683f14f7e8fae46c98fc50e015"},
 ]
 
 [package.extras]
-cov = ["attrs[tests]", "coverage-enable-subprocess", "coverage[toml] (>=5.3)"]
-dev = ["attrs[docs,tests]"]
-docs = ["furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-towncrier", "towncrier", "zope.interface"]
-tests = ["attrs[tests-no-zope]", "zope.interface"]
-tests-no-zope = ["cloudpickle", "cloudpickle", "hypothesis", "hypothesis", "mypy (>=0.971,<0.990)", "mypy (>=0.971,<0.990)", "pympler", "pympler", "pytest (>=4.3.0)", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-mypy-plugins", "pytest-xdist[psutil]", "pytest-xdist[psutil]"]
+cov = ["attrs[tests]", "coverage[toml] (>=5.3)"]
+dev = ["attrs[docs,tests]", "pre-commit"]
+docs = ["furo", "myst-parser", "sphinx", "sphinx-notfound-page", "sphinxcontrib-towncrier", "towncrier", "zope-interface"]
+tests = ["attrs[tests-no-zope]", "zope-interface"]
+tests-no-zope = ["cloudpickle", "hypothesis", "mypy (>=1.1.1)", "pympler", "pytest (>=4.3.0)", "pytest-mypy-plugins", "pytest-xdist[psutil]"]
 
 [[package]]
 name = "binaryornot"
@@ -1963,27 +1963,6 @@ postgresql = ["asyncpg (>=0.27.0,<0.28.0)"]
 telegram = ["nonebot-adapter-telegram (>=0.1.0b8,<0.2.0)"]
 
 [[package]]
-name = "nonebot-plugin-postoffice"
-version = "0.1.0"
-description = ""
-category = "main"
-optional = false
-python-versions = "^3.10"
-files = []
-develop = false
-
-[package.dependencies]
-nonebot-adapter-onebot = "^2.2.2"
-nonebot-plugin-send-anything-anywhere = "^0.2.2"
-nonebot2 = {version = "^2.0.0rc4", extras = ["fastapi"]}
-
-[package.source]
-type = "git"
-url = "https://github.com/ssttkkl/nonebot-plugin-postoffice"
-reference = "HEAD"
-resolved_reference = "efe198f26f24eda909425418e9560b718018033f"
-
-[[package]]
 name = "nonebot-plugin-qq-monitor"
 version = "0.2.0.post1"
 description = ""
@@ -2040,20 +2019,16 @@ version = "0.2.2"
 description = "An adaptor for nonebot2 adaptors"
 category = "main"
 optional = false
-python-versions = "^3.10"
-files = []
-develop = false
+python-versions = ">=3.10,<4.0"
+files = [
+    {file = "nonebot_plugin_send_anything_anywhere-0.2.2-py3-none-any.whl", hash = "sha256:7af943114ef727826e72c2efac9d05515183b72d56af16aced3e2223584f2b0c"},
+    {file = "nonebot_plugin_send_anything_anywhere-0.2.2.tar.gz", hash = "sha256:ebd644f4f058941b776bf518e07dfb8d588dda1488d4a77e47fa53c0382e51f0"},
+]
 
 [package.dependencies]
-nonebot2 = "^2.0.0rc1"
-pydantic = "^1.10.5"
-strenum = "^0.4.8"
-
-[package.source]
-type = "git"
-url = "https://github.com/ssttkkl/nonebot-plugin-send-anything-anywhere"
-reference = "HEAD"
-resolved_reference = "e861b8f6612e3e1e149efcb0fed4b1a806238cfd"
+nonebot2 = ">=2.0.0rc1,<3.0.0"
+pydantic = ">=1.10.5,<2.0.0"
+strenum = ">=0.4.8,<0.5.0"
 
 [[package]]
 name = "nonebot-plugin-sqlalchemy"
@@ -3378,4 +3353,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "51a0faf70708dc2c265c3c7da69663319d92bdffbf390bbe4786022163c6ac9c"
+content-hash = "1a47daa56c0791d71efc877f534c514e72ae9cc41d943328d0c0d76bf58cabbc"
