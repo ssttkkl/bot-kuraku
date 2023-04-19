@@ -21,10 +21,11 @@ nonebot-plugin-access-control = ">=0.4.0"
 nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-savor = ">=0.2.1"
+nonebot-plugin-autoreply = "^0.2.3"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
-    "nonebot_plugin_pixivbot", "nonebot_plugin_savor",
+    "nonebot_plugin_pixivbot", "nonebot_plugin_savor", "nonebot_plugin_autoreply",
     "nonebot_plugin_onebot_monitor", "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke"]
 
 [build-system]
