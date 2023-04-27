@@ -22,6 +22,8 @@ nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-savor = ">=0.2.1"
 nonebot-plugin-autoreply = "^0.2.3"
+nonebot-plugin-apscheduler = "^0.2.0"
+nonebot-plugin-send-anything-anywhere = "^0.2.2"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",

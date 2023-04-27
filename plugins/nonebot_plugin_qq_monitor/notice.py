@@ -3,8 +3,8 @@ from nonebot.adapters.onebot.v11 import NoticeEvent, Message, MessageSegment, Gr
     GroupDecreaseNoticeEvent, GroupIncreaseNoticeEvent, GroupBanNoticeEvent, GroupRecallNoticeEvent, \
     PokeNotifyEvent, LuckyKingNotifyEvent, HonorNotifyEvent, FriendAddNoticeEvent, Bot
 
-from nonebot_plugin_onebot_monitor.config import conf
-from nonebot_plugin_onebot_monitor.utils import map_group, map_user
+from .config import conf
+from .utils import map_group, map_user
 
 
 async def map_notice_forward_message(notice: NoticeEvent):
