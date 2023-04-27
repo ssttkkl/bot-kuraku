@@ -142,7 +142,7 @@ async def send(bot: Bot, target: PlatformTarget, *, silently: bool = False):
             await MessageFactory(Text(summary)).send_to(bot=bot, target=target)
 
     factories = list(map(lambda x: MessageFactory(Text(x.summary)), data))
-    for i in range(0, len(factories), 50):
+    for i in range(0, len(factories), 99):
         await AggregatedMessageFactory(factories[i:min(len(factories), i + 50)]).send_to(bot=bot, target=target)
 
 
