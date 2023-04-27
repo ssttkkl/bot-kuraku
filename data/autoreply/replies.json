@@ -1,0 +1,22 @@
+[
+  {
+    "matches": [
+      {
+        "match": "在",
+        "type": "full",
+        "to_me": true
+      },
+      {
+        "match": "在？",
+        "type": "full",
+        "to_me": true
+      }
+    ],
+    "replies": [
+      {
+        "type": "plain",
+        "message": "bot在"
+      }
+    ]
+  }
+]
