@@ -1,0 +1,32 @@
+version: "3"
+
+services:
+  bot:
+    image: "ssttkkl/bot-kuraku:latest"
+    container_name: "bot"
+    environment:
+      - "HOST=0.0.0.0"
+      - "PORT=8080"
+    env_file:
+      - .env
+    restart: "always"
+
+  bot-gocq:
+    image: "silicer/go-cqhttp:latest"
+    container_name: "bot-gocq"
+    volumes:
+      - "bot-gocq-data:/data"
+    restart: "always"
+
+  bot-postgres:
+    image: "postgres:latest"
+    container_name: "bot-postgres"
+    environment:
+      - "POSTGRES_PASSWORD=hwl1098042114"
+    volumes:
+      - "bot-postgres-data:/var/lib/postgresql/data"
+    restart: "always"
+
+volumes:
+  bot-gocq-data:
+  bot-postgres-data:
