@@ -1903,14 +1903,14 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.1.5"
+version = "0.1.6"
 description = ""
 category = "main"
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.1.5-py3-none-any.whl", hash = "sha256:682e588e471095fdb04a630e957dd9eded4851d7e292dbd57f2e33801e7e8550"},
-    {file = "nonebot_plugin_majsoul-0.1.5.tar.gz", hash = "sha256:4b0ea4fefb90b19c1be53700b770b152a775a23bb57df77792059450506872f1"},
+    {file = "nonebot_plugin_majsoul-0.1.6-py3-none-any.whl", hash = "sha256:22fc50e05822c65f0841ad4122b7e9648f7d7e797f5898b5af8de0d860ed8ea6"},
+    {file = "nonebot_plugin_majsoul-0.1.6.tar.gz", hash = "sha256:7d2b016c7cf30d55244812cd615aa62ebeaed3080037c635057440be92487870"},
 ]
 
 [package.dependencies]
