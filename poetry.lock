@@ -1472,6 +1472,21 @@ files = [
 ]
 
 [[package]]
+name = "ms-api"
+version = "0.10.226.post2"
+description = "Python wrapper for the Mahjong Soul (Majsoul) Protobuf objects. It allows to use their API."
+optional = false
+python-versions = "*"
+files = [
+    {file = "ms_api-0.10.226.post2.tar.gz", hash = "sha256:3c62bc058b2bd2e95080ee95048e5938e075c9b4ff085ed4f721a76b714afb9a"},
+]
+
+[package.dependencies]
+aiohttp = "*"
+protobuf = "*"
+websockets = "*"
+
+[[package]]
 name = "msgpack"
 version = "1.0.5"
 description = "MessagePack serializer"
@@ -1837,13 +1852,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.0"
+version = "0.2.0.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.0-py3-none-any.whl", hash = "sha256:a42b6e619d768593339bb75a1e2bfebda5565eb856fa249c93d55c689c0f5336"},
-    {file = "nonebot_plugin_majsoul-0.2.0.tar.gz", hash = "sha256:0826b00602ef613a75aacfbfeca46be4e63ab47811975042c249eaf6ad5f7541"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post1-py3-none-any.whl", hash = "sha256:c95031e7df1b50787c0c76a40fadb4da922e03fe2e750cc8fb1030601b4f7828"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post1.tar.gz", hash = "sha256:999e3cf0d6284f75cb34cfb377ec3f29d1cc50635c1986079c05f012e4f20a8e"},
 ]
 
 [package.dependencies]
@@ -1856,6 +1871,7 @@ nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.4,<0.2.0"
 nonebot-plugin-send-anything-anywhere = ">=0.2.1,<0.3.0"
 nonebot2 = ">=2.0.0rc3,<3.0.0"
 pydantic = ">=1.10.2,<2.0.0"
+tensoul = ">=0.1.0,<0.2.0"
 typing-extensions = ">=4.4.0,<5.0.0"
 tzlocal = ">=4.2,<5.0"
 
@@ -2214,6 +2230,28 @@ files = [
 
 [package.dependencies]
 wcwidth = "*"
+
+[[package]]
+name = "protobuf"
+version = "4.23.1"
+description = ""
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "protobuf-4.23.1-cp310-abi3-win32.whl", hash = "sha256:410bcc0a5b279f634d3e16082ce221dfef7c3392fac723500e2e64d1806dd2be"},
+    {file = "protobuf-4.23.1-cp310-abi3-win_amd64.whl", hash = "sha256:32e78beda26d7a101fecf15d7a4a792278a0d26a31bc327ff05564a9d68ab8ee"},
+    {file = "protobuf-4.23.1-cp37-abi3-macosx_10_9_universal2.whl", hash = "sha256:f9510cac91e764e86acd74e2b7f7bc5e6127a7f3fb646d7c8033cfb84fd1176a"},
+    {file = "protobuf-4.23.1-cp37-abi3-manylinux2014_aarch64.whl", hash = "sha256:346990f634272caac1f09efbcfbbacb23098b1f606d172534c6fa2d9758bb436"},
+    {file = "protobuf-4.23.1-cp37-abi3-manylinux2014_x86_64.whl", hash = "sha256:3ce113b3f3362493bddc9069c2163a38f240a9ed685ff83e7bcb756b05e1deb0"},
+    {file = "protobuf-4.23.1-cp37-cp37m-win32.whl", hash = "sha256:2036a3a1e7fc27f973fa0a7888dce712393af644f4695385f117886abc792e39"},
+    {file = "protobuf-4.23.1-cp37-cp37m-win_amd64.whl", hash = "sha256:3b8905eafe4439076e1f58e9d1fa327025fd2777cf90f14083092ae47f77b0aa"},
+    {file = "protobuf-4.23.1-cp38-cp38-win32.whl", hash = "sha256:5b9cd6097e6acae48a68cb29b56bc79339be84eca65b486910bb1e7a30e2b7c1"},
+    {file = "protobuf-4.23.1-cp38-cp38-win_amd64.whl", hash = "sha256:decf119d54e820f298ee6d89c72d6b289ea240c32c521f00433f9dc420595f38"},
+    {file = "protobuf-4.23.1-cp39-cp39-win32.whl", hash = "sha256:91fac0753c3c4951fbb98a93271c43cc7cf3b93cf67747b3e600bb1e5cc14d61"},
+    {file = "protobuf-4.23.1-cp39-cp39-win_amd64.whl", hash = "sha256:ac50be82491369a9ec3710565777e4da87c6d2e20404e0abb1f3a8f10ffd20f0"},
+    {file = "protobuf-4.23.1-py3-none-any.whl", hash = "sha256:65f0ac96ef67d7dd09b19a46aad81a851b6f85f89725577f16de38f2d68ad477"},
+    {file = "protobuf-4.23.1.tar.gz", hash = "sha256:95789b569418a3e32a53f43d7763be3d490a831e9c08042539462b6d972c2d7e"},
+]
 
 [[package]]
 name = "psutil"
@@ -2747,6 +2785,21 @@ python-versions = "*"
 files = [
     {file = "stringcase-1.2.0.tar.gz", hash = "sha256:48a06980661908efe8d9d34eab2b6c13aefa2163b3ced26972902e3bdfd87008"},
 ]
+
+[[package]]
+name = "tensoul"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.9,<4.0"
+files = [
+    {file = "tensoul-0.1.0-py3-none-any.whl", hash = "sha256:53da94e16401ebf9bfd7f619f13edcfa71a6fe0cba98e3b04d600f7f056da2c1"},
+    {file = "tensoul-0.1.0.tar.gz", hash = "sha256:06ad5ed560efcbd2b2a88ea51dfa259c2947217d54313b58432bc5c5fd307df6"},
+]
+
+[package.dependencies]
+aiohttp = ">=3.8.4,<4.0.0"
+ms-api = ">=0.10.226.post2"
 
 [[package]]
 name = "text-unidecode"
