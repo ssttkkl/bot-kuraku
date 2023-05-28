@@ -30,7 +30,7 @@ nonebot-plugin-nagabus = "^0.1.0"
 plugins = ["nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
     "nonebot_plugin_pixivbot", "nonebot_plugin_savor", "nonebot_plugin_autoreply",
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke", 
-    "nonebot-plugin-nagabus"]
+    "nonebot_plugin_nagabus"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
