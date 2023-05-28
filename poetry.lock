@@ -1867,13 +1867,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.0.post2"
+version = "0.2.0.post3"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.0.post2-py3-none-any.whl", hash = "sha256:8bd0d9dca7981ab19388d3a8619a845b3d34b950e6f33fa1b62fd611b0936434"},
-    {file = "nonebot_plugin_majsoul-0.2.0.post2.tar.gz", hash = "sha256:c92b72f8837b866bb9faa5bfeef189f906ab14cbf780e71e89ad3a691ca26a15"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post3-py3-none-any.whl", hash = "sha256:fe025ed83bc16fd604e0656f16492c43b7ac721e2c36b0473ee99f4944554365"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post3.tar.gz", hash = "sha256:ca5525294f952b7f27eb8fac54e11c60cf4ffa054697f8b31ede214b5ccec756"},
 ]
 
 [package.dependencies]
@@ -1892,13 +1892,13 @@ tzlocal = ">=4.2,<5.0"
 
 [[package]]
 name = "nonebot-plugin-nagabus"
-version = "0.1.0"
+version = "0.1.1.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_nagabus-0.1.0-py3-none-any.whl", hash = "sha256:1dae4e266fcf5116ded8222150fffab705bac60eebb2981fe85f015fc9471e0f"},
-    {file = "nonebot_plugin_nagabus-0.1.0.tar.gz", hash = "sha256:28af9db47eadef3da4cb7a6e5e1db9e35c0b549a50238282e6d40d580ea950f6"},
+    {file = "nonebot_plugin_nagabus-0.1.1.post1-py3-none-any.whl", hash = "sha256:44601e0d2429a0e261cda3bb626b102de91c6900552878a9378ff830305b590e"},
+    {file = "nonebot_plugin_nagabus-0.1.1.post1.tar.gz", hash = "sha256:4500bea6e3bfeed6dabc26833c84f3b5833b0ed2bcff724b331aa3f61a7eb9a2"},
 ]
 
 [package.dependencies]
