@@ -180,23 +180,24 @@ tz = ["python-dateutil"]
 
 [[package]]
 name = "anyio"
-version = "3.6.2"
+version = "3.7.0"
 description = "High level compatibility layer for multiple asynchronous event loop implementations"
 optional = false
-python-versions = ">=3.6.2"
+python-versions = ">=3.7"
 files = [
-    {file = "anyio-3.6.2-py3-none-any.whl", hash = "sha256:fbbe32bd270d2a2ef3ed1c5d45041250284e31fc0a4df4a5a6071842051a51e3"},
-    {file = "anyio-3.6.2.tar.gz", hash = "sha256:25ea0d673ae30af41a0c442f81cf3b38c7e79fdc7b60335a4c14e05eb0947421"},
+    {file = "anyio-3.7.0-py3-none-any.whl", hash = "sha256:eddca883c4175f14df8aedce21054bfca3adb70ffe76a9f607aef9d7fa2ea7f0"},
+    {file = "anyio-3.7.0.tar.gz", hash = "sha256:275d9973793619a5374e1c89a4f4ad3f4b0a5510a2b5b939444bee8f4c4d37ce"},
 ]
 
 [package.dependencies]
+exceptiongroup = {version = "*", markers = "python_version < \"3.11\""}
 idna = ">=2.8"
 sniffio = ">=1.1"
 
 [package.extras]
-doc = ["packaging", "sphinx-autodoc-typehints (>=1.2.0)", "sphinx-rtd-theme"]
-test = ["contextlib2", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=4)", "pytest (>=7.0)", "pytest-mock (>=3.6.1)", "trustme", "uvloop (<0.15)", "uvloop (>=0.15)"]
-trio = ["trio (>=0.16,<0.22)"]
+doc = ["Sphinx (>=6.1.0)", "packaging", "sphinx-autodoc-typehints (>=1.2.0)", "sphinx-rtd-theme", "sphinxcontrib-jquery"]
+test = ["anyio[trio]", "coverage[toml] (>=4.5)", "hypothesis (>=4.0)", "mock (>=4)", "psutil (>=5.9)", "pytest (>=7.0)", "pytest-mock (>=3.6.1)", "trustme", "uvloop (>=0.17)"]
+trio = ["trio (<0.22)"]
 
 [[package]]
 name = "apscheduler"
@@ -350,13 +351,13 @@ chardet = ">=3.0.2"
 
 [[package]]
 name = "cachetools"
-version = "5.3.0"
+version = "5.3.1"
 description = "Extensible memoizing collections and decorators"
 optional = false
-python-versions = "~=3.7"
+python-versions = ">=3.7"
 files = [
-    {file = "cachetools-5.3.0-py3-none-any.whl", hash = "sha256:429e1a1e845c008ea6c85aa35d4b98b65d6a9763eeef3e37e92728a12d1de9d4"},
-    {file = "cachetools-5.3.0.tar.gz", hash = "sha256:13dfddc7b8df938c21a940dfa6557ce6e94a2f1cdfa58eb90c805721d58f2c14"},
+    {file = "cachetools-5.3.1-py3-none-any.whl", hash = "sha256:95ef631eeaea14ba2e36f06437f36463aac3a096799e876ee55e5cdccb102590"},
+    {file = "cachetools-5.3.1.tar.gz", hash = "sha256:dce83f2d9b4e1f732a8cd44af8e8fab2dbe46201467fc98b3ef8f269092bf62b"},
 ]
 
 [[package]]
@@ -691,20 +692,20 @@ files = [
 
 [[package]]
 name = "deprecated"
-version = "1.2.13"
+version = "1.2.14"
 description = "Python @deprecated decorator to deprecate old python classes, functions or methods."
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 files = [
-    {file = "Deprecated-1.2.13-py2.py3-none-any.whl", hash = "sha256:64756e3e14c8c5eea9795d93c524551432a0be75629f8f29e67ab8caf076c76d"},
-    {file = "Deprecated-1.2.13.tar.gz", hash = "sha256:43ac5335da90c31c24ba028af536a91d41d53f9e6901ddb021bcc572ce44e38d"},
+    {file = "Deprecated-1.2.14-py2.py3-none-any.whl", hash = "sha256:6fac8b097794a90302bdbb17b9b815e732d3c4720583ff1b198499d78470466c"},
+    {file = "Deprecated-1.2.14.tar.gz", hash = "sha256:e5323eb936458dccc2582dc6f9c322c852a775a27065ff2b0c4970b9d53d01b3"},
 ]
 
 [package.dependencies]
 wrapt = ">=1.10,<2"
 
 [package.extras]
-dev = ["PyTest", "PyTest (<5)", "PyTest-Cov", "PyTest-Cov (<2.6)", "bump2version (<1)", "configparser (<5)", "importlib-metadata (<3)", "importlib-resources (<4)", "sphinx (<2)", "sphinxcontrib-websupport (<2)", "tox", "zipp (<2)"]
+dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 
 [[package]]
 name = "distlib"
@@ -716,6 +717,20 @@ files = [
     {file = "distlib-0.3.6-py2.py3-none-any.whl", hash = "sha256:f35c4b692542ca110de7ef0bea44d73981caeb34ca0b9b6b2e6d7790dda8f80e"},
     {file = "distlib-0.3.6.tar.gz", hash = "sha256:14bad2d9b04d3a36127ac97f30b12a19268f211063d8f8ee4f47108896e11b46"},
 ]
+
+[[package]]
+name = "exceptiongroup"
+version = "1.1.1"
+description = "Backport of PEP 654 (exception groups)"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.1.1-py3-none-any.whl", hash = "sha256:232c37c63e4f682982c8b6459f33a8981039e5fb8756b2074364e5055c498c9e"},
+    {file = "exceptiongroup-1.1.1.tar.gz", hash = "sha256:d484c3090ba2889ae2928419117447a14daf3c1231d5e30d0aae34f354f01785"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
 
 [[package]]
 name = "fastapi"
@@ -1852,13 +1867,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.0.post1"
+version = "0.2.0.post2"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.0.post1-py3-none-any.whl", hash = "sha256:c95031e7df1b50787c0c76a40fadb4da922e03fe2e750cc8fb1030601b4f7828"},
-    {file = "nonebot_plugin_majsoul-0.2.0.post1.tar.gz", hash = "sha256:999e3cf0d6284f75cb34cfb377ec3f29d1cc50635c1986079c05f012e4f20a8e"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post2-py3-none-any.whl", hash = "sha256:8bd0d9dca7981ab19388d3a8619a845b3d34b950e6f33fa1b62fd611b0936434"},
+    {file = "nonebot_plugin_majsoul-0.2.0.post2.tar.gz", hash = "sha256:c92b72f8837b866bb9faa5bfeef189f906ab14cbf780e71e89ad3a691ca26a15"},
 ]
 
 [package.dependencies]
@@ -1874,6 +1889,28 @@ pydantic = ">=1.10.2,<2.0.0"
 tensoul = ">=0.1.0,<0.2.0"
 typing-extensions = ">=4.4.0,<5.0.0"
 tzlocal = ">=4.2,<5.0"
+
+[[package]]
+name = "nonebot-plugin-nagabus"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = ">=3.9,<4.0"
+files = [
+    {file = "nonebot_plugin_nagabus-0.1.0-py3-none-any.whl", hash = "sha256:1dae4e266fcf5116ded8222150fffab705bac60eebb2981fe85f015fc9471e0f"},
+    {file = "nonebot_plugin_nagabus-0.1.0.tar.gz", hash = "sha256:28af9db47eadef3da4cb7a6e5e1db9e35c0b549a50238282e6d40d580ea950f6"},
+]
+
+[package.dependencies]
+httpx = ">=0.23.0,<0.24.0"
+monthdelta = ">=0.9.1,<0.10.0"
+nonebot-adapter-onebot = ">=2.2.3,<3.0.0"
+nonebot-plugin-access-control = ">=0.4.2,<0.5.0"
+nonebot-plugin-datastore = ">=0.6.3,<0.7.0"
+nonebot-plugin-majsoul = ">=0.2.0.post1,<0.3.0"
+nonebot2 = ">=2.0.0rc4,<3.0.0"
+pydantic = ">=1.10.8,<2.0.0"
+typing-extensions = ">=4.6.2,<5.0.0"
 
 [[package]]
 name = "nonebot-plugin-picstatus"
@@ -2714,7 +2751,7 @@ files = [
 
 [package.dependencies]
 aiosqlite = {version = "*", optional = true, markers = "extra == \"aiosqlite\""}
-greenlet = {version = "!=0.4.17", optional = true, markers = "platform_machine == \"win32\" or platform_machine == \"WIN32\" or platform_machine == \"AMD64\" or platform_machine == \"amd64\" or platform_machine == \"x86_64\" or platform_machine == \"ppc64le\" or platform_machine == \"aarch64\" or extra == \"aiosqlite\""}
+greenlet = {version = "!=0.4.17", optional = true, markers = "platform_machine == \"win32\" or platform_machine == \"WIN32\" or platform_machine == \"AMD64\" or platform_machine == \"amd64\" or platform_machine == \"x86_64\" or platform_machine == \"ppc64le\" or platform_machine == \"aarch64\" or extra == \"asyncio\""}
 typing-extensions = [
     {version = ">=4.2.0"},
     {version = "!=3.10.0.1", optional = true, markers = "extra == \"aiosqlite\""},
@@ -3292,4 +3329,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "48d4779f192e4537b12ea8d1b3ee3e397127eca79f8492e45e19454c619777cb"
+content-hash = "cedfe16e9de28f5bd99b0e30d2c128c33820042978c6842318bad73f2683e971"
