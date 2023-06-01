@@ -13,9 +13,11 @@ asyncpg = "^0.27.0"
 cachetools = "^5.2.0"
 nonebot-adapter-onebot = ">=2.1.5"
 nonebot-adapter-qqguild = ">=0.2.2"
+nonebot-adapter-telegram = "^0.1.0b12"
+nonebot-adapter-kaiheila = "^0.2.6"
 nonebot-plugin-escape-url = ">=0.1.0"
 nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.3"
-nonebot-plugin-pixivbot = { extras = ["onebot", "postgresql"], version = ">=1.8.0" }
+nonebot-plugin-pixivbot = { extras = ["onebot", "postgresql", "telegram", "kook"], version = ">=1.8.0" }
 nonebot-plugin-mahjong-utils = { extras = ["htmlrender"], version = ">=0.3.0" }
 nonebot-plugin-mahjong-scoreboard = ">=0.3.0"
 nonebot-plugin-majsoul = ">=0.1.4"
