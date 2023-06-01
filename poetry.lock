@@ -1687,7 +1687,6 @@ wcwidth = ">=0.2,<1.0"
 name = "nonebot-adapter-kaiheila"
 version = "0.2.6"
 description = "kaiheila adapter for nonebot2"
-category = "main"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
@@ -1734,7 +1733,6 @@ pydantic = ">=1.9.0,<2.0.0"
 name = "nonebot-adapter-telegram"
 version = "0.1.0b12"
 description = "Telegram Adapter for NoneBot2"
-category = "main"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
