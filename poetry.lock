@@ -1654,13 +1654,13 @@ pydantic = ">=1.9.0,<2.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.5.1"
+version = "0.5.2"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.5.1-py3-none-any.whl", hash = "sha256:d4be6b6182c4764e1e8a7d86264fa0e74e4f85b44de52471e9254409fb19843a"},
-    {file = "nonebot_plugin_access_control-0.5.1.tar.gz", hash = "sha256:aa41b793ff20c54f4c0ae87db50c20e39c2bf0912302f1531e90ea9c231502d1"},
+    {file = "nonebot_plugin_access_control-0.5.2-py3-none-any.whl", hash = "sha256:323300fb08866955f6fd844b02e8036b615cea6ac83af629d720ecc328fa81c1"},
+    {file = "nonebot_plugin_access_control-0.5.2.tar.gz", hash = "sha256:228de648a1b13cb7eeff65d8f02b3c115b9e23fa46fdac68135d95f3a0717fe0"},
 ]
 
 [package.dependencies]
@@ -1809,13 +1809,13 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.3.1.post1"
+version = "0.4.0"
 description = "日麻寄分器（NoneBot插件）"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.3.1.post1-py3-none-any.whl", hash = "sha256:56376ad00e6313c7490e0382126e2a7fcf2e709ccc6b0c06a52a15bc4d599750"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.3.1.post1.tar.gz", hash = "sha256:e7fe1137942991324d143cf9d9ad518e1adbef7332bbed59faa2e2439dc68b04"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0-py3-none-any.whl", hash = "sha256:cc266b6b4b4419e566df774761b22f019f3d557e3a2f8022d2f2cb851e890a75"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0.tar.gz", hash = "sha256:99daca993142c8028f9483e7248315150585f59c71de05ceb2a525617a55fa0b"},
 ]
 
 [package.dependencies]
@@ -1823,8 +1823,10 @@ aiosqlite = ">=0.17,<0.19"
 cachetools = ">=5.2.0,<6.0.0"
 nonebot-adapter-onebot = ">=2.2.2,<3.0.0"
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.4,<0.2.0"
-nonebot-plugin-sqlalchemy = ">=0.2.0,<0.3.0"
+nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.5,<0.2.0"
+nonebot-plugin-localstore = ">=0.4.1,<0.5.0"
+nonebot-plugin-session = ">=0.0.3,<0.0.4"
+nonebot-plugin-sqlalchemy = ">=0.2.1,<0.3.0"
 nonebot2 = ">=2.0.0rc4,<3.0.0"
 tzlocal = ">=4.2,<5.0"
 
@@ -2825,13 +2827,13 @@ files = [
 
 [[package]]
 name = "typing-extensions"
-version = "4.6.2"
+version = "4.6.3"
 description = "Backported and Experimental Type Hints for Python 3.7+"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "typing_extensions-4.6.2-py3-none-any.whl", hash = "sha256:3a8b36f13dd5fdc5d1b16fe317f5668545de77fa0b8e02006381fd49d731ab98"},
-    {file = "typing_extensions-4.6.2.tar.gz", hash = "sha256:06006244c70ac8ee83fa8282cb188f697b8db25bc8b4df07be1873c43897060c"},
+    {file = "typing_extensions-4.6.3-py3-none-any.whl", hash = "sha256:88a4153d8505aabbb4e13aacb7c486c2b4a33ca3b3f807914a9b4c844c471c26"},
+    {file = "typing_extensions-4.6.3.tar.gz", hash = "sha256:d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5"},
 ]
 
 [[package]]
