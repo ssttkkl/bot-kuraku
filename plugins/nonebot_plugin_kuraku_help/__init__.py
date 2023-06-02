@@ -1,7 +1,10 @@
+from nonebot import require
 from nonebot.plugin import PluginMetadata
 
 from . import matcher
 from .utils import default_cmd_start
+
+require("nonebot_plugin_access_control")
 
 help_text = f"""
 - {default_cmd_start}help：查看帮助信息
