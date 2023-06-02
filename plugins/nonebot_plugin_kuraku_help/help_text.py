@@ -12,14 +12,14 @@ from .utils import default_cmd_start
 
 
 def _get_metadata(plugin_name: str) -> Optional[PluginMetadata]:
-    if plugin_name in help_conf.kuraku_custom_plugin_metadata:
-        return help_conf.kuraku_custom_plugin_metadata[plugin_name]
+    if plugin_name in help_conf.kuraku_help_ignore_plugin or plugin_name == "nonebot_plugin_kuraku_help":
+        return None
+
+    plugin = nonebot.plugin.get_plugin(plugin_name)
+    if plugin is not None:
+        return plugin.metadata
     else:
-        plugin = nonebot.plugin.get_plugin(plugin_name)
-        if plugin is not None:
-            return plugin.metadata
-        else:
-            return None
+        return None
 
 
 _plugin_name_mapping = None

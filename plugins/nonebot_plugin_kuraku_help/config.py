@@ -1,7 +1,6 @@
-from typing import Optional, Dict
+from typing import Optional, List
 
 from nonebot import get_driver
-from nonebot.plugin import PluginMetadata
 from pydantic import BaseSettings, Field
 
 
@@ -11,7 +10,7 @@ class HelpConfig(BaseSettings):
     kuraku_plugin_help_header: Optional[str]
     kuraku_plugin_help_footer: Optional[str]
 
-    kuraku_custom_plugin_metadata: Dict[str, PluginMetadata] = Field(default_factory=dict)
+    kuraku_help_ignore_plugin: List[str] = Field(default_factory=list)
 
     class Config:
         extra = "ignore"
