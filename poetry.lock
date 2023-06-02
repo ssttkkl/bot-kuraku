@@ -1728,13 +1728,13 @@ yaml = ["pyyaml (>=6.0,<7.0)"]
 
 [[package]]
 name = "nonebot-plugin-escape-url"
-version = "0.1.0"
+version = "0.1.2.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_escape_url-0.1.0-py3-none-any.whl", hash = "sha256:e3f0bfe5f0ceac5355ea361f501c90835106c12e089750b50902fe6c6afe9af5"},
-    {file = "nonebot_plugin_escape_url-0.1.0.tar.gz", hash = "sha256:6cd1df825a22074a9c118fd51ccf1b2f0aae1ae3b613c5bd16a3eebe80bbfa18"},
+    {file = "nonebot_plugin_escape_url-0.1.2.post1-py3-none-any.whl", hash = "sha256:b78ea09a75660971c28a3d9a00106a04122788f2d83f03aabc166f7013367601"},
+    {file = "nonebot_plugin_escape_url-0.1.2.post1.tar.gz", hash = "sha256:af010ac66cd84e0166825a125785158442e649596f4b764dce63f335fb7ac69c"},
 ]
 
 [package.dependencies]
@@ -1809,13 +1809,13 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.4.0"
+version = "0.4.0.post1"
 description = "日麻寄分器（NoneBot插件）"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0-py3-none-any.whl", hash = "sha256:cc266b6b4b4419e566df774761b22f019f3d557e3a2f8022d2f2cb851e890a75"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0.tar.gz", hash = "sha256:99daca993142c8028f9483e7248315150585f59c71de05ceb2a525617a55fa0b"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0.post1-py3-none-any.whl", hash = "sha256:c48eb526b7c6b94eea7a09998a94efe23284d6d6a6d61a882134ccb063dce4b6"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.4.0.post1.tar.gz", hash = "sha256:366b2d43f44539aa41f3a6370c4bea62fe85e0407ddb2f7f58309c70c94b5126"},
 ]
 
 [package.dependencies]
@@ -1852,13 +1852,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.0.post4"
+version = "0.2.1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.0.post4-py3-none-any.whl", hash = "sha256:b0bc1d1278070677ddc5ae1bb1b974ccbe82c29e8d991c983b884d174d22e43e"},
-    {file = "nonebot_plugin_majsoul-0.2.0.post4.tar.gz", hash = "sha256:7499d581d70315a7403625037f20b0d22c95aa482059d5df8f0b2655893f6dfb"},
+    {file = "nonebot_plugin_majsoul-0.2.1-py3-none-any.whl", hash = "sha256:b64a973469328c9294d7e4689e2158a2248054dfda0605606f1884f024c5d82b"},
+    {file = "nonebot_plugin_majsoul-0.2.1.tar.gz", hash = "sha256:639aa95ff0e5f08caee61067deaa0004c5b5e1d9dec011c589a9654f0be5ea91"},
 ]
 
 [package.dependencies]
