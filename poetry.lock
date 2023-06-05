@@ -344,13 +344,13 @@ files = [
 
 [[package]]
 name = "cashews"
-version = "6.1.0"
+version = "6.2.0"
 description = "cache tools with async power"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "cashews-6.1.0-py3-none-any.whl", hash = "sha256:bd620e5fdb947949aca0f107f0275a48d46026c747695186d2507f89a48d1af9"},
-    {file = "cashews-6.1.0.tar.gz", hash = "sha256:6ef7822500b8bc5ceadeaa284021ec7843d066e2f208612ec28a93064eef7d4a"},
+    {file = "cashews-6.2.0-py3-none-any.whl", hash = "sha256:8a005fdb429efad8a99e2d8c3024a0a59bed35d49fe67da35a2cd9cb1d56cd89"},
+    {file = "cashews-6.2.0.tar.gz", hash = "sha256:c197202336d1bfde732bf43c30c8fd3fdb5836700e8a81bdd25abcc5ea1df9c8"},
 ]
 
 [package.extras]
@@ -1654,19 +1654,19 @@ pydantic = ">=1.9.0,<2.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.5.2"
+version = "0.5.3"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.5.2-py3-none-any.whl", hash = "sha256:323300fb08866955f6fd844b02e8036b615cea6ac83af629d720ecc328fa81c1"},
-    {file = "nonebot_plugin_access_control-0.5.2.tar.gz", hash = "sha256:228de648a1b13cb7eeff65d8f02b3c115b9e23fa46fdac68135d95f3a0717fe0"},
+    {file = "nonebot_plugin_access_control-0.5.3-py3-none-any.whl", hash = "sha256:9af2f76055520782a2f73f35ca0caa57be2eec5472d45812112af6a78410169c"},
+    {file = "nonebot_plugin_access_control-0.5.3.tar.gz", hash = "sha256:0ac1a5021560a8b26aeb0155fd395ba30b8f37323ea8e09b111124470439a134"},
 ]
 
 [package.dependencies]
 nonebot-plugin-apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-datastore = ">=0.6.0a3,<0.7.0"
-nonebot2 = ">=2.0.0rc3,<3.0.0"
+nonebot-plugin-datastore = ">=0.6.0,<0.7.0"
+nonebot2 = ">=2.0.0,<3.0.0"
 shortuuid = ">=1.0.11,<2.0.0"
 
 [[package]]
@@ -1686,19 +1686,19 @@ nonebot2 = ">=2.0.0-rc.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-autoreply"
-version = "0.2.10"
+version = "0.2.11"
 description = "A powerful auto reply plugin for NoneBot2"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "nonebot_plugin_autoreply-0.2.10-py3-none-any.whl", hash = "sha256:3c4052c81d7b4f8d34a2a664aa9d3c546580d5c625c468a7ea144146134ecc31"},
-    {file = "nonebot_plugin_autoreply-0.2.10.tar.gz", hash = "sha256:74092b5267d0f8250ec844c27fa5dc1c5c77593280411681a1a99fa20a4be220"},
+    {file = "nonebot_plugin_autoreply-0.2.11-py3-none-any.whl", hash = "sha256:6a51de445dea8b6cfd6c800ea9431a05310be14fc2b6c993bc8f41cd1bb1b1c1"},
+    {file = "nonebot_plugin_autoreply-0.2.11.tar.gz", hash = "sha256:926ab5d898fa237fdf7cc790146f4a33ba554474b6c72436ae2d7a947e041b3d"},
 ]
 
 [package.dependencies]
 anyio = ">=3.6.2"
 nonebot-adapter-onebot = ">=2.1.0"
-nonebot2 = ">=2.0.0rc1"
+nonebot2 = ">=2.0.0"
 pydantic = ">=1.10.4"
 PyYAML = ">=6.0"
 typing-extensions = ">=4.4.0"
@@ -1899,20 +1899,20 @@ typing-extensions = ">=4.6.2,<5.0.0"
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "0.4.1"
+version = "0.4.2"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "nonebot_plugin_picstatus-0.4.1-py3-none-any.whl", hash = "sha256:de96d097122bb3f70c15aeffb91f7f474ede5d74371c0f6eca01dffa72e16fbe"},
-    {file = "nonebot_plugin_picstatus-0.4.1.tar.gz", hash = "sha256:02a546c07b7ffe6563b64290a7bda0aae2119c7d031b312cf338aab1fe5e763c"},
+    {file = "nonebot_plugin_picstatus-0.4.2-py3-none-any.whl", hash = "sha256:39ac3e4dbd719fa9613d480a57e710b924dabb4f57cf5228c29d1c513fba1ef7"},
+    {file = "nonebot_plugin_picstatus-0.4.2.tar.gz", hash = "sha256:2ec885c346e28eaddda1ae85cda21df604d5053128a42a4287dcf28bb04da34e"},
 ]
 
 [package.dependencies]
 anyio = ">=3.7.0"
 httpx = ">=0.24.1"
 nonebot-plugin-send-anything-anywhere = ">=0.2.4"
-nonebot2 = ">=2.0.0b4"
+nonebot2 = ">=2.0.0"
 pil-utils = ">=0.1.7"
 Pillow = ">=9.2.0,<10.0.0"
 psutil = ">=5.9.2,<6.0.0"
