@@ -1654,18 +1654,19 @@ pydantic = ">=1.9.0,<2.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.5.3"
+version = "0.5.3.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.5.3-py3-none-any.whl", hash = "sha256:9af2f76055520782a2f73f35ca0caa57be2eec5472d45812112af6a78410169c"},
-    {file = "nonebot_plugin_access_control-0.5.3.tar.gz", hash = "sha256:0ac1a5021560a8b26aeb0155fd395ba30b8f37323ea8e09b111124470439a134"},
+    {file = "nonebot_plugin_access_control-0.5.3.post1-py3-none-any.whl", hash = "sha256:1ad60827c24d38da9073353ca176bd5afe3e36d89d21ba5c2a2fe920269ca8c0"},
+    {file = "nonebot_plugin_access_control-0.5.3.post1.tar.gz", hash = "sha256:d39057fb85509d16da5580fdc1e541939465d6e4a6ec94e66af02334bac4d037"},
 ]
 
 [package.dependencies]
 nonebot-plugin-apscheduler = ">=0.2.0,<0.3.0"
 nonebot-plugin-datastore = ">=0.6.0,<0.7.0"
+nonebot-plugin-session = ">=0.0.4,<0.0.5"
 nonebot2 = ">=2.0.0,<3.0.0"
 shortuuid = ">=1.0.11,<2.0.0"
 
@@ -1742,18 +1743,18 @@ nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-get-nickname"
-version = "0.1.0"
+version = "0.1.1.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_get_nickname-0.1.0-py3-none-any.whl", hash = "sha256:46f2a745d7d3aa040c18a2ace0732fe23e6c7ba6d44ac04af1ef67c335dbfdd1"},
-    {file = "nonebot_plugin_get_nickname-0.1.0.tar.gz", hash = "sha256:92dbd97856f7af8ad20b65e26f61e2ff84cbfd6b9eda10578f4e76e4dc5252c2"},
+    {file = "nonebot_plugin_get_nickname-0.1.1.post1-py3-none-any.whl", hash = "sha256:544377142e9146f546836606cf9f1faee9045c16b1ca93762e95e2a1c31d67b1"},
+    {file = "nonebot_plugin_get_nickname-0.1.1.post1.tar.gz", hash = "sha256:546b9481c40bc97b6cb123f6309a4a94aa35ef3d9bfe42e7545b50e55317075f"},
 ]
 
 [package.dependencies]
-nonebot-plugin-session = ">=0.0.3,<0.0.4"
-nonebot2 = ">=2.0.0rc4,<3.0.0"
+nonebot-plugin-session = ">=0.0.3"
+nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-gocqhttp-cross-machine-upload-file"
@@ -1809,13 +1810,13 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.4.1.post2"
+version = "0.3.1.post1"
 description = "日麻寄分器（NoneBot插件）"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.4.1.post2-py3-none-any.whl", hash = "sha256:0e4b86fed8c035be45df47ddd0530b7ad7c78031e7a4c9c2e1dd60e231e51310"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.4.1.post2.tar.gz", hash = "sha256:f458eacad0d65e559f9e701be93d5f40e87ab0d779191427c2b94b54a2603151"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.3.1.post1-py3-none-any.whl", hash = "sha256:56376ad00e6313c7490e0382126e2a7fcf2e709ccc6b0c06a52a15bc4d599750"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.3.1.post1.tar.gz", hash = "sha256:e7fe1137942991324d143cf9d9ad518e1adbef7332bbed59faa2e2439dc68b04"},
 ]
 
 [package.dependencies]
@@ -1823,32 +1824,30 @@ aiosqlite = ">=0.17,<0.19"
 cachetools = ">=5.2.0,<6.0.0"
 nonebot-adapter-onebot = ">=2.2.2,<3.0.0"
 nonebot_plugin_apscheduler = ">=0.2.0,<0.3.0"
-nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.5,<0.2.0"
-nonebot-plugin-localstore = ">=0.4.1,<0.5.0"
-nonebot-plugin-session = ">=0.0.3,<0.0.4"
-nonebot-plugin-sqlalchemy = ">=0.2.1,<0.3.0"
-nonebot2 = ">=2.0.0,<3.0.0"
+nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.4,<0.2.0"
+nonebot-plugin-sqlalchemy = ">=0.2.0,<0.3.0"
+nonebot2 = ">=2.0.0rc4,<3.0.0"
 tzlocal = ">=4.2,<5.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-utils"
-version = "0.4.1"
+version = "0.4.2"
 description = ""
 optional = false
-python-versions = ">=3.10,<4.0"
+python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_utils-0.4.1-py3-none-any.whl", hash = "sha256:761e70bd1652766d48e7a9552f88c92f6a4c90de6709ea91d412ebd4671e46a0"},
-    {file = "nonebot_plugin_mahjong_utils-0.4.1.tar.gz", hash = "sha256:29fbfdb6f7029be019afa65f95c1d1a5342d185f11000da5f44f9e27fdf14f80"},
+    {file = "nonebot_plugin_mahjong_utils-0.4.2-py3-none-any.whl", hash = "sha256:3738842c7c01e09556c39be54db38544f1cfba9d40b60e786a5029147b86ea85"},
+    {file = "nonebot_plugin_mahjong_utils-0.4.2.tar.gz", hash = "sha256:695dcc537bdcbbffc5a309834873b44ecebace582c3ca1bdc691e60ae97da887"},
 ]
 
 [package.dependencies]
 mahjong-utils = ">=0.5.1,<0.6.0"
 nonebot-plugin-htmlrender = {version = ">=0.2.0.3,<0.3.0.0", optional = true, markers = "extra == \"htmlrender\""}
-nonebot-plugin-send-anything-anywhere = {version = ">=0.2.1,<0.3.0", optional = true, markers = "extra == \"htmlrender\""}
-nonebot2 = ">=2.0.0rc1,<3.0.0"
+nonebot-plugin-send-anything-anywhere = {version = ">=0.2.6,<0.3.0", optional = true, markers = "extra == \"htmlrender\""}
+nonebot2 = ">=2.0.0,<3.0.0"
 
 [package.extras]
-htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-send-anything-anywhere (>=0.2.1,<0.3.0)"]
+htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-send-anything-anywhere (>=0.2.6,<0.3.0)"]
 
 [[package]]
 name = "nonebot-plugin-majsoul"
@@ -1951,13 +1950,13 @@ strenum = ">=0.4.8,<0.5.0"
 
 [[package]]
 name = "nonebot-plugin-session"
-version = "0.0.3"
+version = "0.0.4"
 description = "Nonebot2 会话信息提取与会话id定义"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_session-0.0.3-py3-none-any.whl", hash = "sha256:4ec0cc6f5d156b7656b2799ad65a362da50613efa8d7d2467dcff27a720a4181"},
-    {file = "nonebot_plugin_session-0.0.3.tar.gz", hash = "sha256:b36e96182ddf4110106ad3bdc0d663913b441385ccf6ff88de98822e855f81c9"},
+    {file = "nonebot_plugin_session-0.0.4-py3-none-any.whl", hash = "sha256:830d500d34004d330c4c08013dcd56557c004db673d2f74db8d32f08da227409"},
+    {file = "nonebot_plugin_session-0.0.4.tar.gz", hash = "sha256:b311e6771d2eb537785cb629f473ceeb612a0654cf4e109d2d1c9db7b6573b75"},
 ]
 
 [package.dependencies]
