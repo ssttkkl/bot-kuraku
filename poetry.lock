@@ -737,18 +737,18 @@ test = ["anyio[trio] (>=3.2.1,<4.0.0)", "black (==23.1.0)", "coverage[toml] (>=6
 
 [[package]]
 name = "filelock"
-version = "3.12.0"
+version = "3.12.1"
 description = "A platform independent file lock."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "filelock-3.12.0-py3-none-any.whl", hash = "sha256:ad98852315c2ab702aeb628412cbf7e95b7ce8c3bf9565670b4eaecf1db370a9"},
-    {file = "filelock-3.12.0.tar.gz", hash = "sha256:fc03ae43288c013d2ea83c8597001b1129db351aad9c57fe2409327916b8e718"},
+    {file = "filelock-3.12.1-py3-none-any.whl", hash = "sha256:42f1e4ff2b497311213d61ad7aac5fed9050608e5309573f101eefa94143134a"},
+    {file = "filelock-3.12.1.tar.gz", hash = "sha256:82b1f7da46f0ae42abf1bc78e548667f484ac59d2bcec38c713cee7e2eb51e83"},
 ]
 
 [package.extras]
-docs = ["furo (>=2023.3.27)", "sphinx (>=6.1.3)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
-testing = ["covdefaults (>=2.3)", "coverage (>=7.2.3)", "diff-cover (>=7.5)", "pytest (>=7.3.1)", "pytest-cov (>=4)", "pytest-mock (>=3.10)", "pytest-timeout (>=2.1)"]
+docs = ["furo (>=2023.5.20)", "sphinx (>=7.0.1)", "sphinx-autodoc-typehints (>=1.23,!=1.23.4)"]
+testing = ["covdefaults (>=2.3)", "coverage (>=7.2.7)", "diff-cover (>=7.5)", "pytest (>=7.3.1)", "pytest-cov (>=4.1)", "pytest-mock (>=3.10)", "pytest-timeout (>=2.1)"]
 
 [[package]]
 name = "fonttools"
@@ -1729,13 +1729,13 @@ yaml = ["pyyaml (>=6.0,<7.0)"]
 
 [[package]]
 name = "nonebot-plugin-escape-url"
-version = "0.1.2.post2"
+version = "0.1.3.post1"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_escape_url-0.1.2.post2-py3-none-any.whl", hash = "sha256:f5884a0b5747f32afbe96723869ffd820ba6601af08205e8cca3a6e63a059206"},
-    {file = "nonebot_plugin_escape_url-0.1.2.post2.tar.gz", hash = "sha256:169b15ab8f19b11ecb6158ceefc87c8acf23a468e0fb3f9281364c0b62695f41"},
+    {file = "nonebot_plugin_escape_url-0.1.3.post1-py3-none-any.whl", hash = "sha256:ce322693f49064ea7807d47e8e0c093d32ef72af98551f9e4cee65bb1e1993a2"},
+    {file = "nonebot_plugin_escape_url-0.1.3.post1.tar.gz", hash = "sha256:5f607c4e131edb5adabe052b435b6441a826b2276a0e48b933207a19c2535084"},
 ]
 
 [package.dependencies]
