@@ -16,7 +16,7 @@ def _get_metadata(plugin_name: str) -> Optional[PluginMetadata]:
         return None
 
     plugin = nonebot.plugin.get_plugin(plugin_name)
-    if plugin is not None:
+    if plugin is not None and plugin.metadata is not None and plugin.metadata.type == 'application':
         return plugin.metadata
     else:
         return None
@@ -110,6 +110,10 @@ async def plugin_help_text(plugin_name: str, bot: Bot, event: Event) -> Optional
 
     plugin_service = get_plugin_service(plugin_name)
     if plugin_service is not None and not await plugin_service.check(bot, event, acquire_rate_limit_token=False):
+        return None
+
+    plugin = nonebot.get_plugin(plugin_name)
+    if plugin.metadata.supported_adapters is not None and bot.adapter.get_name() not in plugin.metadata.supported_adapters:
         return None
 
     if plugin_name in _plugin_help_text_cache:

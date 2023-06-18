@@ -14,5 +14,6 @@ help_text = f"""
 __plugin_meta__ = PluginMetadata(
     name="帮助",
     description="获取帮助信息",
-    usage=help_text
+    usage=help_text,
+    type="application"
 )
