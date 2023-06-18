@@ -8,6 +8,14 @@ COPY ./pyproject.toml ./poetry.lock* /tmp/
 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
+FROM ubuntu:latest as maimai-static-stage
+
+WORKDIR /tmp
+
+RUN apt update && apt install wget unzip -y
+
+RUN wget https://www.diving-fish.com/maibot/static.zip && unzip static.zip
+
 FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.10-slim
 
 ENV APP_MODULE=bot:app
@@ -26,6 +34,8 @@ RUN apt update && apt install git -y && pip install playwright && playwright ins
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+
+COPY --from=maimai-static-stage /tmp/static /app/data/maimai
 
 COPY ./ /app/
 
