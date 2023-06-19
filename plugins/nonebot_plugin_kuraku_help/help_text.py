@@ -1,8 +1,11 @@
+import json
+import os
 from io import StringIO
+from pathlib import Path
 from typing import Optional
 
 import nonebot
-from nonebot import logger, Bot
+from nonebot import logger, Bot, Adapter
 from nonebot.internal.adapter import Event
 from nonebot.plugin import PluginMetadata
 from nonebot_plugin_access_control.service import get_plugin_service
@@ -10,16 +13,45 @@ from nonebot_plugin_access_control.service import get_plugin_service
 from .config import help_conf
 from .utils import default_cmd_start
 
+_metadata = {}
 
-def _get_metadata(plugin_name: str) -> Optional[PluginMetadata]:
-    if plugin_name in help_conf.kuraku_help_ignore_plugin or plugin_name == "nonebot_plugin_kuraku_help":
-        return None
 
-    plugin = nonebot.plugin.get_plugin(plugin_name)
-    if plugin is not None and plugin.metadata is not None and plugin.metadata.type == 'application':
-        return plugin.metadata
-    else:
-        return None
+@nonebot.get_driver().on_startup
+def prepare_metadata():
+    metadata_mixin = {}
+
+    for metadata_mixin_file in (Path(os.getcwd()) / "data" / "metadata_mixin").iterdir():
+        if not metadata_mixin_file.is_file():
+            continue
+        with open(metadata_mixin_file, "r", encoding="utf-8") as f:
+            plugin_name = metadata_mixin_file.name.split('.')[0]
+            metadata = json.load(f)
+            if "config" in metadata:
+                metadata["config"] = eval(metadata["config"])
+            if "supported_adapters" in metadata:
+                metadata["supported_adapters"] = set(metadata["supported_adapters"])
+            metadata_mixin[plugin_name] = metadata
+            logger.opt(colors=True).success(f"Loaded metadata mixin for plugin \"<y>{plugin_name}</y>\"")
+
+    for plugin in nonebot.get_loaded_plugins():
+        if plugin.name in help_conf.kuraku_help_ignore_plugin or plugin.name == "nonebot_plugin_kuraku_help":
+            continue
+
+        metadata = plugin.metadata
+        if metadata is None:
+            metadata = PluginMetadata(name=plugin.name, description="", usage="")
+
+        if plugin.name in metadata_mixin:
+            metadata = dict(name=metadata.name, description=metadata.description, usage=metadata.usage,
+                            type=metadata.type, homepage=metadata.homepage,
+                            config=metadata.config, supported_adapters=metadata.supported_adapters,
+                            extra=metadata.extra)
+            for k, v in metadata_mixin[plugin.name].items():
+                metadata[k] = v
+            metadata = PluginMetadata(**metadata)
+
+        if metadata.type == "application":
+            _metadata[plugin.name] = metadata
 
 
 _plugin_name_mapping = None
@@ -32,7 +64,7 @@ def _get_real_plugin_name(raw: str) -> Optional[str]:
         logger.trace("build plugin name mapping...")
         mapping = {}
         for plugin in nonebot.plugin.get_loaded_plugins():
-            metadata = _get_metadata(plugin.name)
+            metadata = _metadata.get(plugin.name)
             if metadata is None:
                 continue
 
@@ -44,15 +76,31 @@ def _get_real_plugin_name(raw: str) -> Optional[str]:
     return _plugin_name_mapping.get(raw, None)
 
 
+def _is_adapter_supported(plugin_name: str, adapter: Adapter):
+    adapter_module = adapter.__module__.removesuffix(".adapter")
+
+    metadata = _metadata.get(plugin_name)
+    if metadata is None:
+        return False
+    return metadata.supported_adapters is None or (
+            adapter_module.replace("nonebot.adapters.", "~") in metadata.supported_adapters
+            or
+            adapter_module in metadata.supported_adapters
+    )
+
+
 async def general_help_text(bot: Bot, event: Event) -> str:
     plugin_metadata = []
     for plugin in nonebot.plugin.get_loaded_plugins():
-        metadata = _get_metadata(plugin.name)
+        metadata = _metadata.get(plugin.name)
         if metadata is None:
             continue
 
         plugin_service = get_plugin_service(plugin.name)
         if plugin_service is not None and not await plugin_service.check(bot, event, acquire_rate_limit_token=False):
+            continue
+
+        if not _is_adapter_supported(plugin.name, bot.adapter):
             continue
 
         plugin_metadata.append(metadata)
@@ -81,7 +129,7 @@ async def general_help_text(bot: Bot, event: Event) -> str:
 def _build_plugin_help_text(plugin_name: str) -> Optional[str]:
     logger.trace(f"building help text of plugin {plugin_name}...")
 
-    metadata = _get_metadata(plugin_name)
+    metadata = _metadata.get(plugin_name)
     if metadata is None:
         return None
 
@@ -112,8 +160,7 @@ async def plugin_help_text(plugin_name: str, bot: Bot, event: Event) -> Optional
     if plugin_service is not None and not await plugin_service.check(bot, event, acquire_rate_limit_token=False):
         return None
 
-    plugin = nonebot.get_plugin(plugin_name)
-    if plugin.metadata.supported_adapters is not None and bot.adapter.get_name() not in plugin.metadata.supported_adapters:
+    if not _is_adapter_supported(plugin_name, bot.adapter):
         return None
 
     if plugin_name in _plugin_help_text_cache:
