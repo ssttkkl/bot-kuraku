@@ -29,14 +29,13 @@ nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-autoreply = ">=0.2.3"
 nonebot-plugin-apscheduler = ">=0.2.0"
 nonebot-plugin-send-anything-anywhere = ">=0.2.2"
-nonebot-plugin-maimai = ">=0.2.0"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
     "nonebot_plugin_pixivbot",
     "nonebot_plugin_autoreply",
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke",
-    "nonebot_plugin_nagabus", "nonebot-plugin-maimai"]
+    "nonebot_plugin_nagabus"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
