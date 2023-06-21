@@ -1874,13 +1874,13 @@ yaml = ["pyyaml (>=6.0,<7.0)"]
 
 [[package]]
 name = "nonebot-plugin-error-alert"
-version = "0.1.1"
+version = "0.1.2"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_error_alert-0.1.1-py3-none-any.whl", hash = "sha256:0d71a0ffe7e2c6e57de989d69f36b344ec5d3a9513956e46ae2f9769cb3725d8"},
-    {file = "nonebot_plugin_error_alert-0.1.1.tar.gz", hash = "sha256:d004c3843fcdf3add6efaaca0488a9cc7f38026cc973a0b58058757786f0ec19"},
+    {file = "nonebot_plugin_error_alert-0.1.2-py3-none-any.whl", hash = "sha256:48804cd9bec134ce851b0660cee3b418426de1ec902aa2a7064a6f703bea2c86"},
+    {file = "nonebot_plugin_error_alert-0.1.2.tar.gz", hash = "sha256:7b401d74ded3216ed96aa92044554897f98829e5223083c56887147acd0aff9e"},
 ]
 
 [package.dependencies]
@@ -1901,6 +1901,21 @@ files = [
 ]
 
 [package.dependencies]
+nonebot2 = ">=2.0.0,<3.0.0"
+
+[[package]]
+name = "nonebot-plugin-follow-withdraw"
+version = "0.2.0"
+description = "A plugin for nonebot2 that follows the user's withdraw of a command."
+optional = false
+python-versions = ">=3.8,<4.0"
+files = [
+    {file = "nonebot_plugin_follow_withdraw-0.2.0-py3-none-any.whl", hash = "sha256:d63aba308d0fc462e05762841e280292c7a1c3d32e47d61a9371ea02e4d5ddec"},
+    {file = "nonebot_plugin_follow_withdraw-0.2.0.tar.gz", hash = "sha256:96d5c0214721bb529bfd0705fd8bb7dd6f77c1983bff2fd800b46e7f7b0d79de"},
+]
+
+[package.dependencies]
+nonebot-plugin-datastore = ">=1.0.0,<2.0.0"
 nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
@@ -3512,4 +3527,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "b142144fcd9a3e9c6d5a1d1cb050f22ba94f617a6e0942748e2a84402aad1b5b"
+content-hash = "2749b779595b994216672c08763e6e166a9541800f8f000c9367813ee72b8b3b"
