@@ -742,13 +742,13 @@ test = ["pytest (>=6)"]
 
 [[package]]
 name = "fastapi"
-version = "0.97.0"
+version = "0.98.0"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "fastapi-0.97.0-py3-none-any.whl", hash = "sha256:95d757511c596409930bd20673358d4a4d709004edb85c5d24d6ffc48fabcbf2"},
-    {file = "fastapi-0.97.0.tar.gz", hash = "sha256:b53248ee45f64f19bb7600953696e3edf94b0f7de94df1e5433fc5c6136fa986"},
+    {file = "fastapi-0.98.0-py3-none-any.whl", hash = "sha256:f4165fb1fe3610c52cb1b8282c1480de9c34bc270f56a965aa93a884c350d605"},
+    {file = "fastapi-0.98.0.tar.gz", hash = "sha256:0d3c18886f652038262b5898fec6b09f4ca92ee23e9d9b1d1d24e429f84bf27b"},
 ]
 
 [package.dependencies]
@@ -1799,13 +1799,13 @@ nonebot2 = ">=2.0.0b1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "0.5.6"
+version = "0.5.7"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_access_control-0.5.6-py3-none-any.whl", hash = "sha256:c0f85e6aea6f4fa13da32bdc09d5a6b64d07c329e59ba29c03feea71c350abc0"},
-    {file = "nonebot_plugin_access_control-0.5.6.tar.gz", hash = "sha256:0ea3d2614015ab634edb466352d8bcfbc5d7aeb102ee570187e0e9d8b71c663f"},
+    {file = "nonebot_plugin_access_control-0.5.7-py3-none-any.whl", hash = "sha256:163e66c24a4808b99df94952e9cb8f7a87a57f780a33b63212cd6c8442e953f5"},
+    {file = "nonebot_plugin_access_control-0.5.7.tar.gz", hash = "sha256:d87d4ffdb875dd04842d593fd1db245e54fe5c051841ff62f53d701515eeb870"},
 ]
 
 [package.dependencies]
