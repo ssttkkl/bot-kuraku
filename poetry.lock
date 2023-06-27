@@ -2052,13 +2052,13 @@ tzlocal = ">=4.2"
 
 [[package]]
 name = "nonebot-plugin-nagabus"
-version = "0.2.3"
+version = "0.2.4"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_nagabus-0.2.3-py3-none-any.whl", hash = "sha256:496cadb4f7a996421adac726cf705b95d94dbdf207350a71f51e7cc860bdadf4"},
-    {file = "nonebot_plugin_nagabus-0.2.3.tar.gz", hash = "sha256:c9d769e97c60878fbf274430706875e13312bdfd11b2fe0a3acd770a38abe342"},
+    {file = "nonebot_plugin_nagabus-0.2.4-py3-none-any.whl", hash = "sha256:758c616a95b43fdc463941d4c063a175e608154189ffb1cd5e6f09d7001156c4"},
+    {file = "nonebot_plugin_nagabus-0.2.4.tar.gz", hash = "sha256:8e4d660fabc97a5c4040e0eb4794b0d2c32f6368353b1819dc2bb4ec72edbd81"},
 ]
 
 [package.dependencies]
@@ -3024,13 +3024,13 @@ Pillow = "*"
 
 [[package]]
 name = "tensoul"
-version = "0.1.2"
+version = "0.1.3"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "tensoul-0.1.2-py3-none-any.whl", hash = "sha256:adab660580d4f04278e4ceaffb567aab4f1a64a0928b2ebf2fd074bd1ea5eed5"},
-    {file = "tensoul-0.1.2.tar.gz", hash = "sha256:d02b32e1ba7497edd336b597e96aae0669e8a362c7c22856713ad3afc53423fd"},
+    {file = "tensoul-0.1.3-py3-none-any.whl", hash = "sha256:875f3b1603d367e5c2d76a259cdfa4eca332d7d340f3de92e969063cbb36aea7"},
+    {file = "tensoul-0.1.3.tar.gz", hash = "sha256:77924bf741327d61d776513920ca39acd2ab45a9f91b3783ed41b0fc147387de"},
 ]
 
 [package.dependencies]
