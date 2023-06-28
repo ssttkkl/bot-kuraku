@@ -1,4 +1,4 @@
-version: "3"
+version: "3.3"
 
 secrets:
   db_passwd:
@@ -22,7 +22,7 @@ services:
 
   bot-qsign:
     image: "xzhouqd/qsign:8.9.63"
-    container_name: "bot_qsign"
+    container_name: "bot-qsign"
     env_file:
       - qsign.env
 
