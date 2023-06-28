@@ -1,5 +1,9 @@
 version: "3"
 
+secrets:
+  db_passwd:
+    file: db_passwd.txt
+
 services:
   bot:
     image: "ssttkkl/bot-kuraku:latest"
@@ -9,23 +13,28 @@ services:
       - "PORT=8080"
     volumes:
       - ./.env:/app/.env.prod
-    restart: "always"
 
   bot-gocq:
     image: "silicer/go-cqhttp:latest"
     container_name: "bot-gocq"
     volumes:
       - "bot-gocq-data:/data"
-    restart: "always"
+
+  bot-qsign:
+    image: "xzhouqd/qsign:8.9.63"
+    container_name: "bot_qsign"
+    env_file:
+      - qsign.env
 
   bot-postgres:
     image: "postgres:latest"
     container_name: "bot-postgres"
     environment:
-      - "POSTGRES_PASSWORD=hwl1098042114"
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db_passwd
     volumes:
       - "bot-postgres-data:/var/lib/postgresql/data"
-    restart: "always"
+    secrets:
+      - db_passwd
 
 volumes:
   bot-gocq-data:
