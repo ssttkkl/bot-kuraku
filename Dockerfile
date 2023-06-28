@@ -50,6 +50,8 @@ RUN pdm build
 
 FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.10-slim
 
+ENV DRIVER=~fastapi+~websockets+~httpx
+
 ENV APP_MODULE=bot:app
 ENV MAX_WORKERS=1
 
