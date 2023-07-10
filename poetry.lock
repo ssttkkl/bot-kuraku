@@ -1691,13 +1691,13 @@ files = [
 
 [[package]]
 name = "nb-cli"
-version = "1.2.0"
+version = "1.2.2"
 description = "CLI for nonebot2"
 optional = false
 python-versions = ">=3.8, <4.0"
 files = [
-    {file = "nb-cli-1.2.0.tar.gz", hash = "sha256:e4204f7393f61195a80c05ddc9b89630b2e0192d10d3d2409435f5edb96de520"},
-    {file = "nb_cli-1.2.0-py3-none-any.whl", hash = "sha256:16540771c86c63e68e29d017d4dbc3da2f39c9d75bdf75f5e27ab15ed6873e9c"},
+    {file = "nb-cli-1.2.2.tar.gz", hash = "sha256:ecef59e636dd86672beea516932d42c134068572c160ab09d0e541ebe838912f"},
+    {file = "nb_cli-1.2.2-py3-none-any.whl", hash = "sha256:b38079daae7ad97a12ed1f2c58d8e3b611b7b01718b368f893effecfeda7ed09"},
 ]
 
 [package.dependencies]
@@ -1718,13 +1718,13 @@ wcwidth = ">=0.2,<1.0"
 
 [[package]]
 name = "nonebot-adapter-kaiheila"
-version = "0.2.6"
+version = "0.2.7"
 description = "kaiheila adapter for nonebot2"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_adapter_kaiheila-0.2.6-py3-none-any.whl", hash = "sha256:1a8cfd757b487e69e3ae9b129e641e28182678c0feaf68faee2f895f2e03869f"},
-    {file = "nonebot_adapter_kaiheila-0.2.6.tar.gz", hash = "sha256:d57ce3821c32ab5ccf6036751bd541b42455ade19c89404677768d06d27bda34"},
+    {file = "nonebot_adapter_kaiheila-0.2.7-py3-none-any.whl", hash = "sha256:0f0648386d7df54b28906cc5093cba31aa5851b394c144abf51f933af9e1775b"},
+    {file = "nonebot_adapter_kaiheila-0.2.7.tar.gz", hash = "sha256:0758239ea51c6509a5c02bb332e47205a585b687e909d512045f9c50a9456124"},
 ]
 
 [package.dependencies]
