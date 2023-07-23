@@ -391,13 +391,13 @@ tests = ["hypothesis", "pytest", "pytest-asyncio"]
 
 [[package]]
 name = "certifi"
-version = "2023.5.7"
+version = "2023.7.22"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "certifi-2023.5.7-py3-none-any.whl", hash = "sha256:c6c2e98f5c7869efca1f8916fed228dd91539f9f1b444c314c06eef02980c716"},
-    {file = "certifi-2023.5.7.tar.gz", hash = "sha256:0f0d56dc5a6ad56fd4ba36484d6cc34451e1c6548c61daad8c320169f91eddc7"},
+    {file = "certifi-2023.7.22-py3-none-any.whl", hash = "sha256:92d6037539857d8206b8f6ae472e8b77db8058fec5937a1ef3f54304089edbb9"},
+    {file = "certifi-2023.7.22.tar.gz", hash = "sha256:539cc1d13202e33ca466e88b2807e29f4c13049d6d87031a3c110744495cb082"},
 ]
 
 [[package]]
@@ -2123,13 +2123,13 @@ strenum = ">=0.4.8,<0.5.0"
 
 [[package]]
 name = "nonebot-plugin-session"
-version = "0.0.5"
+version = "0.0.6"
 description = "Nonebot2 会话信息提取与会话id定义"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_session-0.0.5-py3-none-any.whl", hash = "sha256:185ec7113bc956bcdadc0892d503802bfff8dc98d0fde674423204f88d49124a"},
-    {file = "nonebot_plugin_session-0.0.5.tar.gz", hash = "sha256:bbdf0dd46e411b3213f7473045d95cf62f40e9578e48478de1cf015556a26307"},
+    {file = "nonebot_plugin_session-0.0.6-py3-none-any.whl", hash = "sha256:99d99a6ac5740345d34d9d0628efc9ed2b32eb63067e9b03fc398e0abdd21b0e"},
+    {file = "nonebot_plugin_session-0.0.6.tar.gz", hash = "sha256:8065f342fbd41155a3e81c072ebdbbac116ede701e693dc9b9d93e059c5a7418"},
 ]
 
 [package.dependencies]
