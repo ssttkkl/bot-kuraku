@@ -1963,21 +1963,6 @@ nonebot-plugin-datastore = ">=1.0.0,<2.0.0"
 nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
-name = "nonebot-plugin-get-nickname"
-version = "0.1.1.post1"
-description = ""
-optional = false
-python-versions = ">=3.9,<4.0"
-files = [
-    {file = "nonebot_plugin_get_nickname-0.1.1.post1-py3-none-any.whl", hash = "sha256:544377142e9146f546836606cf9f1faee9045c16b1ca93762e95e2a1c31d67b1"},
-    {file = "nonebot_plugin_get_nickname-0.1.1.post1.tar.gz", hash = "sha256:546b9481c40bc97b6cb123f6309a4a94aa35ef3d9bfe42e7545b50e55317075f"},
-]
-
-[package.dependencies]
-nonebot-plugin-session = ">=0.0.3"
-nonebot2 = ">=2.0.0,<3.0.0"
-
-[[package]]
 name = "nonebot-plugin-gocqhttp-cross-machine-upload-file"
 version = "0.1.5"
 description = ""
@@ -2096,13 +2081,13 @@ tzlocal = ">=4.2"
 
 [[package]]
 name = "nonebot-plugin-nagabus"
-version = "0.2.10"
+version = "0.2.13"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_nagabus-0.2.10-py3-none-any.whl", hash = "sha256:0513db75f924e31cbe9882a464bcb268ca79ac5730b38c44872d87ba669ffc60"},
-    {file = "nonebot_plugin_nagabus-0.2.10.tar.gz", hash = "sha256:c9460cb0b261c6124e75e498f2a72fe29ccf18066f49d3ef3c1a1b9ff863829f"},
+    {file = "nonebot_plugin_nagabus-0.2.13-py3-none-any.whl", hash = "sha256:66a46d371e292468f9525b817a6cb756ceaaeafdb84efca95d4611331f03713b"},
+    {file = "nonebot_plugin_nagabus-0.2.13.tar.gz", hash = "sha256:f2ff03f9dd7a2511c963e3150642f536d2797ac46458385de75eea42ed4de216"},
 ]
 
 [package.dependencies]
@@ -2110,12 +2095,12 @@ monthdelta = ">=0.9.1"
 nonebot-adapter-onebot = ">=2.2.3"
 nonebot-plugin-access-control = ">=0.5.1"
 nonebot-plugin-datastore = ">=1.1.0,<2.0.0"
-nonebot-plugin-get-nickname = ">=0.1.0"
 nonebot-plugin-majsoul = ">=0.2.2"
 nonebot-plugin-send-anything-anywhere = ">=0.2.4"
 nonebot-plugin-session = ">=0.0.3"
 nonebot2 = {version = ">=2.0.0,<3.0.0", extras = ["httpx"]}
 pydantic = ">=1.10.8"
+ssttkkl-nonebot-utils = ">=0.1.1"
 typing-extensions = ">=4.6.2"
 
 [[package]]
@@ -3012,6 +2997,21 @@ postgresql-psycopg2cffi = ["psycopg2cffi"]
 postgresql-psycopgbinary = ["psycopg[binary] (>=3.0.7)"]
 pymysql = ["pymysql"]
 sqlcipher = ["sqlcipher3-binary"]
+
+[[package]]
+name = "ssttkkl-nonebot-utils"
+version = "0.1.2"
+description = ""
+optional = false
+python-versions = ">=3.9,<4.0"
+files = [
+    {file = "ssttkkl_nonebot_utils-0.1.2-py3-none-any.whl", hash = "sha256:915942ee5593758f56267d5811dbc9edad705a75af2e198c05916aa418998891"},
+    {file = "ssttkkl_nonebot_utils-0.1.2.tar.gz", hash = "sha256:c61d4a17d4e27b9fc9659d1f80a92288348a2e19646d217a61de3762b2f58bb3"},
+]
+
+[package.dependencies]
+nonebot-plugin-session = ">=0.1.0"
+nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "starlette"
