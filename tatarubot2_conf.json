@@ -5,7 +5,7 @@
   },
   "proxy": {
     "info": "对查物价和日志订阅使用代理连接",
-    "enable": true,
+    "enable": false,
     "url": "http://127.0.0.1:7890"
   },
   "chat_ai": {

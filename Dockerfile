@@ -48,7 +48,7 @@ RUN wget https://vote.yuzuai.xyz/download/static.zip && unzip -d ./maimaiDX stat
 
 RUN pdm build
 
-FROM antonapetrov/uvicorn-gunicorn-fastapi:python3.10-slim
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
 ENV DRIVER=~fastapi+~websockets+~httpx
 
