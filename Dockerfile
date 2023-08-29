@@ -14,7 +14,7 @@ RUN apt update && apt install wget unzip git && pip install pdm
 
 WORKDIR /tmp
 
-RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+#RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
 
 WORKDIR /tmp/maimaiDX
 
@@ -65,9 +65,9 @@ RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
 RUN apt update && apt install git -y && pip install playwright && playwright install chromium && playwright install-deps
 
-COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp
+#COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp
 
-RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
+#RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
 COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
 
