@@ -14,18 +14,6 @@ services:
     volumes:
       - ./.env:/app/.env.prod
 
-  bot-gocq:
-    image: "silicer/go-cqhttp:latest"
-    container_name: "bot-gocq"
-    volumes:
-      - "bot-gocq-data:/data"
-
-  bot-qsign:
-    image: "xzhouqd/qsign:8.9.63"
-    container_name: "bot-qsign"
-    env_file:
-      - qsign.env
-
   bot-postgres:
     image: "postgres:latest"
     container_name: "bot-postgres"
@@ -37,5 +25,4 @@ services:
       - db_passwd
 
 volumes:
-  bot-gocq-data:
   bot-postgres-data:
