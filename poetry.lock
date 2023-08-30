@@ -2081,13 +2081,13 @@ tzlocal = ">=4.2"
 
 [[package]]
 name = "nonebot-plugin-nagabus"
-version = "0.2.13"
+version = "0.2.14"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_nagabus-0.2.13-py3-none-any.whl", hash = "sha256:66a46d371e292468f9525b817a6cb756ceaaeafdb84efca95d4611331f03713b"},
-    {file = "nonebot_plugin_nagabus-0.2.13.tar.gz", hash = "sha256:f2ff03f9dd7a2511c963e3150642f536d2797ac46458385de75eea42ed4de216"},
+    {file = "nonebot_plugin_nagabus-0.2.14-py3-none-any.whl", hash = "sha256:f1d2f2450d923bde31c93619553fa4a378833f752d58f50d5a15028b61ff9acd"},
+    {file = "nonebot_plugin_nagabus-0.2.14.tar.gz", hash = "sha256:e009090a7f06702e5ad5fc00fb612e506da827f6eb70db55e6f0420274a1b72c"},
 ]
 
 [package.dependencies]
