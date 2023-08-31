@@ -30,12 +30,12 @@ nonebot-plugin-follow-withdraw = ">=0.2.0"
 nonebot-plugin-sentry = ">=0.4.1"
 
 [tool.nonebot]
-plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_follow_withdraw", "nonebot_plugin_sentry"
+plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_follow_withdraw", "nonebot_plugin_sentry",
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus",
     "nonebot_plugin_autoreply",
     "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul", "nonebot_plugin_nagabus",
     "nonebot_plugin_pixivbot",
-    "maimaiDX",]
+    "maimaiDX"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
