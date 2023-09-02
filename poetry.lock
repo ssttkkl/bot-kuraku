@@ -2073,16 +2073,17 @@ psutil = ">=5.9.2,<6.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.0.2"
+version = "2.0.3"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-2.0.2-py3-none-any.whl", hash = "sha256:a2ff73e69a316c09b37dad36e88ea58b197792d6d406ff63186263b64e571d02"},
-    {file = "nonebot_plugin_pixivbot-2.0.2.tar.gz", hash = "sha256:78c9efda95ec64e989cd159f227c22e6ef4260534408c444afcad9f5cc881de8"},
+    {file = "nonebot_plugin_pixivbot-2.0.3-py3-none-any.whl", hash = "sha256:3049022ac263e8feb859a56728697963bbdb2a17d3a09b231dbc3655f18d65f6"},
+    {file = "nonebot_plugin_pixivbot-2.0.3.tar.gz", hash = "sha256:3792bf0d8ffbcca05a8589b3d30dfcad2aab0d92091d1292af5c36077dea96da"},
 ]
 
 [package.dependencies]
+aiofiles = ">=23.2.1"
 asyncache = ">=0.3.1"
 cachetools = ">=5.2.0"
 frozendict = ">=2.3.4"
@@ -2971,13 +2972,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.11"
+version = "0.1.13"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.11-py3-none-any.whl", hash = "sha256:bb3651903a00d5624f28b588086fa45737456085ba932bd888520ab2a5abcebd"},
-    {file = "ssttkkl_nonebot_utils-0.1.11.tar.gz", hash = "sha256:df54f3c3db3fc244c505e1c5a3213a283665b262b42a52241c5d8fc82c731bda"},
+    {file = "ssttkkl_nonebot_utils-0.1.13-py3-none-any.whl", hash = "sha256:e6a9a9b83d7f476c3a82f39979758d089f04243c2c63749ae3140369c631288c"},
+    {file = "ssttkkl_nonebot_utils-0.1.13.tar.gz", hash = "sha256:c0872470d07146764b6ed3f4ae79830da6620e620a77873e802066f45d8410c4"},
 ]
 
 [package.dependencies]
