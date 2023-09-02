@@ -34,8 +34,7 @@ plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_follow_withdraw", "noneb
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus",
     "nonebot_plugin_autoreply",
     "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul", "nonebot_plugin_nagabus",
-    "nonebot_plugin_pixivbot",
-    "maimaiDX"]
+    "nonebot_plugin_pixivbot"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
