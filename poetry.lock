@@ -135,14 +135,18 @@ frozenlist = ">=1.1.0"
 
 [[package]]
 name = "aiosqlite"
-version = "0.18.0"
+version = "0.19.0"
 description = "asyncio bridge to the standard sqlite3 module"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "aiosqlite-0.18.0-py3-none-any.whl", hash = "sha256:c3511b841e3a2c5614900ba1d179f366826857586f78abd75e7cbeb88e75a557"},
-    {file = "aiosqlite-0.18.0.tar.gz", hash = "sha256:faa843ef5fb08bafe9a9b3859012d3d9d6f77ce3637899de20606b7fc39aa213"},
+    {file = "aiosqlite-0.19.0-py3-none-any.whl", hash = "sha256:edba222e03453e094a3ce605db1b970c4b3376264e56f32e2a4959f948d66a96"},
+    {file = "aiosqlite-0.19.0.tar.gz", hash = "sha256:95ee77b91c8d2808bd08a59fbebf66270e9090c3d92ffbf260dc0db0b979577d"},
 ]
+
+[package.extras]
+dev = ["aiounittest (==1.4.1)", "attribution (==1.6.2)", "black (==23.3.0)", "coverage[toml] (==7.2.3)", "flake8 (==5.0.4)", "flake8-bugbear (==23.3.12)", "flit (==3.7.1)", "mypy (==1.2.0)", "ufmt (==2.1.0)", "usort (==1.0.6)"]
+docs = ["sphinx (==6.1.3)", "sphinx-mdinclude (==0.5.3)"]
 
 [[package]]
 name = "alembic"
@@ -1959,17 +1963,17 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.5.1"
+version = "0.5.3"
 description = "日麻寄分器（NoneBot插件）"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.5.1-py3-none-any.whl", hash = "sha256:c2cdbd117871913791e002c9e5cff91dcbb1b708a5de6e7a40a921ae35f25445"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.5.1.tar.gz", hash = "sha256:08df4dbf7f291725cb777f92da3bd26a29af4e4fd2715dca4e3730f794c6b2db"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.5.3-py3-none-any.whl", hash = "sha256:fbeed90cb2fe6a54896fed45b088eb002b4de6399f363baebe592874d8696b5f"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.5.3.tar.gz", hash = "sha256:856161eb518ecfd30beb2c196969b70f00804095a804dcccd765fcf03805c8c6"},
 ]
 
 [package.dependencies]
-aiosqlite = ">=0.17,<0.19"
+aiosqlite = ">=0.17.0"
 cachetools = ">=5.2.0"
 nonebot-adapter-onebot = ">=2.2.2"
 nonebot_plugin_apscheduler = ">=0.3.0"
@@ -1978,7 +1982,7 @@ nonebot-plugin-localstore = ">=0.4.1"
 nonebot-plugin-session = ">=0.0.3"
 nonebot-plugin-sqlalchemy = ">=0.2.1"
 nonebot2 = ">=2.0.0,<3.0.0"
-ssttkkl-nonebot-utils = ">=0.1.5"
+ssttkkl-nonebot-utils = ">=0.1.10"
 tzlocal = ">=4.2"
 
 [[package]]
@@ -2967,13 +2971,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.8"
+version = "0.1.11"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.8-py3-none-any.whl", hash = "sha256:06a1f2218eb37839f4690c087e6efc59ce30d89325712f1de26eb9f648984b28"},
-    {file = "ssttkkl_nonebot_utils-0.1.8.tar.gz", hash = "sha256:2336c5c16fb6c09dfbc50b948f12acf9676a83b1592be8eac1dd948ffc09b5a3"},
+    {file = "ssttkkl_nonebot_utils-0.1.11-py3-none-any.whl", hash = "sha256:bb3651903a00d5624f28b588086fa45737456085ba932bd888520ab2a5abcebd"},
+    {file = "ssttkkl_nonebot_utils-0.1.11.tar.gz", hash = "sha256:df54f3c3db3fc244c505e1c5a3213a283665b262b42a52241c5d8fc82c731bda"},
 ]
 
 [package.dependencies]
