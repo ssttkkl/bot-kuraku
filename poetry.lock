@@ -718,16 +718,17 @@ test = ["pytest (>=6)"]
 
 [[package]]
 name = "fastapi"
-version = "0.103.0"
+version = "0.103.1"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "fastapi-0.103.0-py3-none-any.whl", hash = "sha256:61ab72c6c281205dd0cbaccf503e829a37e0be108d965ac223779a8479243665"},
-    {file = "fastapi-0.103.0.tar.gz", hash = "sha256:4166732f5ddf61c33e9fa4664f73780872511e0598d4d5434b1816dc1e6d9421"},
+    {file = "fastapi-0.103.1-py3-none-any.whl", hash = "sha256:5e5f17e826dbd9e9b5a5145976c5cd90bcaa61f2bf9a69aca423f2bcebe44d83"},
+    {file = "fastapi-0.103.1.tar.gz", hash = "sha256:345844e6a82062f06a096684196aaf96c1198b25c06b72c1311b882aa2d8a35d"},
 ]
 
 [package.dependencies]
+anyio = ">=3.7.1,<4.0.0"
 pydantic = ">=1.7.4,<1.8 || >1.8,<1.8.1 || >1.8.1,<2.0.0 || >2.0.0,<2.0.1 || >2.0.1,<2.1.0 || >2.1.0,<3.0.0"
 starlette = ">=0.27.0,<0.28.0"
 typing-extensions = ">=4.5.0"
@@ -1718,13 +1719,13 @@ files = [
 
 [[package]]
 name = "nb-cli"
-version = "1.2.2"
+version = "1.2.3"
 description = "CLI for nonebot2"
 optional = false
 python-versions = ">=3.8, <4.0"
 files = [
-    {file = "nb-cli-1.2.2.tar.gz", hash = "sha256:ecef59e636dd86672beea516932d42c134068572c160ab09d0e541ebe838912f"},
-    {file = "nb_cli-1.2.2-py3-none-any.whl", hash = "sha256:b38079daae7ad97a12ed1f2c58d8e3b611b7b01718b368f893effecfeda7ed09"},
+    {file = "nb-cli-1.2.3.tar.gz", hash = "sha256:b3fc95873852c258fbaaa1979af95a7f83369c67c85d314cb015ee7b1275c4f9"},
+    {file = "nb_cli-1.2.3-py3-none-any.whl", hash = "sha256:db0019bbffcf1004ccc0eae1f1f85453d55f22cb2fbbf21cfb02b9248007fdae"},
 ]
 
 [package.dependencies]
@@ -1948,13 +1949,13 @@ python-markdown-math = ">=0.8"
 
 [[package]]
 name = "nonebot-plugin-localstore"
-version = "0.5.0"
+version = "0.5.1"
 description = "Local Storage Support for NoneBot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_localstore-0.5.0-py3-none-any.whl", hash = "sha256:31ada7d363bdc9326e14f054d02f2c8cee58ec7a970e534ac2793d75b818cf95"},
-    {file = "nonebot_plugin_localstore-0.5.0.tar.gz", hash = "sha256:0099d99c427b13c52b6a23588b954dc8651c0b0b556d743f36aa2dd246576611"},
+    {file = "nonebot_plugin_localstore-0.5.1-py3-none-any.whl", hash = "sha256:520c4dd42f00495ec8fc458c40c5877bc604556f58147c34c4051860df34575b"},
+    {file = "nonebot_plugin_localstore-0.5.1.tar.gz", hash = "sha256:97491d213d419de3f76f941a8d80ab190aa9828950289ec83402028e0f0892eb"},
 ]
 
 [package.dependencies]
@@ -2073,13 +2074,13 @@ psutil = ">=5.9.2,<6.0.0"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.0.3"
+version = "2.0.4"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-2.0.3-py3-none-any.whl", hash = "sha256:3049022ac263e8feb859a56728697963bbdb2a17d3a09b231dbc3655f18d65f6"},
-    {file = "nonebot_plugin_pixivbot-2.0.3.tar.gz", hash = "sha256:3792bf0d8ffbcca05a8589b3d30dfcad2aab0d92091d1292af5c36077dea96da"},
+    {file = "nonebot_plugin_pixivbot-2.0.4-py3-none-any.whl", hash = "sha256:67c469666520ff6a890a700a901732883a0b8d78173c413278fec475b75f0675"},
+    {file = "nonebot_plugin_pixivbot-2.0.4.tar.gz", hash = "sha256:78f5d6c96656b1b8da8d1b198163a6a96cc7547a66c75e6f7c90b053502fb5bf"},
 ]
 
 [package.dependencies]
@@ -2097,7 +2098,7 @@ numpy = ">=1.23.1"
 Pillow = ">=9.2.0,<10.0.0"
 PixivPy-Async = ">=1.2.14,<2.0.0"
 shortuuid = ">=1.0.9"
-ssttkkl-nonebot-utils = ">=0.1.8"
+ssttkkl-nonebot-utils = ">=0.1.14"
 tzlocal = ">=5.0.1"
 
 [[package]]
@@ -2606,13 +2607,13 @@ files = [
 
 [[package]]
 name = "pymdown-extensions"
-version = "10.2.1"
+version = "10.3"
 description = "Extension pack for Python Markdown."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "pymdown_extensions-10.2.1-py3-none-any.whl", hash = "sha256:bded105eb8d93f88f2f821f00108cb70cef1269db6a40128c09c5f48bfc60ea4"},
-    {file = "pymdown_extensions-10.2.1.tar.gz", hash = "sha256:d0c534b4a5725a4be7ccef25d65a4c97dba58b54ad7c813babf0eb5ba9c81591"},
+    {file = "pymdown_extensions-10.3-py3-none-any.whl", hash = "sha256:77a82c621c58a83efc49a389159181d570e370fff9f810d3a4766a75fc678b66"},
+    {file = "pymdown_extensions-10.3.tar.gz", hash = "sha256:94a0d8a03246712b64698af223848fd80aaf1ae4c4be29c8c61939b0467b5722"},
 ]
 
 [package.dependencies]
@@ -2972,13 +2973,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.13"
+version = "0.1.14"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.13-py3-none-any.whl", hash = "sha256:e6a9a9b83d7f476c3a82f39979758d089f04243c2c63749ae3140369c631288c"},
-    {file = "ssttkkl_nonebot_utils-0.1.13.tar.gz", hash = "sha256:c0872470d07146764b6ed3f4ae79830da6620e620a77873e802066f45d8410c4"},
+    {file = "ssttkkl_nonebot_utils-0.1.14-py3-none-any.whl", hash = "sha256:fbf64e0d337181f5a434607d9a2bceea5c305688a22a55d7efbe9df06db333c5"},
+    {file = "ssttkkl_nonebot_utils-0.1.14.tar.gz", hash = "sha256:b619aff68b3ca781f0df4c0f1e81f4715e9060ba68ee64ddf6e2253b8021efff"},
 ]
 
 [package.dependencies]
