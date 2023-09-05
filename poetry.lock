@@ -1313,13 +1313,13 @@ docs = ["sphinx", "sphinx-rtd-theme"]
 
 [[package]]
 name = "loguru"
-version = "0.7.0"
+version = "0.7.1"
 description = "Python logging made (stupidly) simple"
 optional = false
 python-versions = ">=3.5"
 files = [
-    {file = "loguru-0.7.0-py3-none-any.whl", hash = "sha256:b93aa30099fa6860d4727f1b81f8718e965bb96253fa190fab2077aaad6d15d3"},
-    {file = "loguru-0.7.0.tar.gz", hash = "sha256:1612053ced6ae84d7959dd7d5e431a0532642237ec21f7fd83ac73fe539e03e1"},
+    {file = "loguru-0.7.1-py3-none-any.whl", hash = "sha256:046bf970cb3cad77a28d607cbf042ac25a407db987a1e801c7f7e692469982f9"},
+    {file = "loguru-0.7.1.tar.gz", hash = "sha256:7ba2a7d81b79a412b0ded69bd921e012335e80fd39937a633570f273a343579e"},
 ]
 
 [package.dependencies]
@@ -1327,7 +1327,7 @@ colorama = {version = ">=0.3.4", markers = "sys_platform == \"win32\""}
 win32-setctime = {version = ">=1.0.0", markers = "sys_platform == \"win32\""}
 
 [package.extras]
-dev = ["Sphinx (==5.3.0)", "colorama (==0.4.5)", "colorama (==0.4.6)", "freezegun (==1.1.0)", "freezegun (==1.2.2)", "mypy (==v0.910)", "mypy (==v0.971)", "mypy (==v0.990)", "pre-commit (==3.2.1)", "pytest (==6.1.2)", "pytest (==7.2.1)", "pytest-cov (==2.12.1)", "pytest-cov (==4.0.0)", "pytest-mypy-plugins (==1.10.1)", "pytest-mypy-plugins (==1.9.3)", "sphinx-autobuild (==2021.3.14)", "sphinx-rtd-theme (==1.2.0)", "tox (==3.27.1)", "tox (==4.4.6)"]
+dev = ["Sphinx (==7.2.5)", "colorama (==0.4.5)", "colorama (==0.4.6)", "freezegun (==1.1.0)", "freezegun (==1.2.2)", "mypy (==v0.910)", "mypy (==v0.971)", "mypy (==v1.4.1)", "pre-commit (==3.3.1)", "pytest (==6.1.2)", "pytest (==7.4.0)", "pytest-cov (==2.12.1)", "pytest-cov (==4.1.0)", "pytest-mypy-plugins (==1.9.3)", "pytest-mypy-plugins (==3.0.0)", "sphinx-autobuild (==2021.3.14)", "sphinx-rtd-theme (==1.3.0)", "tox (==3.27.1)", "tox (==4.11.0)"]
 
 [[package]]
 name = "mahjong-utils"
@@ -1746,19 +1746,17 @@ wcwidth = ">=0.2,<1.0"
 
 [[package]]
 name = "nonebot-adapter-kaiheila"
-version = "0.2.8"
+version = "0.2.11"
 description = "kaiheila adapter for nonebot2"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_adapter_kaiheila-0.2.8-py3-none-any.whl", hash = "sha256:81faa39efb7ea701c40ae27bd5e93f2df84b96b866c5fb221bd567e941bccfc6"},
-    {file = "nonebot_adapter_kaiheila-0.2.8.tar.gz", hash = "sha256:69ca9c2d7478418da0dca53c9806aa7a08069ab890ed2ba377487c472b17fa66"},
+    {file = "nonebot_adapter_kaiheila-0.2.11-py3-none-any.whl", hash = "sha256:7255d84983b9b547afe79b30e47b2a03564dfd4668f3035d9ff21309d003593e"},
+    {file = "nonebot_adapter_kaiheila-0.2.11.tar.gz", hash = "sha256:47482b4c697a8cf36b71da73387e750e684d4c551e78a9f048895ce89609e5a5"},
 ]
 
 [package.dependencies]
-aiohttp = ">=3.8.1,<4.0.0"
-deprecated = ">=1.2.13,<2.0.0"
-nonebot2 = ">=2.0.0rc1,<3.0.0"
+nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "nonebot-adapter-onebot"
@@ -1860,13 +1858,13 @@ typing-extensions = ">=4.4.0"
 
 [[package]]
 name = "nonebot-plugin-datastore"
-version = "1.1.0"
+version = "1.1.1"
 description = "适用于 Nonebot2 的数据存储插件"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_datastore-1.1.0-py3-none-any.whl", hash = "sha256:8ca11b6da0f1ff09cf0effe9f1baf3475874ec1c7c8ffe0053bb21524112c95e"},
-    {file = "nonebot_plugin_datastore-1.1.0.tar.gz", hash = "sha256:1e7fdba17fba3986467a98e1938d3e2ad65767d548146a31b7ded340d050a22c"},
+    {file = "nonebot_plugin_datastore-1.1.1-py3-none-any.whl", hash = "sha256:7ae06b5a50651c29426775b6f300f229a18c4f09aaecb7f2104f321369524e16"},
+    {file = "nonebot_plugin_datastore-1.1.1.tar.gz", hash = "sha256:f5b675646a0b17850911ee746d973f86e1a6afb4eb5d124cdb55adbf12404ac2"},
 ]
 
 [package.dependencies]
@@ -2698,13 +2696,13 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "pytz"
-version = "2023.3"
+version = "2023.3.post1"
 description = "World timezone definitions, modern and historical"
 optional = false
 python-versions = "*"
 files = [
-    {file = "pytz-2023.3-py2.py3-none-any.whl", hash = "sha256:a151b3abb88eda1d4e34a9814df37de2a80e301e68ba0fd856fb9b46bfbbbffb"},
-    {file = "pytz-2023.3.tar.gz", hash = "sha256:1d8ce29db189191fb55338ee6d0387d82ab59f3d00eac103412d64e0ebd0c588"},
+    {file = "pytz-2023.3.post1-py2.py3-none-any.whl", hash = "sha256:ce42d816b81b68506614c11e8937d3aa9e41007ceb50bfdcb0749b921bf646c7"},
+    {file = "pytz-2023.3.post1.tar.gz", hash = "sha256:7b4fddbeb94a1eba4b557da24f19fdf9db575192544270a9101d8509f9f43d7b"},
 ]
 
 [[package]]
