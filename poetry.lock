@@ -1972,27 +1972,30 @@ typing-extensions = ">=4.0.0"
 
 [[package]]
 name = "nonebot-plugin-mahjong-scoreboard"
-version = "0.5.3"
+version = "0.6.0"
 description = "日麻寄分器（NoneBot插件）"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_mahjong_scoreboard-0.5.3-py3-none-any.whl", hash = "sha256:fbeed90cb2fe6a54896fed45b088eb002b4de6399f363baebe592874d8696b5f"},
-    {file = "nonebot_plugin_mahjong_scoreboard-0.5.3.tar.gz", hash = "sha256:856161eb518ecfd30beb2c196969b70f00804095a804dcccd765fcf03805c8c6"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.6.0-py3-none-any.whl", hash = "sha256:ff2528bb663d876b3a237cb515623dcb729e2342f36964a72105599e4b16e287"},
+    {file = "nonebot_plugin_mahjong_scoreboard-0.6.0.tar.gz", hash = "sha256:5aca2936164b5b520b146bae0ecedeae1a9afc4ebe999567f8d03fba73d6d12c"},
 ]
 
 [package.dependencies]
 aiosqlite = ">=0.17.0"
 cachetools = ">=5.2.0"
-nonebot-adapter-onebot = ">=2.2.2"
 nonebot_plugin_apscheduler = ">=0.3.0"
 nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.5"
 nonebot-plugin-localstore = ">=0.4.1"
 nonebot-plugin-session = ">=0.0.3"
 nonebot-plugin-sqlalchemy = ">=0.2.1"
 nonebot2 = ">=2.0.0,<3.0.0"
+prettytable = ">=3.8.0,<4.0.0"
 ssttkkl-nonebot-utils = ">=0.1.10"
 tzlocal = ">=4.2"
+
+[package.extras]
+htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-send-anything-anywhere (>=0.3.0)"]
 
 [[package]]
 name = "nonebot-plugin-mahjong-utils"
@@ -2436,6 +2439,23 @@ files = [
 [package.dependencies]
 greenlet = "2.0.2"
 pyee = "9.0.4"
+
+[[package]]
+name = "prettytable"
+version = "3.8.0"
+description = "A simple Python library for easily displaying tabular data in a visually appealing ASCII table format"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "prettytable-3.8.0-py3-none-any.whl", hash = "sha256:03481bca25ae0c28958c8cd6ac5165c159ce89f7ccde04d5c899b24b68bb13b7"},
+    {file = "prettytable-3.8.0.tar.gz", hash = "sha256:031eae6a9102017e8c7c7906460d150b7ed78b20fd1d8c8be4edaf88556c07ce"},
+]
+
+[package.dependencies]
+wcwidth = "*"
+
+[package.extras]
+tests = ["pytest", "pytest-cov", "pytest-lazy-fixture"]
 
 [[package]]
 name = "prompt-toolkit"
