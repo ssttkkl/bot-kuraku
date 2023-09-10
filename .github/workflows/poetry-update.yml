@@ -96,3 +96,19 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          
+  deploy:
+
+    needs: poetry-update
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Depoly through SSH
+      uses: nekiro/ssh-job@main
+      with:
+        host: ${{ secrets.DEPLOY_HOST }}
+        key: ${{ secrets.DEPLOY_PRI_KEY }}
+        user: ${{ secrets.DEPLOY_USER }}
+        command: |
+          cd ~/bot-kuraku
+          ./ci.sh
