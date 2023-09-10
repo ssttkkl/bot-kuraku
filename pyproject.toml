@@ -30,10 +30,11 @@ nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-autoreply = ">=0.2.3"
 nonebot-plugin-apscheduler = ">=0.2.0"
-nonebot-plugin-send-anything-anywhere = ">=0.2.2"
+nonebot-plugin-send-anything-anywhere = ">=0.3.0"
 tatarubot2 = ">=0.1.16"
 nonebot-plugin-error-alert = ">=0.2.0"
 nonebot-plugin-follow-withdraw = ">=0.2.0"
+nonebot-plugin-htmlrender = ">=0.2.2"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
