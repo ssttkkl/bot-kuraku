@@ -3059,13 +3059,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.14"
+version = "0.1.15"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.14-py3-none-any.whl", hash = "sha256:fbf64e0d337181f5a434607d9a2bceea5c305688a22a55d7efbe9df06db333c5"},
-    {file = "ssttkkl_nonebot_utils-0.1.14.tar.gz", hash = "sha256:b619aff68b3ca781f0df4c0f1e81f4715e9060ba68ee64ddf6e2253b8021efff"},
+    {file = "ssttkkl_nonebot_utils-0.1.15-py3-none-any.whl", hash = "sha256:d06277f8c4caf3296e59ca53e2411a62e2174acba0e888b2cbbe6300b6a53025"},
+    {file = "ssttkkl_nonebot_utils-0.1.15.tar.gz", hash = "sha256:cafc747b772023a5b9d4c07ee20067d76089654bd08f7e557de62c2f18c123c5"},
 ]
 
 [package.dependencies]
