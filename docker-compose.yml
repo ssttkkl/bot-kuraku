@@ -11,8 +11,8 @@ services:
     environment:
       - "HOST=0.0.0.0"
       - "PORT=8080"
-    volumes:
-      - ./.env:/app/.env.prod
+    env_file:
+      - .env
 
   bot-postgres:
     image: "postgres:latest"
