@@ -24,5 +24,17 @@ services:
     secrets:
       - db_passwd
 
+  bot-gocq:
+    image: "ghcr.io/mrs4s/go-cqhttp:latest"
+    container_name: "bot-gocq"
+    volumes:
+      - "bot-gocq-data:/data"
+
+  bot-qsign:
+    image: "ghcr.io/fuqiuluo/unidbg-fetch-qsign:master"
+    container_name: "bot-qsign"
+    restart: always
+
 volumes:
   bot-postgres-data:
+  bot-gocq-data:
