@@ -7,7 +7,7 @@ on:
   push:
     branches: [ "main" ]
   schedule:
-    - cron: '0 6 * * *'
+    - cron: '0 20 * * *'
   workflow_dispatch:
   
 env:
@@ -99,7 +99,7 @@ jobs:
           
   deploy:
 
-    needs: poetry-update
+    needs: build
     runs-on: ubuntu-latest
     
     steps:
