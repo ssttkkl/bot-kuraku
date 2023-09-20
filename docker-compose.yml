@@ -15,7 +15,7 @@ services:
       - ./.env.prod:/app/.env.prod
 
   bot-postgres:
-    image: "postgres:latest"
+    image: "postgres:15"
     container_name: "bot-postgres"
     environment:
       - POSTGRES_PASSWORD_FILE=/run/secrets/db_passwd

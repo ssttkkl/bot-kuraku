@@ -73,7 +73,7 @@ RUN apt update && apt install git -y && pip install playwright && playwright ins
 
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt && pip install /tmp/*.whl
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt # && pip install /tmp/*.whl
 
 COPY ./ /app/
 
