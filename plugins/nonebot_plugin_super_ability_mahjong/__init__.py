@@ -18,3 +18,5 @@ __plugin_meta__ = PluginMetadata(
     usage=__usage__,
     type="application"
 )
+
+from . import main
