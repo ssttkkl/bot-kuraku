@@ -146,3 +146,4 @@ dmypy.json
 .env.dev
 
 *.db
+db_passwd.txt

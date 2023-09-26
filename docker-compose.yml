@@ -24,5 +24,21 @@ services:
     secrets:
       - db_passwd
 
+  bot-chronocat:
+    image: "yuukinya/chronocat-docker:latest"
+    tty: true
+    container_name: "bot-chronocat"
+    restart: always
+    ports:
+      - "5900:5900"
+      - "16530:16530"
+    environment:
+      - TZ=Asia/Shanghai
+    volumes:
+      - bot-config-data:/root/.chronocat/config
+      - bot-chronocat-data:/root/.config/QQ
+
 volumes:
   bot-postgres-data:
+  bot-config-data:
+  bot-chronocat-data:
