@@ -35,10 +35,10 @@ services:
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - bot-config-data:/root/.chronocat/config
+      - bot-chronocat-config:/root/.chronocat/config
       - bot-chronocat-data:/root/.config/QQ
 
 volumes:
   bot-postgres-data:
-  bot-config-data:
+  bot-chronocat-config:
   bot-chronocat-data:
