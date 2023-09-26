@@ -1905,13 +1905,13 @@ wcwidth = ">=0.2,<1.0"
 
 [[package]]
 name = "nepattern"
-version = "0.5.14"
+version = "0.5.15"
 description = "a complex pattern, support typing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nepattern-0.5.14-py3-none-any.whl", hash = "sha256:2dd1bdb9b722da8099d52794a1d1c7fa7ace220badac10b91ec8b6ff053a7c51"},
-    {file = "nepattern-0.5.14.tar.gz", hash = "sha256:d9cda6e6033645a57bec70e3e5f8998cbca278a78e38b55f96d9c2f419fdcc24"},
+    {file = "nepattern-0.5.15-py3-none-any.whl", hash = "sha256:c68fc7c0c9b7835c956a89e0f91fd380b8e07880e183414871e83ef4a9fa0dbd"},
+    {file = "nepattern-0.5.15.tar.gz", hash = "sha256:3b04b91b5856b9826b61737933911f570a75ba8116b9e2ff8fa83b4aa0211203"},
 ]
 
 [package.dependencies]
