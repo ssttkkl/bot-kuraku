@@ -120,6 +120,21 @@ yarl = ">=1.0,<2.0"
 speedups = ["Brotli", "aiodns", "cchardet"]
 
 [[package]]
+name = "aiohttp-socks"
+version = "0.8.3"
+description = "Proxy connector for aiohttp"
+optional = false
+python-versions = "*"
+files = [
+    {file = "aiohttp_socks-0.8.3-py3-none-any.whl", hash = "sha256:04bed72d21561f5ae8199da1cf845bede27c6b6ba42a0ab7e8f71f7e00e9a23a"},
+    {file = "aiohttp_socks-0.8.3.tar.gz", hash = "sha256:6aab528f669e0873018fd37773b833a2e2ba284243be672817fa401bc7941ec6"},
+]
+
+[package.dependencies]
+aiohttp = ">=2.3.2"
+python-socks = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
+
+[[package]]
 name = "aiosignal"
 version = "1.3.1"
 description = "aiosignal: a list of registered asynchronous callbacks"
@@ -812,6 +827,20 @@ files = [
 ]
 
 [[package]]
+name = "emoji"
+version = "2.8.0"
+description = "Emoji for Python"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+files = [
+    {file = "emoji-2.8.0-py2.py3-none-any.whl", hash = "sha256:a8468fd836b7ecb6d1eac054c9a591701ce0ccd6c6f7779ad71b66f76664df90"},
+    {file = "emoji-2.8.0.tar.gz", hash = "sha256:8d8b5dec3c507444b58890e598fc895fcec022b3f5acb49497c6ccc5208b8b00"},
+]
+
+[package.extras]
+dev = ["coverage", "coveralls", "pytest"]
+
+[[package]]
 name = "exceptiongroup"
 version = "1.1.3"
 description = "Backport of PEP 654 (exception groups)"
@@ -1251,6 +1280,21 @@ files = [
     {file = "hyperframe-6.0.1-py3-none-any.whl", hash = "sha256:0ec6bafd80d8ad2195c4f03aacba3a8265e57bc4cff261e802bf39970ed02a15"},
     {file = "hyperframe-6.0.1.tar.gz", hash = "sha256:ae510046231dc8e9ecb1a6586f63d2347bf4c8905914aa84ba585ae85f28a914"},
 ]
+
+[[package]]
+name = "icalendar"
+version = "5.0.9"
+description = "iCalendar parser/generator"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "icalendar-5.0.9-py3-none-any.whl", hash = "sha256:f473fb5c1b255f53c9296b56887307cce4f215a65491b35c4f08f67ac05ac95b"},
+    {file = "icalendar-5.0.9.tar.gz", hash = "sha256:94d1f7f417409257def23c6c053b6bc89da4885e327342365204cdf58cb2eb6b"},
+]
+
+[package.dependencies]
+python-dateutil = "*"
+pytz = "*"
 
 [[package]]
 name = "icmplib"
@@ -1977,6 +2021,24 @@ files = [
 [package.dependencies]
 nonebot2 = ">=2.1.0,<3.0.0"
 pydantic = ">=1.9.0,<2.0.0"
+
+[[package]]
+name = "nonebot-adapter-red"
+version = "0.5.0"
+description = "Red Protocol Adapter for Nonebot2"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "nonebot_adapter_red-0.5.0-py3-none-any.whl", hash = "sha256:5da804d0d755b7b23116b80857fe30458d7d4058469b9e65952f25397e7b398a"},
+    {file = "nonebot_adapter_red-0.5.0.tar.gz", hash = "sha256:51fa65080039d6527c7f4242e7fb0fdbeef1a3a5ca35e7b4368faa73b73a004a"},
+]
+
+[package.dependencies]
+nonebot2 = ">=2.0.1"
+packaging = ">=23.1"
+
+[package.extras]
+auto-detect = ["PyYAML"]
 
 [[package]]
 name = "nonebot-adapter-telegram"
@@ -2962,6 +3024,26 @@ text-unidecode = ">=1.3"
 unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
+name = "python-socks"
+version = "2.4.3"
+description = "Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python"
+optional = false
+python-versions = "*"
+files = [
+    {file = "python-socks-2.4.3.tar.gz", hash = "sha256:135430ae36d582dc834c983696c5f66177aa5b587407f540985d616ef2e0c701"},
+    {file = "python_socks-2.4.3-py3-none-any.whl", hash = "sha256:a57559b3f6073855761cb58b47a71bc5df8b72963d4a7a6e988b39dedd0e7ef2"},
+]
+
+[package.dependencies]
+async-timeout = {version = ">=3.0.1", optional = true, markers = "extra == \"asyncio\""}
+
+[package.extras]
+anyio = ["anyio (>=3.3.4,<5.0.0)"]
+asyncio = ["async-timeout (>=3.0.1)"]
+curio = ["curio (>=1.4)"]
+trio = ["trio (>=0.16.0)"]
+
+[[package]]
 name = "pytimeparser"
 version = "0.2.0"
 description = "Basic Python module to parse time expressions."
@@ -3352,6 +3434,25 @@ files = [
 
 [package.dependencies]
 typing-extensions = ">=4.4.0"
+
+[[package]]
+name = "tatarubot2"
+version = "0.1.16"
+description = "FF14 bot Tataru"
+optional = false
+python-versions = ">=3.7.3,<4.0.0"
+files = [
+    {file = "tatarubot2-0.1.16.tar.gz", hash = "sha256:7d6f8479360be3cb9b93969f2e2a922eb3b2e7ce5c6ffb0dcb2e1af3e6f8e998"},
+]
+
+[package.dependencies]
+aiohttp = "*"
+aiohttp_socks = "*"
+emoji = "*"
+icalendar = "*"
+nonebot-adapter-onebot = "*"
+nonebot2 = ">=2.0.0-beta.1,<3.0.0"
+Pillow = "*"
 
 [[package]]
 name = "tensoul"
@@ -3905,4 +4006,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "8af4fe589c6113a25f554da2db356c1ebb5a62a9aa8096ece2c508b0612149ab"
+content-hash = "e27b78df78ee3fbbc483fa4d7dcc3970dac9c8a0882b8eaa1e3bb057bee8c15c"
