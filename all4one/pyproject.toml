@@ -14,15 +14,11 @@ nonebot-adapter-onebot = ">=2.1.5"
 nonebot-adapter-qqguild = ">=0.2.2"
 nonebot-adapter-kaiheila = ">=0.2.6"
 nonebot-adapter-telegram = ">=0.1.0b13"
-nonebot-adapter-console = ">=0.4.0"
 nonebot-adapter-red = ">=0.5.0"
 nonebot-plugin-all4one = ">=0.1.0a3"
 
 [tool.nonebot]
-adapters = [
-    { name = "OneBot V11", module_name = "nonebot.adapters.onebot.v11" },
-    { name = "QQ 频道", module_name = "nonebot.adapters.qqguild" }
-]
+adapters = []
 plugins = ["nonebot_plugin_all4one"]
 plugin_dirs = []
 builtin_plugins = []

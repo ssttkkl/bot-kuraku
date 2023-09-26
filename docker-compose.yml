@@ -16,7 +16,7 @@ services:
 
   bot-all4one:
     image: "ssttkkl/bot-kuraku-all4one:latest"
-    container_name: "bot"
+    container_name: "bot-all4one"
     environment:
       - "HOST=0.0.0.0"
       - "PORT=8080"
