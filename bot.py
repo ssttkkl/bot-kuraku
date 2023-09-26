@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import nonebot
+from nonebot.adapters.red import Adapter as RedAdapter
 from nonebot.adapters.kaiheila import Adapter as KaiheilaAdapter
 from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
 from nonebot.adapters.qqguild import Adapter as QQGuildAdapter
@@ -13,6 +14,7 @@ app = nonebot.get_asgi()
 
 # 注册adapter
 driver = nonebot.get_driver()
+driver.register_adapter(RedAdapter)
 driver.register_adapter(ONEBOT_V11Adapter)
 driver.register_adapter(QQGuildAdapter)
 driver.register_adapter(TelegramAdapter)
