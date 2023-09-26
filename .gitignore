@@ -109,7 +109,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
 .venv
 env/
 venv/
@@ -142,8 +141,7 @@ dmypy.json
 
 .idea
 
-.env.prod
-.env.dev
+.env.*
 
 *.db
 db_passwd.txt

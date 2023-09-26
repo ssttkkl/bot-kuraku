@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "bot-kuraku"
+name = "bot-kuraku-bot"
 version = "1.0.0"
-description = "bot-kuraku"
+description = "bot-kuraku-bot"
 authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
 readme = "README.md"
 

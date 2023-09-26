@@ -6,13 +6,22 @@ secrets:
 
 services:
   bot:
-    image: "ssttkkl/bot-kuraku:latest"
+    image: "ssttkkl/bot-kuraku-bot:latest"
     container_name: "bot"
     environment:
       - "HOST=0.0.0.0"
       - "PORT=8080"
     volumes:
       - ./.env.prod:/app/.env.prod
+
+  bot-all4one:
+    image: "ssttkkl/bot-kuraku-all4one:latest"
+    container_name: "bot"
+    environment:
+      - "HOST=0.0.0.0"
+      - "PORT=8080"
+    volumes:
+      - ./.env.all4one.prod:/app/.env.prod
 
   bot-postgres:
     image: "postgres:15"

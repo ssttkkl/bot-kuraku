@@ -55,8 +55,6 @@ RUN pdm build
 # ========== main ==========
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
-ENV DRIVER=~fastapi+~websockets+~httpx
-
 ENV APP_MODULE=bot:app
 ENV MAX_WORKERS=1
 
