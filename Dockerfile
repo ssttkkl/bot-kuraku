@@ -1,4 +1,6 @@
-FROM python:3.10-slim as requirements-stage
+# ========== requirements-stage ==========
+# 从poetry.lock生成requirements.txt
+FROM python:3.11 as requirements-stage
 
 WORKDIR /tmp
 
@@ -8,13 +10,15 @@ COPY ./pyproject.toml ./poetry.lock* /tmp/
 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
-FROM python:3.10 AS maimaidx-stage
+# ========== maimaidx-stage ==========
+# 将maimaiDX与资源文件打成一个whl包
+FROM python:3.11 AS maimaidx-stage
 
 RUN apt update && apt install wget unzip git && pip install pdm
 
 WORKDIR /tmp
 
-#RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
+RUN wget https://bitbucket.org/ariya/phantomjs/downloads/phantomjs-2.1.1-linux-x86_64.tar.bz2
 
 WORKDIR /tmp/maimaiDX
 
@@ -48,6 +52,7 @@ RUN wget https://vote.yuzuai.xyz/download/static.zip && unzip -d ./maimaiDX stat
 
 RUN pdm build
 
+# ========== main ==========
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
 ENV DRIVER=~fastapi+~websockets+~httpx
@@ -63,12 +68,15 @@ ENV LC_ALL zh_CN.UTF-8
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
-RUN apt update && apt install git -y && pip install playwright && playwright install chromium && playwright install-deps
+# 安装必要依赖（git、bzip2、playwright）
+RUN apt update && apt install git bzip2 -y && pip install playwright && playwright install chromium && playwright install-deps
 
-#COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp
+# 安装phantomjs（maimaiDX依赖）
+COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp
 
-#RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
+RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
+# 安装whl包
 COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
 
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
