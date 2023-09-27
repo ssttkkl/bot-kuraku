@@ -2430,7 +2430,7 @@ strenum = "^0.4.8"
 [package.source]
 type = "git"
 url = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git"
-reference = "HEAD"
+reference = "main"
 resolved_reference = "006984ddc25c19d6b5baa65c22f8f08acca03349"
 
 [[package]]
@@ -4010,4 +4010,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f366e74cad7178eb468a206d6fb0d5a7fdf1a21115bc57658a6b7bf02bd30c7b"
+content-hash = "9f483a4cc63ea8de7562bdf01fc1d35f8861eacb3373823c534b6bdde87f014c"
