@@ -2417,17 +2417,21 @@ name = "nonebot-plugin-send-anything-anywhere"
 version = "0.3.0"
 description = "An adaptor for nonebot2 adaptors"
 optional = false
-python-versions = ">=3.8,<4.0"
-files = [
-    {file = "nonebot_plugin_send_anything_anywhere-0.3.0-py3-none-any.whl", hash = "sha256:30ed3346e9acd0b80f7be5306b70f581d6a20f90388e46ccc984303d4c4449be"},
-    {file = "nonebot_plugin_send_anything_anywhere-0.3.0.tar.gz", hash = "sha256:1ec98b48c842cdc656fbc9d90ee44a60eb77761d94843cf03cc1327f1b04773c"},
-]
+python-versions = "^3.8"
+files = []
+develop = false
 
 [package.dependencies]
-anyio = ">=3.6.2,<4.0.0"
-nonebot2 = ">=2.0.0,<3.0.0"
-pydantic = ">=1.10.5,<2.0.0"
-strenum = ">=0.4.8,<0.5.0"
+anyio = "^3.6.2"
+nonebot2 = "^2.0.0"
+pydantic = "^1.10.5"
+strenum = "^0.4.8"
+
+[package.source]
+type = "git"
+url = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git"
+reference = "HEAD"
+resolved_reference = "006984ddc25c19d6b5baa65c22f8f08acca03349"
 
 [[package]]
 name = "nonebot-plugin-session"
@@ -4006,4 +4010,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "a9fa807dc5255d0058569912eaf1ebae5b713f50e330c6176475f9b6dae57c70"
+content-hash = "f366e74cad7178eb468a206d6fb0d5a7fdf1a21115bc57658a6b7bf02bd30c7b"
