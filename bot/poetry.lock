@@ -2305,13 +2305,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.3"
+version = "0.2.4"
 description = "NoneBot2 雀魂信息查询插件"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.3-py3-none-any.whl", hash = "sha256:c2d1e3c9f62f536ffd20bf02a5c76a5b62dff1c89949aa74b8eef83f19a7eba0"},
-    {file = "nonebot_plugin_majsoul-0.2.3.tar.gz", hash = "sha256:c9e761c80f2011f6dd22f8e8c2403d1ca64af7e8c38e495885e88d39aee82fd2"},
+    {file = "nonebot_plugin_majsoul-0.2.4-py3-none-any.whl", hash = "sha256:19a19b208cc5c56e93707351206969f98ce3c58f82d872d7a65184ef1c338526"},
+    {file = "nonebot_plugin_majsoul-0.2.4.tar.gz", hash = "sha256:90ea7728c9744d23c29599fe4c38f4c6a69e2969b24c2400318a2b3ff4e9eccb"},
 ]
 
 [package.dependencies]
@@ -3456,13 +3456,13 @@ Pillow = "*"
 
 [[package]]
 name = "tensoul"
-version = "0.1.5"
+version = "0.1.6"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "tensoul-0.1.5-py3-none-any.whl", hash = "sha256:9c8010c7c5494e2651e4eaff7d903dd7106891eb74c86f451105790b9d0d5fb2"},
-    {file = "tensoul-0.1.5.tar.gz", hash = "sha256:f7bec372d254ba211cf6c72450bdbf08a246afac27dd895f995b72b0c5d09366"},
+    {file = "tensoul-0.1.6-py3-none-any.whl", hash = "sha256:c8fec024220fffb3bd54fdc787cc047eb79f5d2c3daa0b12a2e6d4ac7e618cb5"},
+    {file = "tensoul-0.1.6.tar.gz", hash = "sha256:f6e5753160584589cc41a75a3fde47c478d19bc381f4146f64f43c47a1f33d27"},
 ]
 
 [package.dependencies]
@@ -4006,4 +4006,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "e27b78df78ee3fbbc483fa4d7dcc3970dac9c8a0882b8eaa1e3bb057bee8c15c"
+content-hash = "a9fa807dc5255d0058569912eaf1ebae5b713f50e330c6176475f9b6dae57c70"
