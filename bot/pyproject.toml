@@ -32,7 +32,7 @@ nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
 nonebot-plugin-autoreply = ">=0.2.3"
 nonebot-plugin-apscheduler = ">=0.2.0"
-nonebot-plugin-send-anything-anywhere = { git = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git" }
+nonebot-plugin-send-anything-anywhere = { git = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git", branch = "main" }
 tatarubot2 = ">=0.1.16"
 nonebot-plugin-error-alert = ">=0.2.0"
 nonebot-plugin-follow-withdraw = ">=0.2.0"
