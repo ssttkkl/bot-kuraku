@@ -66,8 +66,8 @@ ENV LC_ALL zh_CN.UTF-8
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
-# 安装必要依赖（git、bzip2、playwright）
-RUN apt update && apt install git bzip2 -y && pip install playwright && playwright install chromium && playwright install-deps
+# 安装必要依赖（git、gcc、bzip2、playwright）
+RUN apt update && apt install git gcc bzip2 -y && pip install playwright && playwright install chromium && playwright install-deps
 
 # 安装phantomjs（maimaiDX依赖）
 COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp

@@ -14,14 +14,14 @@ services:
     volumes:
       - ./.env.prod:/app/.env.prod
 
-  bot-all4one:
-    image: "ssttkkl/bot-kuraku-all4one:latest"
-    container_name: "bot-all4one"
-    environment:
-      - "HOST=0.0.0.0"
-      - "PORT=8080"
-    volumes:
-      - ./.env.all4one.prod:/app/.env.prod
+#  bot-all4one:
+#    image: "ssttkkl/bot-kuraku-all4one:latest"
+#    container_name: "bot-all4one"
+#    environment:
+#      - "HOST=0.0.0.0"
+#      - "PORT=8080"
+#    volumes:
+#      - ./.env.all4one.prod:/app/.env.prod
 
   bot-postgres:
     image: "postgres:15"
