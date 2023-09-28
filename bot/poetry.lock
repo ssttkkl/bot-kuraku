@@ -2008,6 +2008,25 @@ nonebot2 = ">=2.1.0,<3.0.0"
 typing-extensions = ">=4.0.0,<5.0.0"
 
 [[package]]
+name = "nonebot-adapter-onebot-pretender"
+version = "0.1.0"
+description = ""
+optional = false
+python-versions = "^3.8"
+files = []
+develop = false
+
+[package.dependencies]
+nonebot-adapter-onebot = "^2.3.0"
+nonebot2 = "^2.1.0"
+
+[package.source]
+type = "git"
+url = "https://github.com/ssttkkl/nonebot-adapter-onebot-pretender.git"
+reference = "dev"
+resolved_reference = "5c0c49126e26a0bb5cc527486def42e5b3cf8384"
+
+[[package]]
 name = "nonebot-adapter-qqguild"
 version = "0.3.0"
 description = "QQ Guild adapter for nonebot2"
@@ -4010,4 +4029,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "9f483a4cc63ea8de7562bdf01fc1d35f8861eacb3373823c534b6bdde87f014c"
+content-hash = "cfb4d475b026e802a27cf5af3e351bbbd5503d68afff53196b13c9989b3d40d1"
