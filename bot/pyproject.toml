@@ -38,6 +38,8 @@ tatarubot2 = ">=0.1.16"
 nonebot-plugin-error-alert = ">=0.2.0"
 nonebot-plugin-follow-withdraw = ">=0.2.0"
 nonebot-plugin-htmlrender = ">=0.2.2"
+nonebot-plugin-githubcard = ">=0.1.5"
+nonebot-plugin-ncm = "1.6.6"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
@@ -45,7 +47,7 @@ plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "no
     "nonebot_plugin_autoreply", "nonebot_plugin_error_alert", "nonebot_plugin_follow_withdraw",
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke",
     "nonebot_plugin_nagabus",
-    "maimaiDX", "tatarubot2"]
+    "maimaiDX", "tatarubot2", "nonebot_plugin_githubcard", "nonebot_plugin_ncm"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
