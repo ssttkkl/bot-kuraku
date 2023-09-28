@@ -19,6 +19,7 @@ nonebot-adapter-kaiheila = ">=0.2.6"
 nonebot-adapter-telegram = ">=0.1.0b13"
 nonebot-adapter-console = ">=0.4.0"
 nonebot-adapter-red = ">=0.5.0"
+nonebot-adapter-onebot-pretender = { git = "https://github.com/ssttkkl/nonebot-adapter-onebot-pretender.git", branch = "dev" }
 nonebot-plugin-datastore = {extras = ["cli"], version = "^1.1.1"}
 nonebot-plugin-escape-url = ">=0.1.0"
 nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.3"

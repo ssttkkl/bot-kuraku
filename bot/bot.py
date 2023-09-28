@@ -2,6 +2,15 @@
 # -*- coding: utf-8 -*-
 
 import nonebot
+
+# 初始化nonebot
+nonebot.init()
+app = nonebot.get_asgi()
+
+from nonebot_adapter_onebot_pretender import init_onebot_pretender, create_ob11_adapter_pretender
+
+init_onebot_pretender()
+
 from nonebot.adapters.red import Adapter as RedAdapter
 from nonebot.adapters.kaiheila import Adapter as KaiheilaAdapter
 from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
@@ -9,13 +18,9 @@ from nonebot.adapters.onebot.v12 import Adapter as ONEBOT_V12Adapter
 from nonebot.adapters.qqguild import Adapter as QQGuildAdapter
 from nonebot.adapters.telegram import Adapter as TelegramAdapter
 
-# 初始化nonebot
-nonebot.init()
-app = nonebot.get_asgi()
-
 # 注册adapter
 driver = nonebot.get_driver()
-driver.register_adapter(RedAdapter)
+driver.register_adapter(create_ob11_adapter_pretender(RedAdapter))
 driver.register_adapter(ONEBOT_V11Adapter)
 driver.register_adapter(ONEBOT_V12Adapter)
 driver.register_adapter(QQGuildAdapter)
