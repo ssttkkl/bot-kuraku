@@ -19,7 +19,7 @@ nonebot-adapter-kaiheila = ">=0.2.6"
 nonebot-adapter-telegram = ">=0.1.0b13"
 nonebot-adapter-console = ">=0.4.0"
 nonebot-adapter-red = ">=0.5.0"
-nonebot-adapter-onebot-pretender = { git = "https://github.com/ssttkkl/nonebot-adapter-onebot-pretender.git", branch = "dev" }
+nonebot-adapter-onebot-pretender = "^0.1.0"
 nonebot-plugin-datastore = {extras = ["cli"], version = "^1.1.1"}
 nonebot-plugin-escape-url = ">=0.1.0"
 nonebot-plugin-gocqhttp-cross-machine-upload-file = ">=0.1.3"
@@ -47,7 +47,7 @@ plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "no
     "nonebot_plugin_autoreply", "nonebot_plugin_error_alert", "nonebot_plugin_follow_withdraw",
     "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke",
     "nonebot_plugin_nagabus",
-    "maimaiDX", "tatarubot2", "nonebot_plugin_githubcard", "nonebot_plugin_ncm"]
+    "maimaiDX", "tatarubot2", "nonebot_plugin_githubcard", "nonebot-plugin-ncm"]
 
 [build-system]
 requires = ["poetry_core>=1.0.0"]
