@@ -1528,6 +1528,7 @@ optional = false
 python-versions = "*"
 files = [
     {file = "mahjong-utils-0.5.1.tar.gz", hash = "sha256:c31aea0de84b81e8413a58c8b189b326f34a2b4563e751033e7c5a9b6a1b30b5"},
+    {file = "mahjong_utils-0.5.1-py3-none-macosx_10_9_universal2.whl", hash = "sha256:076a411a18ed96a801cac81e6f7bb7153ce231f742db26da5096067ff92efb64"},
     {file = "mahjong_utils-0.5.1-py3-none-macosx_11_7_x86_64.whl", hash = "sha256:9cf1330957fedbc991b9538ee8e10cbbb6a91cf48eb3a2ff5ec000d539eabe22"},
     {file = "mahjong_utils-0.5.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:a97f6e54ff5b21e3efa1c9ae45f175f2c19134779ffd8c28c4c24c7ca7bbfe9b"},
     {file = "mahjong_utils-0.5.1-py3-none-win_amd64.whl", hash = "sha256:5ae0dbcdb48f537cd4069ec7ee8858eb1a85734c788be00dd5309a77271dc2b9"},
@@ -2024,7 +2025,7 @@ nonebot2 = "^2.1.0"
 type = "git"
 url = "https://github.com/ssttkkl/nonebot-adapter-onebot-pretender.git"
 reference = "dev"
-resolved_reference = "b1c9fde5e225f8b7e291b7f261f193adbedccf0a"
+resolved_reference = "5558ab3996a5d0b34b9671840548a8b0033ad152"
 
 [[package]]
 name = "nonebot-adapter-qqguild"
