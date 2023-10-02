@@ -1847,12 +1847,12 @@ files = [
 
 [[package]]
 name = "ms-api"
-version = "0.10.226.post2"
+version = "0.10.275"
 description = "Python wrapper for the Mahjong Soul (Majsoul) Protobuf objects. It allows to use their API."
 optional = false
 python-versions = "*"
 files = [
-    {file = "ms_api-0.10.226.post2.tar.gz", hash = "sha256:3c62bc058b2bd2e95080ee95048e5938e075c9b4ff085ed4f721a76b714afb9a"},
+    {file = "ms_api-0.10.275.tar.gz", hash = "sha256:9a2b9cc438c904350f39cec2ceee67dd638daf2890bb7e43e29c689d2c0a5c23"},
 ]
 
 [package.dependencies]
@@ -2114,18 +2114,19 @@ unqlite = ">=0.9.6,<0.10.0"
 
 [[package]]
 name = "nonebot-adapter-qqguild"
-version = "0.3.0"
+version = "0.4.0"
 description = "QQ Guild adapter for nonebot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_adapter_qqguild-0.3.0-py3-none-any.whl", hash = "sha256:31fffc36c1f2e936592e0e92cefe64c5ebfb19a4b9b339fbb8144fedcc8cfe38"},
-    {file = "nonebot_adapter_qqguild-0.3.0.tar.gz", hash = "sha256:c78d9935f5f7c6129c7bc4a531c1da9b02947be2859c20fc61ed6899c2d96fe3"},
+    {file = "nonebot_adapter_qqguild-0.4.0-py3-none-any.whl", hash = "sha256:991480cb8c931d540f4db439a9a0f71fc92d7585ecbab292e5d4643ef2535402"},
+    {file = "nonebot_adapter_qqguild-0.4.0.tar.gz", hash = "sha256:481802ad9dc5254ef555a47ed2737d9027ef5eb9743d28775052874b870ca15e"},
 ]
 
 [package.dependencies]
 nonebot2 = ">=2.1.0,<3.0.0"
 pydantic = ">=1.9.0,<2.0.0"
+typing-extensions = ">=4.4.0,<5.0.0"
 
 [[package]]
 name = "nonebot-adapter-red"
@@ -2832,13 +2833,13 @@ deprecated = "*"
 
 [[package]]
 name = "platformdirs"
-version = "3.10.0"
+version = "3.11.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "platformdirs-3.10.0-py3-none-any.whl", hash = "sha256:d7c24979f292f916dc9cbf8648319032f551ea8c49a4c9bf2fb556a02070ec1d"},
-    {file = "platformdirs-3.10.0.tar.gz", hash = "sha256:b45696dab2d7cc691a3226759c0d3b00c47c8b6e293d96f6436f733303f77f6d"},
+    {file = "platformdirs-3.11.0-py3-none-any.whl", hash = "sha256:e9d171d00af68be50e9202731309c4e658fd8bc76f55c11c7dd760d023bda68e"},
+    {file = "platformdirs-3.11.0.tar.gz", hash = "sha256:cf8ee52a3afdb965072dcc652433e0c7e3e40cf5ea1477cd4b3b1d2eb75495b3"},
 ]
 
 [package.extras]
@@ -3307,25 +3308,25 @@ testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jar
 
 [[package]]
 name = "setuptools-scm"
-version = "8.0.3"
+version = "8.0.4"
 description = "the blessed package to manage your versions by scm tags"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "setuptools-scm-8.0.3.tar.gz", hash = "sha256:0169fd70197efda2f8c4d0b2a7a3d614431b488116f37b79d031e9e7ec884d8c"},
-    {file = "setuptools_scm-8.0.3-py3-none-any.whl", hash = "sha256:813822234453438a13c78d05c8af29918fbc06f88efb33d38f065340bbb48c39"},
+    {file = "setuptools-scm-8.0.4.tar.gz", hash = "sha256:b5f43ff6800669595193fd09891564ee9d1d7dcb196cab4b2506d53a2e1c95c7"},
+    {file = "setuptools_scm-8.0.4-py3-none-any.whl", hash = "sha256:b47844cd2a84b83b3187a5782c71128c28b4c94cad8bfb871da2784a5cb54c4f"},
 ]
 
 [package.dependencies]
 packaging = ">=20"
 setuptools = "*"
 tomli = {version = ">=1", markers = "python_version < \"3.11\""}
-typing-extensions = {version = "*", markers = "python_version < \"3.11\""}
+typing-extensions = "*"
 
 [package.extras]
 docs = ["entangled-cli[rich]", "mkdocs", "mkdocs-entangled-plugin", "mkdocs-material", "mkdocstrings[python]", "pygments"]
 rich = ["rich"]
-test = ["pytest", "rich", "virtualenv (>20)"]
+test = ["build", "pytest", "rich", "wheel"]
 
 [[package]]
 name = "shortuuid"
@@ -3724,13 +3725,13 @@ Cython = "*"
 
 [[package]]
 name = "urllib3"
-version = "2.0.5"
+version = "2.0.6"
 description = "HTTP library with thread-safe connection pooling, file post, and more."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "urllib3-2.0.5-py3-none-any.whl", hash = "sha256:ef16afa8ba34a1f989db38e1dbbe0c302e4289a47856990d0682e374563ce35e"},
-    {file = "urllib3-2.0.5.tar.gz", hash = "sha256:13abf37382ea2ce6fb744d4dad67838eec857c9f4f57009891805e0b5e123594"},
+    {file = "urllib3-2.0.6-py3-none-any.whl", hash = "sha256:7a7c7003b000adf9e7ca2a377c9688bbc54ed41b985789ed576570342a375cd2"},
+    {file = "urllib3-2.0.6.tar.gz", hash = "sha256:b19e1a85d206b56d7df1d5e683df4a7725252a964e3993648dd0fb5a1c157564"},
 ]
 
 [package.extras]
