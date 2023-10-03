@@ -121,18 +121,18 @@ speedups = ["Brotli", "aiodns", "cchardet"]
 
 [[package]]
 name = "aiohttp-socks"
-version = "0.8.3"
+version = "0.8.4"
 description = "Proxy connector for aiohttp"
 optional = false
 python-versions = "*"
 files = [
-    {file = "aiohttp_socks-0.8.3-py3-none-any.whl", hash = "sha256:04bed72d21561f5ae8199da1cf845bede27c6b6ba42a0ab7e8f71f7e00e9a23a"},
-    {file = "aiohttp_socks-0.8.3.tar.gz", hash = "sha256:6aab528f669e0873018fd37773b833a2e2ba284243be672817fa401bc7941ec6"},
+    {file = "aiohttp_socks-0.8.4-py3-none-any.whl", hash = "sha256:74b21105634ed31d56ed6fee43701ca16218b53475e606d56950a4d17e8290ea"},
+    {file = "aiohttp_socks-0.8.4.tar.gz", hash = "sha256:6b611d4ce838e9cf2c2fed5e0dba447cc84824a6cba95dc5747606201da46cb4"},
 ]
 
 [package.dependencies]
 aiohttp = ">=2.3.2"
-python-socks = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
+python-socks = {version = ">=2.4.3,<3.0.0", extras = ["asyncio"]}
 
 [[package]]
 name = "aiosignal"
