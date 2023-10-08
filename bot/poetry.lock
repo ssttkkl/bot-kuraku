@@ -2130,13 +2130,13 @@ typing-extensions = ">=4.4.0,<5.0.0"
 
 [[package]]
 name = "nonebot-adapter-red"
-version = "0.5.1"
+version = "0.5.2"
 description = "Red Protocol Adapter for Nonebot2"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_adapter_red-0.5.1-py3-none-any.whl", hash = "sha256:57d41547f4587cc140641cfb361766a34bde31b593690bf15841ad8cfaf3362b"},
-    {file = "nonebot_adapter_red-0.5.1.tar.gz", hash = "sha256:12dde60000f3827f1f9d2939ec71ba6fe7c9b71cbf04266612db10ab992bded9"},
+    {file = "nonebot_adapter_red-0.5.2-py3-none-any.whl", hash = "sha256:fb0743411836f2d3351575e3f75f78c80fb6c8c0fe1b71256369cc737fe595ad"},
+    {file = "nonebot_adapter_red-0.5.2.tar.gz", hash = "sha256:11467b509ef75f7d920a0fe870287a9fea6fbe3a7ce6903eee287f63d893019d"},
 ]
 
 [package.dependencies]
@@ -2311,13 +2311,13 @@ nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-githubcard"
-version = "0.1.6"
+version = "0.1.9"
 description = "检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_githubcard-0.1.6-py3-none-any.whl", hash = "sha256:c54641ef012ef7cdfc161fb083a57b8b3f233fc19539b7f8136b39a6d4f84ebe"},
-    {file = "nonebot_plugin_githubcard-0.1.6.tar.gz", hash = "sha256:27d6c2aaedccb52edd80dd102d3c1f2716d01f870521bb74d61c4876ce376308"},
+    {file = "nonebot_plugin_githubcard-0.1.9-py3-none-any.whl", hash = "sha256:7f0725e560e624b5634d51b2ac2ffca9a44806e45adee3e67c9ceeb57e467a06"},
+    {file = "nonebot_plugin_githubcard-0.1.9.tar.gz", hash = "sha256:a981eede386e1aa20fe10e9bfea2f935927aac7fcd6bcc170299e4005b2bc09b"},
 ]
 
 [package.dependencies]
@@ -2473,13 +2473,13 @@ typing-extensions = ">=4.6.2"
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "0.5.1"
+version = "0.5.2"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "nonebot_plugin_picstatus-0.5.1-py3-none-any.whl", hash = "sha256:ecdbc035efb6fe3a368a501ad65ebc100b4e6c34fb4ec95e7148716258796ac7"},
-    {file = "nonebot_plugin_picstatus-0.5.1.tar.gz", hash = "sha256:a30ccea7e0f2955db18bebdaa8495efe343ed2fde67399ecf7769b89a011ff40"},
+    {file = "nonebot_plugin_picstatus-0.5.2-py3-none-any.whl", hash = "sha256:21519a2bced11762749b5488369bd0eab9631c5c470a3824be614ac85b2079ee"},
+    {file = "nonebot_plugin_picstatus-0.5.2.tar.gz", hash = "sha256:72568bcf1a6e0ee37f06f99a55b3fa12b4e5fa6bfaa754e7a67f5b7f9b2fe50f"},
 ]
 
 [package.dependencies]
