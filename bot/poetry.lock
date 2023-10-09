@@ -2311,13 +2311,13 @@ nonebot2 = ">=2.0.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-githubcard"
-version = "0.1.9"
+version = "0.2.1"
 description = "检测GitHub仓库链接并自动发送卡片信息（适用于Onebot V11）"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_githubcard-0.1.9-py3-none-any.whl", hash = "sha256:7f0725e560e624b5634d51b2ac2ffca9a44806e45adee3e67c9ceeb57e467a06"},
-    {file = "nonebot_plugin_githubcard-0.1.9.tar.gz", hash = "sha256:a981eede386e1aa20fe10e9bfea2f935927aac7fcd6bcc170299e4005b2bc09b"},
+    {file = "nonebot_plugin_githubcard-0.2.1-py3-none-any.whl", hash = "sha256:5b42d52f176088daa46a0672eb74ded9afb7fe0cd43e0b0803ff337e7dfb8985"},
+    {file = "nonebot_plugin_githubcard-0.2.1.tar.gz", hash = "sha256:d220bffa7a9f1bfa91254112d344e16c82d270398ffd24ac8cb79413e84ecae0"},
 ]
 
 [package.dependencies]
