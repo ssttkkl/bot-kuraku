@@ -233,13 +233,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.7.25"
+version = "1.7.26"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.7.25-py3-none-any.whl", hash = "sha256:78f8d4c5cf0b45e9aab07c1fdfd62fbe98e30b6895e8de2335b85d1a382fb9a8"},
-    {file = "arclet_alconna-1.7.25.tar.gz", hash = "sha256:40bcf1d1606777ce43d624ac88ecf966c7f1ceec874748c38e2ed2044464ade9"},
+    {file = "arclet_alconna-1.7.26-py3-none-any.whl", hash = "sha256:1a602010c248c66db3839eaceaa973df6d4886d3cf98a511ee312addd9d3dfce"},
+    {file = "arclet_alconna-1.7.26.tar.gz", hash = "sha256:a39d05efdd469bd09a61eaffe04ae35979d0cd54fc135fe6f9d659ba23f06961"},
 ]
 
 [package.dependencies]
@@ -2537,7 +2537,7 @@ nonebot2 = ">=2.0.0rc2,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-send-anything-anywhere"
-version = "0.3.1"
+version = "0.3.2"
 description = "An adaptor for nonebot2 adaptors"
 optional = false
 python-versions = "^3.8"
@@ -2554,7 +2554,7 @@ strenum = "^0.4.8"
 type = "git"
 url = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git"
 reference = "main"
-resolved_reference = "5483fd4b55cb525894ab5bc71e82bec6b9c83c9a"
+resolved_reference = "ca893e2d2330fb55106e8ec0dbd4e8d219a0aa46"
 
 [[package]]
 name = "nonebot-plugin-session"
