@@ -2554,7 +2554,7 @@ strenum = "^0.4.8"
 type = "git"
 url = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git"
 reference = "main"
-resolved_reference = "b69940542c2450f10d55d1ab6b7aaa23d4a6362c"
+resolved_reference = "14f386641d706e9d4a467e352a415e77c418d81d"
 
 [[package]]
 name = "nonebot-plugin-session"
