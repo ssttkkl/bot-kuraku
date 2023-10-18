@@ -31,6 +31,7 @@ nonebot-plugin-nagabus = ">=0.2.0.post1"
 nonebot-plugin-access-control = ">=0.5.1"
 nonebot_plugin_picstatus = ">=0.3.0"
 nonebot-plugin-revoke = ">=0.1.0"
+nonebot-plugin-session = "^0.1.0"
 nonebot-plugin-autoreply = ">=0.2.3"
 nonebot-plugin-apscheduler = ">=0.2.0"
 nonebot-plugin-send-anything-anywhere = { git = "https://github.com/MountainDash/nonebot-plugin-send-anything-anywhere.git", branch = "main" }
