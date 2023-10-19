@@ -233,13 +233,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.7.30"
+version = "1.7.31"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.7.30-py3-none-any.whl", hash = "sha256:1b7a33a4459f735165ffc83ff1448c949b5c98ce72800140af704193a640ec9e"},
-    {file = "arclet_alconna-1.7.30.tar.gz", hash = "sha256:1a14a03d35c8f01dad8dac799f6584d627afb6f73efaf2a1590c346e6d752ee4"},
+    {file = "arclet_alconna-1.7.31-py3-none-any.whl", hash = "sha256:cee463ab045a7fcc262be82ca761ce8f1e4fb6b8369f6ac4f9d1a17e0de0e917"},
+    {file = "arclet_alconna-1.7.31.tar.gz", hash = "sha256:44d52c86709b76375fe2499f8130b52cb6dbef54aeb119e526b9aa591fd930ad"},
 ]
 
 [package.dependencies]
@@ -2492,13 +2492,13 @@ psutil = ">=5.9.2"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.0.4"
+version = "2.0.5"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_pixivbot-2.0.4-py3-none-any.whl", hash = "sha256:67c469666520ff6a890a700a901732883a0b8d78173c413278fec475b75f0675"},
-    {file = "nonebot_plugin_pixivbot-2.0.4.tar.gz", hash = "sha256:78f5d6c96656b1b8da8d1b198163a6a96cc7547a66c75e6f7c90b053502fb5bf"},
+    {file = "nonebot_plugin_pixivbot-2.0.5-py3-none-any.whl", hash = "sha256:c246790f43ea2e118c7973b79be80aa7cf247f10733d65b29bfbb3ae21f845c6"},
+    {file = "nonebot_plugin_pixivbot-2.0.5.tar.gz", hash = "sha256:7b2ea3966369ad61bb47c68632607f1bc5dfd526ef5305c38e250633337c52f4"},
 ]
 
 [package.dependencies]
@@ -2509,8 +2509,9 @@ frozendict = ">=2.3.4"
 lazy = ">=1.4,<2.0"
 nonebot-plugin-access-control = ">=0.5.5"
 nonebot_plugin_apscheduler = ">=0.3.0"
+nonebot-plugin-localstore = ">=0.5.1,<0.6.0"
 nonebot-plugin-send-anything-anywhere = ">=0.3.0"
-nonebot-plugin-session = ">=0.1.0"
+nonebot-plugin-session = ">=0.1.0,<0.3.0"
 nonebot2 = ">=2.0.0,<3.0.0"
 numpy = ">=1.23.1"
 Pillow = ">=9.2.0,<10.0.0"
@@ -3065,13 +3066,13 @@ files = [
 
 [[package]]
 name = "pymdown-extensions"
-version = "10.3"
+version = "10.3.1"
 description = "Extension pack for Python Markdown."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "pymdown_extensions-10.3-py3-none-any.whl", hash = "sha256:77a82c621c58a83efc49a389159181d570e370fff9f810d3a4766a75fc678b66"},
-    {file = "pymdown_extensions-10.3.tar.gz", hash = "sha256:94a0d8a03246712b64698af223848fd80aaf1ae4c4be29c8c61939b0467b5722"},
+    {file = "pymdown_extensions-10.3.1-py3-none-any.whl", hash = "sha256:8cba67beb2a1318cdaf742d09dff7c0fc4cafcc290147ade0f8fb7b71522711a"},
+    {file = "pymdown_extensions-10.3.1.tar.gz", hash = "sha256:f6c79941498a458852853872e379e7bab63888361ba20992fc8b4f8a9b61735e"},
 ]
 
 [package.dependencies]
@@ -3465,13 +3466,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.17"
+version = "0.1.18"
 description = ""
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.17-py3-none-any.whl", hash = "sha256:5b0a48948c9744956961018c99b22e6b376e380d919218e6a7674a2eac3a86c5"},
-    {file = "ssttkkl_nonebot_utils-0.1.17.tar.gz", hash = "sha256:92dac4c7a7356d63b0540dfc9410dbe57ba041ab1f3dbfb497a6e2dc1ee27882"},
+    {file = "ssttkkl_nonebot_utils-0.1.18-py3-none-any.whl", hash = "sha256:470ad2277d01e508be9772ea908baa1bed9f91479c4b62c4340ff6bcca89e68d"},
+    {file = "ssttkkl_nonebot_utils-0.1.18.tar.gz", hash = "sha256:855fa37ec8ee9b45d715f8ba920a229653d3d5b29486ac49b5e3bf30f31459c3"},
 ]
 
 [package.dependencies]
