@@ -40,11 +40,6 @@ jobs:
         poetry update
       working-directory: ./bot
 
-#    - name: Poetry Update (all4one)
-#      run: |
-#        poetry update
-#      working-directory: ./all4one
-
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
@@ -57,7 +52,6 @@ jobs:
     strategy:
       matrix:
         image: ['bot']
-#        image: ['bot', 'all4one']
 
     runs-on: ubuntu-latest
 
@@ -80,9 +74,7 @@ jobs:
       # https://github.com/sigstore/cosign-installer
       - name: Install cosign
         if: github.event_name != 'pull_request'
-        uses: sigstore/cosign-installer@7e0881f8fe90b25e305bbf0309761e9314607e25
-        with:
-          cosign-release: 'v1.9.0'
+        uses: sigstore/cosign-installer@v3.1.1
           
       # Login against a Docker registry except on PR
       # https://github.com/docker/login-action
