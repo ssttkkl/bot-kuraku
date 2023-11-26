@@ -8,7 +8,7 @@ import nonebot
 from nonebot import logger, Bot, Adapter
 from nonebot.internal.adapter import Event
 from nonebot.plugin import PluginMetadata
-from nonebot_plugin_access_control.service import get_plugin_service
+from nonebot_plugin_access_control_api.service import get_plugin_service
 
 from .config import help_conf
 from .utils import default_cmd_start
