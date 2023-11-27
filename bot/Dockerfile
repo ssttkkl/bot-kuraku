@@ -53,10 +53,7 @@ RUN wget https://vote.yuzuai.xyz/download/static.zip && unzip -d ./maimaiDX stat
 RUN pdm build
 
 # ========== main ==========
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
-
-ENV APP_MODULE=bot:app
-ENV MAX_WORKERS=1
+FROM python:3.11-slim
 
 ENV TZ=Asia/Shanghai
 
@@ -84,3 +81,5 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt && pip install
 COPY ./ /app/
 
 WORKDIR /app
+
+ENTRYPOINT ["bash", "entry.sh"]
