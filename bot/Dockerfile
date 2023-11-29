@@ -67,12 +67,26 @@ ENV LC_ALL zh_CN.UTF-8
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 
 # 安装必要依赖（git、gcc、bzip2、playwright）
-RUN apt update && apt install git gcc bzip2 -y && pip install playwright && playwright install chromium && playwright install-deps
+RUN apt update\
+ && apt install git gcc bzip2 -y\
+ && pip install playwright\
+ && playwright install chromium\
+ && playwright install-deps
+
+# 安装JDK17（mahjong-utils依赖）
+RUN apt install -y wget apt-transport-https\
+ && mkdir -p /etc/apt/keyrings\
+ && wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | tee /etc/apt/keyrings/adoptium.asc\
+ && echo "deb [signed-by=/etc/apt/keyrings/adoptium.asc] https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list\
+ && apt update\
+ && apt install temurin-17-jdk
 
 # 安装phantomjs（maimaiDX依赖）
 COPY --from=maimaidx-stage /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 /tmp
 
-RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2 && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
+RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2\
+ && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs\
+ && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
 # 安装whl包
 COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
