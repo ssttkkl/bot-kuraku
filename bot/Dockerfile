@@ -65,6 +65,7 @@ ENV LANGUAGE zh_CN.UTF-8
 ENV LC_ALL zh_CN.UTF-8
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
+WORKDIR /app
 
 # 安装必要依赖（git、gcc、bzip2、playwright）
 RUN apt update\
@@ -88,6 +89,9 @@ RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2\
  && mv /usr/local/phantomjs-2.1.1-linux-x86_64 phantomjs\
  && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
+# 下载mahjong-utils-webapi
+RUN wget https://github.com/ssttkkl/mahjong-utils/releases/download/v0.6.0/mahjong-utils-webapi-all.jar
+
 # 安装whl包
 COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
 
@@ -97,4 +101,3 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt && pip install
 
 COPY ./ /app/
 
-WORKDIR /app
