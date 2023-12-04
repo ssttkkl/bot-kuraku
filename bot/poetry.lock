@@ -1929,13 +1929,13 @@ files = [
 
 [[package]]
 name = "nb-cli"
-version = "1.2.6"
+version = "1.2.7"
 description = "CLI for nonebot2"
 optional = false
 python-versions = ">=3.8, <4.0"
 files = [
-    {file = "nb-cli-1.2.6.tar.gz", hash = "sha256:33ca8ffdb721ea50751c47788789c84cd7594afc888ccfb2439f06ff95cbbd7c"},
-    {file = "nb_cli-1.2.6-py3-none-any.whl", hash = "sha256:2aa52e0d21fb8a5a08662b691fa6cd521c99140aa0e24a81503264129f4b3045"},
+    {file = "nb-cli-1.2.7.tar.gz", hash = "sha256:a868f03c2da9ccdfbdebd067f70c0f8e687ab904aebbea7f3a9a01853705e483"},
+    {file = "nb_cli-1.2.7-py3-none-any.whl", hash = "sha256:574914fa224a25952a6ad60e7165b6208ebd8519d4f91b738f48210febf8b66c"},
 ]
 
 [package.dependencies]
@@ -2807,13 +2807,13 @@ deprecated = "*"
 
 [[package]]
 name = "platformdirs"
-version = "4.0.0"
+version = "4.1.0"
 description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "platformdirs-4.0.0-py3-none-any.whl", hash = "sha256:118c954d7e949b35437270383a3f2531e99dd93cf7ce4dc8340d3356d30f173b"},
-    {file = "platformdirs-4.0.0.tar.gz", hash = "sha256:cb633b2bcf10c51af60beb0ab06d2f1d69064b43abf4c185ca6b28865f3f9731"},
+    {file = "platformdirs-4.1.0-py3-none-any.whl", hash = "sha256:11c8f37bcca40db96d8144522d925583bdb7a31f7b0e37e3ed4318400a8e2380"},
+    {file = "platformdirs-4.1.0.tar.gz", hash = "sha256:906d548203468492d432bcb294d4bc2fff751bf84971fbb2c10918cc206ee420"},
 ]
 
 [package.extras]
@@ -3418,13 +3418,13 @@ sqlcipher = ["sqlcipher3-binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.18"
+version = "0.1.19"
 description = ""
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.18-py3-none-any.whl", hash = "sha256:470ad2277d01e508be9772ea908baa1bed9f91479c4b62c4340ff6bcca89e68d"},
-    {file = "ssttkkl_nonebot_utils-0.1.18.tar.gz", hash = "sha256:855fa37ec8ee9b45d715f8ba920a229653d3d5b29486ac49b5e3bf30f31459c3"},
+    {file = "ssttkkl_nonebot_utils-0.1.19-py3-none-any.whl", hash = "sha256:f074a905c0e7eae9fd168753dd830c395e9e02fa1e39e8f232a41ab19dc6f50b"},
+    {file = "ssttkkl_nonebot_utils-0.1.19.tar.gz", hash = "sha256:3e90165de3d61c9f63031601ce36254d4ef32992625e377e1b7a3530876bad13"},
 ]
 
 [package.dependencies]
@@ -3529,12 +3529,12 @@ typing-extensions = ">=4.4.0"
 
 [[package]]
 name = "tatarubot2"
-version = "0.1.19"
+version = "1.0"
 description = "FF14 bot Tataru"
 optional = false
 python-versions = ">=3.7.3,<4.0.0"
 files = [
-    {file = "tatarubot2-0.1.19.tar.gz", hash = "sha256:0d8f1b2030653b16640be2860d760afd934aad3ae273dadab904543a7b10e06e"},
+    {file = "tatarubot2-1.0.tar.gz", hash = "sha256:041dc8c9b92ec97219f812f6a9804d9a0de351b7d1e1c6515865d19436440d52"},
 ]
 
 [package.dependencies]
