@@ -221,13 +221,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.7.38"
+version = "1.7.39"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.7.38-py3-none-any.whl", hash = "sha256:e2248605bb7425c69a9cbe1e5f797d50945f30f054aaa9af73a237d8307d3432"},
-    {file = "arclet_alconna-1.7.38.tar.gz", hash = "sha256:90af6498993e7bc21223259758a021d811329b341a9add7868b9497705af050b"},
+    {file = "arclet_alconna-1.7.39-py3-none-any.whl", hash = "sha256:7743892bc496cc630c44ed552a68ad9782efa44289362cb07c05bb197f880f89"},
+    {file = "arclet_alconna-1.7.39.tar.gz", hash = "sha256:90b466c8471ef9e10be4053efa19663c6806b521100abdb398abe19dab49b113"},
 ]
 
 [package.dependencies]
@@ -806,13 +806,13 @@ dev = ["PyTest", "PyTest-Cov", "bump2version (<1)", "sphinx (<2)", "tox"]
 
 [[package]]
 name = "distlib"
-version = "0.3.7"
+version = "0.3.8"
 description = "Distribution utilities"
 optional = false
 python-versions = "*"
 files = [
-    {file = "distlib-0.3.7-py2.py3-none-any.whl", hash = "sha256:2e24928bc811348f0feb63014e97aaae3037f2cf48712d51ae61df7fd6075057"},
-    {file = "distlib-0.3.7.tar.gz", hash = "sha256:9dafe54b34a028eafd95039d5e5d4851a13734540f1331060d31c9916e7147a8"},
+    {file = "distlib-0.3.8-py2.py3-none-any.whl", hash = "sha256:034db59a0b96f8ca18035f36290806a9a6e6bd9d1ff91e45a7f172eb17e51784"},
+    {file = "distlib-0.3.8.tar.gz", hash = "sha256:1530ea13e350031b6312d8580ddb6b27a104275a31106523b8f123787f494f64"},
 ]
 
 [[package]]
@@ -845,13 +845,13 @@ test = ["pytest (>=6)"]
 
 [[package]]
 name = "fastapi"
-version = "0.104.1"
+version = "0.105.0"
 description = "FastAPI framework, high performance, easy to learn, fast to code, ready for production"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "fastapi-0.104.1-py3-none-any.whl", hash = "sha256:752dc31160cdbd0436bb93bad51560b57e525cbb1d4bbf6f4904ceee75548241"},
-    {file = "fastapi-0.104.1.tar.gz", hash = "sha256:e5e4540a7c5e1dcfbbcf5b903c234feddcdcd881f191977a1c5dfd917487e7ae"},
+    {file = "fastapi-0.105.0-py3-none-any.whl", hash = "sha256:f19ebf6fdc82a3281d10f2cb4774bdfa90238e3b40af3525a0c09fd08ad1c480"},
+    {file = "fastapi-0.105.0.tar.gz", hash = "sha256:4d12838819aa52af244580675825e750ad67c9df4614f557a769606af902cf22"},
 ]
 
 [package.dependencies]
@@ -1928,13 +1928,13 @@ files = [
 
 [[package]]
 name = "nb-cli"
-version = "1.2.7"
+version = "1.2.8"
 description = "CLI for nonebot2"
 optional = false
 python-versions = ">=3.8, <4.0"
 files = [
-    {file = "nb-cli-1.2.7.tar.gz", hash = "sha256:a868f03c2da9ccdfbdebd067f70c0f8e687ab904aebbea7f3a9a01853705e483"},
-    {file = "nb_cli-1.2.7-py3-none-any.whl", hash = "sha256:574914fa224a25952a6ad60e7165b6208ebd8519d4f91b738f48210febf8b66c"},
+    {file = "nb-cli-1.2.8.tar.gz", hash = "sha256:8e17c73ca494ce16b3a18a18d4d611b5ffb27e37ee3de2c7a510c7e32b7df002"},
+    {file = "nb_cli-1.2.8-py3-none-any.whl", hash = "sha256:080a07c4bb94f93a662844d7f1fe8b9672cb61daf6a9c3ae74bbc42ed17a35a7"},
 ]
 
 [package.dependencies]
@@ -2016,13 +2016,13 @@ typing-extensions = ">=4.0.0,<5.0.0"
 
 [[package]]
 name = "nonebot-adapter-onebot-pretender"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_adapter_onebot_pretender-0.1.0-py3-none-any.whl", hash = "sha256:8f4ddff5d81f48495301e072f3143e20506872d7ccb7a9fc051a866b5a5aa556"},
-    {file = "nonebot_adapter_onebot_pretender-0.1.0.tar.gz", hash = "sha256:672575464cc7fb6d69b4dbab4aba24f932b4c21862c89ead8f2861661e947919"},
+    {file = "nonebot_adapter_onebot_pretender-0.1.1-py3-none-any.whl", hash = "sha256:6068dcf12cf01e8069d3a141805242537c7edc544db2e61ebe29f6a390c512c5"},
+    {file = "nonebot_adapter_onebot_pretender-0.1.1.tar.gz", hash = "sha256:7f80d61d2006b81aaec21d98efd3b5586c8bd6873d5e3ba3d236b6ae44d560c9"},
 ]
 
 [package.dependencies]
@@ -2350,13 +2350,13 @@ tzlocal = ">=4.2"
 
 [[package]]
 name = "nonebot-plugin-nagabus"
-version = "0.3.1"
+version = "0.3.2"
 description = ""
 optional = false
 python-versions = ">=3.9,<4.0"
 files = [
-    {file = "nonebot_plugin_nagabus-0.3.1-py3-none-any.whl", hash = "sha256:b2fe078725097b2475451122a9a6088472f74a933be05e5c1dfe79db8046845d"},
-    {file = "nonebot_plugin_nagabus-0.3.1.tar.gz", hash = "sha256:fb34ac9ed2205e68cae4091222ff2778621a392b8b8c19424b85ee849b728f1d"},
+    {file = "nonebot_plugin_nagabus-0.3.2-py3-none-any.whl", hash = "sha256:450ba4492d328ece1f1fb776c2c8c6b8e7516952ab6d90c01cf1e0f82106c796"},
+    {file = "nonebot_plugin_nagabus-0.3.2.tar.gz", hash = "sha256:da0d163abb86c2c335c406a8ff64d0c59ed98801cb438f26c40e415ceed0993e"},
 ]
 
 [package.dependencies]
@@ -2859,13 +2859,13 @@ tests = ["pytest", "pytest-cov", "pytest-lazy-fixture"]
 
 [[package]]
 name = "prompt-toolkit"
-version = "3.0.41"
+version = "3.0.42"
 description = "Library for building powerful interactive command lines in Python"
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "prompt_toolkit-3.0.41-py3-none-any.whl", hash = "sha256:f36fe301fafb7470e86aaf90f036eef600a3210be4decf461a5b1ca8403d3cb2"},
-    {file = "prompt_toolkit-3.0.41.tar.gz", hash = "sha256:941367d97fc815548822aa26c2a269fdc4eb21e9ec05fc5d447cf09bad5d75f0"},
+    {file = "prompt_toolkit-3.0.42-py3-none-any.whl", hash = "sha256:3b50b5fc50660dc8e39dfe464b170959ad82ff185ffa53bfd3be02222e7156a1"},
+    {file = "prompt_toolkit-3.0.42.tar.gz", hash = "sha256:bfbf7d6ea9744e4ec94c9a69539e8106c77a2a607d728ded87c9182a4aec39be"},
 ]
 
 [package.dependencies]
@@ -3388,8 +3388,8 @@ files = [
 
 [package.dependencies]
 aiosqlite = {version = "*", optional = true, markers = "extra == \"aiosqlite\""}
-greenlet = {version = "!=0.4.17", optional = true, markers = "platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\" or extra == \"asyncio\""}
-typing-extensions = {version = ">=4.2.0", optional = true}
+greenlet = {version = "!=0.4.17", optional = true, markers = "platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\" or extra == \"aiosqlite\""}
+typing-extensions = {version = ">=4.2.0", optional = true, markers = "extra == \"aiosqlite\""}
 
 [package.extras]
 aiomysql = ["aiomysql (>=0.2.0)", "greenlet (!=0.4.17)"]
