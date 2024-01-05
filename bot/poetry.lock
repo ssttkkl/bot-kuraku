@@ -2449,18 +2449,17 @@ sqlite = ["aiosqlite (>=0.19,<1.0)"]
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "1.0.1"
+version = "1.0.2"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "nonebot_plugin_picstatus-1.0.1-py3-none-any.whl", hash = "sha256:9ad3aa7adfea0ce9c70741799255ffd65db743d6cd25d5ef48b65b8fb1fa19e0"},
-    {file = "nonebot_plugin_picstatus-1.0.1.tar.gz", hash = "sha256:bf3bc6cd1277ef40840003aaff703919777c2cd0b72632b94d78c6bf4afef079"},
+    {file = "nonebot_plugin_picstatus-1.0.2-py3-none-any.whl", hash = "sha256:d985890d94131dc8e1fc4308e3027b66d9fa18efb08a2e15edd1f4e85259283e"},
+    {file = "nonebot_plugin_picstatus-1.0.2.tar.gz", hash = "sha256:671ccf26842d1936dd6ccf8e5930332ced3384bbd9f12568d80d37c6c77f7479"},
 ]
 
 [package.dependencies]
 anyio = ">=3.7.0"
-fleep = ">=1.0.1"
 httpx = ">=0.24.1"
 jinja2 = ">=3.1.2"
 nonebot-plugin-alconna = ">=0.34.1"
