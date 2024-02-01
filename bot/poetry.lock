@@ -885,16 +885,6 @@ testing = ["covdefaults (>=2.3)", "coverage (>=7.3.2)", "diff-cover (>=8)", "pyt
 typing = ["typing-extensions (>=4.8)"]
 
 [[package]]
-name = "fleep"
-version = "1.0.1"
-description = "File format determination library"
-optional = false
-python-versions = ">=3.1"
-files = [
-    {file = "fleep-1.0.1.tar.gz", hash = "sha256:c8f62b258ee5364d7f6c1ed1f3f278e99020fc3f0a60a24ad1e10846e31d104c"},
-]
-
-[[package]]
 name = "fonttools"
 version = "4.47.2"
 description = "Tools to manipulate font files"
@@ -2154,19 +2144,18 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.36.0"
+version = "0.36.2"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.36.0-py3-none-any.whl", hash = "sha256:37f8afc272924802fe75146df5f68b44e8e5537420cbb983d2d9d65195e625e7"},
-    {file = "nonebot_plugin_alconna-0.36.0.tar.gz", hash = "sha256:e524fac76ee0f1a08817007e649c2b491b44094e0262a3d36fcef3e1259edfa2"},
+    {file = "nonebot_plugin_alconna-0.36.2-py3-none-any.whl", hash = "sha256:8c7590a72cb05e5a194364436116bf4a3e0f6920bb39796367de8cc92aedb334"},
+    {file = "nonebot_plugin_alconna-0.36.2.tar.gz", hash = "sha256:b706eb26ecb67ae4a46e03ff840eaa804fb12fd25eb6bf3ab1dce5277567395b"},
 ]
 
 [package.dependencies]
 arclet-alconna = ">=1.7.38,<2.0.0"
 arclet-alconna-tools = ">=0.6.7,<0.7.0"
-fleep = ">=1.0.1"
 nepattern = ">=0.5.14,<0.6.0"
 nonebot2 = ">=2.1.0"
 
