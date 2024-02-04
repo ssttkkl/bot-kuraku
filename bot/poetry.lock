@@ -1512,13 +1512,13 @@ mypy = ["mypy"]
 
 [[package]]
 name = "linkify-it-py"
-version = "2.0.2"
+version = "2.0.3"
 description = "Links recognition library with FULL unicode support."
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "linkify-it-py-2.0.2.tar.gz", hash = "sha256:19f3060727842c254c808e99d465c80c49d2c7306788140987a1a7a29b0d6ad2"},
-    {file = "linkify_it_py-2.0.2-py3-none-any.whl", hash = "sha256:a3a24428f6c96f27370d7fe61d2ac0be09017be5190d68d8658233171f1b6541"},
+    {file = "linkify-it-py-2.0.3.tar.gz", hash = "sha256:68cda27e162e9215c17d786649d1da0021a451bdc436ef9e0fa0ba5234b9b048"},
+    {file = "linkify_it_py-2.0.3-py3-none-any.whl", hash = "sha256:6bcbc417b0ac14323382aef5c5192c0075bf8a9d6b41820a2b66371eac6b6d79"},
 ]
 
 [package.dependencies]
@@ -2320,13 +2320,13 @@ python-markdown-math = ">=0.8"
 
 [[package]]
 name = "nonebot-plugin-localstore"
-version = "0.5.1"
+version = "0.5.2"
 description = "Local Storage Support for NoneBot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_localstore-0.5.1-py3-none-any.whl", hash = "sha256:520c4dd42f00495ec8fc458c40c5877bc604556f58147c34c4051860df34575b"},
-    {file = "nonebot_plugin_localstore-0.5.1.tar.gz", hash = "sha256:97491d213d419de3f76f941a8d80ab190aa9828950289ec83402028e0f0892eb"},
+    {file = "nonebot_plugin_localstore-0.5.2-py3-none-any.whl", hash = "sha256:6cd3ee2120918e9fd2af572730aa0612f29d69da22c67bf7297bbdc86b489b57"},
+    {file = "nonebot_plugin_localstore-0.5.2.tar.gz", hash = "sha256:66ac53f954c7f9c4117c3bc472580c018bc83ec0c08bc12c4fd96ce875f8a1e3"},
 ]
 
 [package.dependencies]
