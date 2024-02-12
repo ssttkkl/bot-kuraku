@@ -2160,35 +2160,36 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.36.3"
+version = "0.37.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.36.3-py3-none-any.whl", hash = "sha256:8f26f96c711d3adadc538ebf40d51ba2249c18fe1689bf36baed0e4d1e05246a"},
-    {file = "nonebot_plugin_alconna-0.36.3.tar.gz", hash = "sha256:ed8e4f2fd845d0c3d8becdd68678c203ee76109b9104a3b1c18f63525e85c6d4"},
+    {file = "nonebot_plugin_alconna-0.37.0-py3-none-any.whl", hash = "sha256:6c2858c9d4fc5c1947582e0c5a5600f230bc59f2c80dd84c4ccf4549a82483a9"},
+    {file = "nonebot_plugin_alconna-0.37.0.tar.gz", hash = "sha256:0de29aada79c18e10df074cceae77e77dfc6702a32940396252db57a70b9a108"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.7.42,<2.0.0"
-arclet-alconna-tools = ">=0.6.11,<0.7.0"
-nepattern = ">=0.5.14,<0.6.0"
-nonebot2 = ">=2.1.0"
+arclet-alconna = ">=1.7.43"
+arclet-alconna-tools = ">=0.6.11"
+nepattern = ">=0.5.15"
+nonebot2 = ">=2.2.0"
 
 [[package]]
 name = "nonebot-plugin-apscheduler"
-version = "0.3.0"
+version = "0.4.0"
 description = "APScheduler Support for NoneBot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_apscheduler-0.3.0-py3-none-any.whl", hash = "sha256:ec5e0267293fc9803e543c6086d3e109ac87bf6dccea5473d219cad826238aae"},
-    {file = "nonebot_plugin_apscheduler-0.3.0.tar.gz", hash = "sha256:7c41cc1d49ea6af7c4518c72cd15f8c2f549071b8bc8bfc4b21fbdd0a4875cfd"},
+    {file = "nonebot_plugin_apscheduler-0.4.0-py3-none-any.whl", hash = "sha256:f01bb418a5ecf9f04dcadbbc2ff5ba565a48177eb0a758c8c46b13048ac5680c"},
+    {file = "nonebot_plugin_apscheduler-0.4.0.tar.gz", hash = "sha256:ba91e68809a38e6dbe28906366d47f37f754ded360944b938cd5ac62029a0eb6"},
 ]
 
 [package.dependencies]
 apscheduler = ">=3.7.0,<4.0.0"
-nonebot2 = ">=2.0.0,<3.0.0"
+nonebot2 = ">=2.2.0,<3.0.0"
+pydantic = ">=1.10.0,<2.5.0 || >2.5.0,<2.5.1 || >2.5.1,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-autoreply"
@@ -3680,13 +3681,13 @@ files = [
 
 [[package]]
 name = "tzdata"
-version = "2023.4"
+version = "2024.1"
 description = "Provider of IANA time zone data"
 optional = false
 python-versions = ">=2"
 files = [
-    {file = "tzdata-2023.4-py2.py3-none-any.whl", hash = "sha256:aa3ace4329eeacda5b7beb7ea08ece826c28d761cda36e747cfbf97996d39bf3"},
-    {file = "tzdata-2023.4.tar.gz", hash = "sha256:dd54c94f294765522c77399649b4fefd95522479a664a0cec87f41bebc6148c9"},
+    {file = "tzdata-2024.1-py2.py3-none-any.whl", hash = "sha256:9068bc196136463f5245e51efda838afa15aaeca9903f49050dfa2679db4d252"},
+    {file = "tzdata-2024.1.tar.gz", hash = "sha256:2674120f8d891909751c38abcdfd386ac0a5a1127954fbc332af6b5ceae07efd"},
 ]
 
 [[package]]
