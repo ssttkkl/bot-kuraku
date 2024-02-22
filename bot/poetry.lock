@@ -224,13 +224,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.7.43"
+version = "1.7.44"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.7.43-py3-none-any.whl", hash = "sha256:46c20fd4f1b287fd20f63ba1665f5b3cdc9940495a99752661ad0881b11e9916"},
-    {file = "arclet_alconna-1.7.43.tar.gz", hash = "sha256:26a04f776ebe4f1d8ee9a6746e8fb64259b40217d174e8260dd7a00c9fa8c99c"},
+    {file = "arclet_alconna-1.7.44-py3-none-any.whl", hash = "sha256:e5751a2aa854b7b2c01cac87986ad11b397986a725c9536d5f9ff81a84e85614"},
+    {file = "arclet_alconna-1.7.44.tar.gz", hash = "sha256:9c8a70a3f75e8358fa9c71befd3687c8c9781a19b1d28cb53cbe08fbc36cf720"},
 ]
 
 [package.dependencies]
@@ -2164,17 +2164,17 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.37.0"
+version = "0.37.1"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.37.0-py3-none-any.whl", hash = "sha256:6c2858c9d4fc5c1947582e0c5a5600f230bc59f2c80dd84c4ccf4549a82483a9"},
-    {file = "nonebot_plugin_alconna-0.37.0.tar.gz", hash = "sha256:0de29aada79c18e10df074cceae77e77dfc6702a32940396252db57a70b9a108"},
+    {file = "nonebot_plugin_alconna-0.37.1-py3-none-any.whl", hash = "sha256:fcc46f04ac89bf43730afebd97fa46e5910bc404a9e24cab7950da58be36246d"},
+    {file = "nonebot_plugin_alconna-0.37.1.tar.gz", hash = "sha256:5e9989ee7debd79d61c97aa41c88aac5fe452cc9c47f2d48b829d81d26dfe130"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.7.43"
+arclet-alconna = ">=1.7.44"
 arclet-alconna-tools = ">=0.6.11"
 nepattern = ">=0.5.15"
 nonebot2 = ">=2.2.0"
@@ -2467,13 +2467,13 @@ sqlite = ["aiosqlite (>=0.19,<1.0)"]
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "1.1.0"
+version = "1.1.1"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_picstatus-1.1.0-py3-none-any.whl", hash = "sha256:d473a3e0f7fa2e27c514b1f516ebf43a00b9f6f6352d0f89ca174bd563a321da"},
-    {file = "nonebot_plugin_picstatus-1.1.0.tar.gz", hash = "sha256:b0c4c41ae8c7a5b87bb614eefe016e6135b9900e74a11acd56609ff8681d9739"},
+    {file = "nonebot_plugin_picstatus-1.1.1-py3-none-any.whl", hash = "sha256:7b3add17364fee47f1469eefe1bedb30b31b77941dff030a5a6029ae4fb064d5"},
+    {file = "nonebot_plugin_picstatus-1.1.1.tar.gz", hash = "sha256:33204bff554670b26dff7ac0a0a707c9f0a0e7519e6a562052a12394f0f38ab9"},
 ]
 
 [package.dependencies]
@@ -3827,13 +3827,13 @@ test = ["Cython (>=0.29.36,<0.30.0)", "aiohttp (==3.9.0b0)", "aiohttp (>=3.8.1)"
 
 [[package]]
 name = "virtualenv"
-version = "20.25.0"
+version = "20.25.1"
 description = "Virtual Python Environment builder"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "virtualenv-20.25.0-py3-none-any.whl", hash = "sha256:4238949c5ffe6876362d9c0180fc6c3a824a7b12b80604eeb8085f2ed7460de3"},
-    {file = "virtualenv-20.25.0.tar.gz", hash = "sha256:bf51c0d9c7dd63ea8e44086fa1e4fb1093a31e963b86959257378aef020e1f1b"},
+    {file = "virtualenv-20.25.1-py3-none-any.whl", hash = "sha256:961c026ac520bac5f69acb8ea063e8a4f071bcc9457b9c1f28f6b085c511583a"},
+    {file = "virtualenv-20.25.1.tar.gz", hash = "sha256:e08e13ecdca7a0bd53798f356d5831434afa5b07b93f0abdf0797b7a06ffe197"},
 ]
 
 [package.dependencies]
