@@ -224,13 +224,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.0"
+version = "1.8.1"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.8.0-py3-none-any.whl", hash = "sha256:e2408f4f3bf50ebafc2ee55ab7c17ea57f33bd02cf8528d381b8dd5c3a5ebe4f"},
-    {file = "arclet_alconna-1.8.0.tar.gz", hash = "sha256:d6227838862cc1c129a421030be5f63e9204ae0a808cc6ab5095b9136bdfd197"},
+    {file = "arclet_alconna-1.8.1-py3-none-any.whl", hash = "sha256:1e7ac67bc5e8fe62b126170bd2938aaccc3caecd4b2527f6348bd3f89453d629"},
+    {file = "arclet_alconna-1.8.1.tar.gz", hash = "sha256:a80857ab23da9c789a4704bd795c51f2b8c54eb98594224ba6e161cb8d15f724"},
 ]
 
 [package.dependencies]
@@ -243,18 +243,18 @@ full = ["arclet-alconna-tools (>=0.2.0)"]
 
 [[package]]
 name = "arclet-alconna-tools"
-version = "0.6.11"
+version = "0.7.0"
 description = "Builtin Tools for Alconna"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet-alconna-tools-0.6.11.tar.gz", hash = "sha256:079f1ccd84120c65288e50014de2117a0dc7c52e5c2d2d718ad9fd95afb40232"},
-    {file = "arclet_alconna_tools-0.6.11-py3-none-any.whl", hash = "sha256:d3bc7d70040fbc1c0b44a9b751089f87c6c487161d7c930dd4018d7ef468d91f"},
+    {file = "arclet-alconna-tools-0.7.0.tar.gz", hash = "sha256:361a193239555d243d8738c39e89f536847d49fa9d74c0a2706b58514c8d8a70"},
+    {file = "arclet_alconna_tools-0.7.0-py3-none-any.whl", hash = "sha256:c4835d277c5927a2d036fba44a710471496b8086575fe3699dfbf256ca72bda2"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.7.39"
-nepattern = ">=0.5.15"
+arclet-alconna = ">=1.8.1"
+nepattern = ">=0.6.5,<1.0.0"
 
 [[package]]
 name = "arrow"
@@ -1968,13 +1968,13 @@ files = [
 
 [[package]]
 name = "nb-cli"
-version = "1.3.1"
+version = "1.4.0"
 description = "CLI for nonebot2"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nb_cli-1.3.1-py3-none-any.whl", hash = "sha256:fa95e1549d87a1f7fbac5df52532f7ca02c2c871b645b9b69290e35c31d73136"},
-    {file = "nb_cli-1.3.1.tar.gz", hash = "sha256:9b4dbbd83b9a8b70ba889f143ad303735528727c253c969e0c9935bc879a9051"},
+    {file = "nb_cli-1.4.0-py3-none-any.whl", hash = "sha256:9b75d8ba5861493d266b6a5bd7d609b715e4f95ee3c37e1c91e2ece4ae821c0a"},
+    {file = "nb_cli-1.4.0.tar.gz", hash = "sha256:8077bd1f44a6f8ea48f434e19dd942a8843d5b8cf909ab2f1c2a75f8cb4ff938"},
 ]
 
 [package.dependencies]
@@ -1985,7 +1985,7 @@ cookiecutter = ">=2.2,<3.0"
 httpx = ">=0.18,<1.0"
 jinja2 = ">=3.0,<4.0"
 noneprompt = ">=0.1.9,<1.0.0"
-pydantic = ">=1.9,<2.0"
+pydantic = ">=1.10.0,<2.5.0 || >2.5.0,<2.5.1 || >2.5.1,<3.0.0"
 pyfiglet = ">=1.0.1,<2.0.0"
 tomlkit = ">=0.10,<1.0"
 typing-extensions = ">=4.4,<5.0"
@@ -2166,19 +2166,19 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.37.1"
+version = "0.38.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.37.1-py3-none-any.whl", hash = "sha256:fcc46f04ac89bf43730afebd97fa46e5910bc404a9e24cab7950da58be36246d"},
-    {file = "nonebot_plugin_alconna-0.37.1.tar.gz", hash = "sha256:5e9989ee7debd79d61c97aa41c88aac5fe452cc9c47f2d48b829d81d26dfe130"},
+    {file = "nonebot_plugin_alconna-0.38.0-py3-none-any.whl", hash = "sha256:aa3b85def4124bcfd673f6587eebcd16c337b9867339316728e2af673a9e6774"},
+    {file = "nonebot_plugin_alconna-0.38.0.tar.gz", hash = "sha256:ecf2dbff4c17dd04135d9674f563994087bbb1bc60ba9bef76cf7733df1bba9d"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.7.44"
-arclet-alconna-tools = ">=0.6.11"
-nepattern = ">=0.5.15"
+arclet-alconna = ">=1.8.1"
+arclet-alconna-tools = ">=0.7.0"
+nepattern = ">=0.6.0"
 nonebot2 = ">=2.2.0"
 
 [[package]]
