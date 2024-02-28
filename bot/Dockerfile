@@ -90,7 +90,7 @@ RUN tar -C /usr/local -xvf /tmp/phantomjs-2.1.1-linux-x86_64.tar.bz2\
  && ln -s /usr/local/phantomjs/bin/phantomjs /usr/bin/phantomjs
 
 # 下载mahjong-utils-webapi
-RUN wget https://github.com/ssttkkl/mahjong-utils/releases/download/v0.6.0/mahjong-utils-webapi-all.jar
+RUN wget https://github.com/ssttkkl/mahjong-utils/releases/download/v0.6.5/mahjong-utils-webapi-all.jar
 
 # 安装whl包
 COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
