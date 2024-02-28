@@ -1553,15 +1553,15 @@ dev = ["Sphinx (==7.2.5)", "colorama (==0.4.5)", "colorama (==0.4.6)", "exceptio
 
 [[package]]
 name = "mahjong-utils"
-version = "0.6.1"
+version = "0.6.6"
 description = "日麻小工具"
 optional = false
 python-versions = "*"
 files = [
-    {file = "mahjong-utils-0.6.1.tar.gz", hash = "sha256:2a9b2a849e6c50f89458a39cf08a731f349eb6c328921a77a4e4ae35a38ccddd"},
-    {file = "mahjong_utils-0.6.1-py3-none-macosx_10_9_universal2.whl", hash = "sha256:ecc47177f69ef6574a4525d5a1d1f0f8e3f8f5e24ec72c4cc8f48a67112a7fbe"},
-    {file = "mahjong_utils-0.6.1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:538da84ac9690a3f1a7a4bca5c31a98f1e78d859f699a6f4a8ce865f445f5500"},
-    {file = "mahjong_utils-0.6.1-py3-none-win_amd64.whl", hash = "sha256:0a552dbb1e6d5d0bd19ea8bff424098cec70c90550e6535f64cfd4468e51047a"},
+    {file = "mahjong-utils-0.6.6.tar.gz", hash = "sha256:71acafdd95c03801aa71429dba6aed58e04407f249b50bb9e29c8ed3fe11ad5b"},
+    {file = "mahjong_utils-0.6.6-py3-none-macosx_10_9_universal2.whl", hash = "sha256:c01c624931be7a1e250b67b740ce12ed8d2433ecd018190867d89cc91b85b89b"},
+    {file = "mahjong_utils-0.6.6-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:56264bef4d64466667a48fa2399d99797e2fa7f5536d2e7aa3803b3fbe746633"},
+    {file = "mahjong_utils-0.6.6-py3-none-win_amd64.whl", hash = "sha256:bd4bb737c68f73faf4eadf39723a0faeeb051b0a7eb110c1c961ce8a93a84bf7"},
 ]
 
 [package.dependencies]
@@ -2620,20 +2620,20 @@ sqlalchemy = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
 
 [[package]]
 name = "nonebot-plugin-userinfo"
-version = "0.2.0"
+version = "0.2.1"
 description = "Nonebot2 用户信息获取插件"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_plugin_userinfo-0.2.0-py3-none-any.whl", hash = "sha256:26529c477ef35a96f0381f23062115a862d0a304a4f6795d0a7f3b1c15fd4d17"},
-    {file = "nonebot_plugin_userinfo-0.2.0.tar.gz", hash = "sha256:f985a822484026eb4b61b58e3b191796e50cd0df32fafd183b657c50ba27358a"},
+    {file = "nonebot_plugin_userinfo-0.2.1-py3-none-any.whl", hash = "sha256:5a7eecba314b97b228f813e99ed3ca3232d3df93b19b114957947389715ebc12"},
+    {file = "nonebot_plugin_userinfo-0.2.1.tar.gz", hash = "sha256:3e01518af4833c68441b3028411e49e49194c5f4775260fbbebf66867b0b873c"},
 ]
 
 [package.dependencies]
 cachetools = ">=5.0.0,<6.0.0"
 emoji = ">=2.0.0,<3.0.0"
 httpx = ">=0.20.0,<1.0.0"
-nonebot2 = {version = ">=2.0.0,<3.0.0", extras = ["fastapi"]}
+nonebot2 = ">=2.0.0,<3.0.0"
 strenum = ">=0.4.8,<0.5.0"
 
 [[package]]
@@ -3304,13 +3304,13 @@ use-chardet-on-py3 = ["chardet (>=3.0.2,<6)"]
 
 [[package]]
 name = "rich"
-version = "13.7.0"
+version = "13.7.1"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
 optional = false
 python-versions = ">=3.7.0"
 files = [
-    {file = "rich-13.7.0-py3-none-any.whl", hash = "sha256:6da14c108c4866ee9520bbffa71f6fe3962e193b7da68720583850cd4548e235"},
-    {file = "rich-13.7.0.tar.gz", hash = "sha256:5cb5123b5cf9ee70584244246816e9114227e0b98ad9176eede6ad54bf5403fa"},
+    {file = "rich-13.7.1-py3-none-any.whl", hash = "sha256:4edbae314f59eb482f54e9e30bf00d33350aaa94f4bfcd4e9e3110e64d0d7222"},
+    {file = "rich-13.7.1.tar.gz", hash = "sha256:9be308cb1fe2f1f57d67ce99e95af38a1e2bc71ad9813b0e247cf7ffbcc3a432"},
 ]
 
 [package.dependencies]
