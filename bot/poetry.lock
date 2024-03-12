@@ -1355,13 +1355,13 @@ testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pyfakefs
 
 [[package]]
 name = "importlib-resources"
-version = "6.1.3"
+version = "6.2.0"
 description = "Read resources from Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "importlib_resources-6.1.3-py3-none-any.whl", hash = "sha256:4c0269e3580fe2634d364b39b38b961540a7738c02cb984e98add8b4221d793d"},
-    {file = "importlib_resources-6.1.3.tar.gz", hash = "sha256:56fb4525197b78544a3354ea27793952ab93f935bb4bf746b846bb1015020f2b"},
+    {file = "importlib_resources-6.2.0-py3-none-any.whl", hash = "sha256:8d035473d681d9bb95d06a31ad18594962933405519d36f4af1565fe6f998ad6"},
+    {file = "importlib_resources-6.2.0.tar.gz", hash = "sha256:4351403cba8e3a1c03ff15b6bbea1cde4c6de00c705f49ea13909b404b415b9c"},
 ]
 
 [package.extras]
@@ -2027,13 +2027,13 @@ typing-extensions = ">=4.7.1"
 
 [[package]]
 name = "nonebot-adapter-kaiheila"
-version = "0.3.2"
+version = "0.3.3"
 description = "kaiheila adapter for nonebot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_adapter_kaiheila-0.3.2-py3-none-any.whl", hash = "sha256:06b109aefce62da80dc4e0653c4d2797efb516fdd32c70e75746b295c212928c"},
-    {file = "nonebot_adapter_kaiheila-0.3.2.tar.gz", hash = "sha256:7d42a61df1bef60762b6186a6ab5cf474ca4c4e75ed2ef5f9df662d72d8017ed"},
+    {file = "nonebot_adapter_kaiheila-0.3.3-py3-none-any.whl", hash = "sha256:3ff5427b8fad0d97609f142bd00e5627ce6c8c668871a0e9b5d30dcc4c0558c5"},
+    {file = "nonebot_adapter_kaiheila-0.3.3.tar.gz", hash = "sha256:abf98c85e2f0007f51f2ef7a59608d5a8bf755e2e0eca06d640601fc9dff3018"},
 ]
 
 [package.dependencies]
@@ -2166,20 +2166,20 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.38.2"
+version = "0.40.1"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.38.2-py3-none-any.whl", hash = "sha256:c1220bf69ce2c785f18bd5040450a53da88e5dbff9ef01ec0616a82233cabc36"},
-    {file = "nonebot_plugin_alconna-0.38.2.tar.gz", hash = "sha256:df45cdec0c7446ecc97aa7721c05241278d14fd7460cfe3a48249cf1d58a779f"},
+    {file = "nonebot_plugin_alconna-0.40.1-py3-none-any.whl", hash = "sha256:6f4bd7576e6df65710a7f920c93cb5400a8eef66abaff06189b532930b376330"},
+    {file = "nonebot_plugin_alconna-0.40.1.tar.gz", hash = "sha256:10b52ee800dd10ffa033208d2dbac6d459b3573dbfeaf53efadc50f62c1213f2"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.8.3"
+arclet-alconna = ">=1.8.5"
 arclet-alconna-tools = ">=0.7.0"
-nepattern = ">=0.6.0"
-nonebot2 = ">=2.2.0"
+nepattern = ">=0.6.5"
+nonebot2 = ">=2.2.1"
 
 [[package]]
 name = "nonebot-plugin-apscheduler"
@@ -3337,13 +3337,13 @@ testing-integration = ["build[virtualenv] (>=1.0.3)", "filelock (>=3.4.0)", "jar
 
 [[package]]
 name = "shortuuid"
-version = "1.0.12"
+version = "1.0.13"
 description = "A generator library for concise, unambiguous and URL-safe UUIDs."
 optional = false
-python-versions = ">=3.5"
+python-versions = ">=3.6"
 files = [
-    {file = "shortuuid-1.0.12-py3-none-any.whl", hash = "sha256:dd855d8c10ced5dc2790b97e31f16ad55a6f4871b478feb4351dd3128a8aa82b"},
-    {file = "shortuuid-1.0.12.tar.gz", hash = "sha256:c39f1b348b3c1e9b115a954b33b76c8c522d2d177a9d20acdbb20d24fac3ccfd"},
+    {file = "shortuuid-1.0.13-py3-none-any.whl", hash = "sha256:a482a497300b49b4953e15108a7913244e1bb0d41f9d332f5e9925dba33a3c5a"},
+    {file = "shortuuid-1.0.13.tar.gz", hash = "sha256:3bb9cf07f606260584b1df46399c0b87dd84773e7b25912b7e391e30797c5e72"},
 ]
 
 [[package]]
