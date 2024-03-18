@@ -2063,13 +2063,13 @@ typing-extensions = ">=4.8.0,<5.0.0"
 
 [[package]]
 name = "nonebot-adapter-onebot"
-version = "2.4.2"
+version = "2.4.3"
 description = "OneBot(CQHTTP) adapter for nonebot2"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "nonebot_adapter_onebot-2.4.2-py3-none-any.whl", hash = "sha256:7e97a08300c7dc0a9ba2c7fb4b7dda8b0038fa4e73f5c730932da5d12c4972be"},
-    {file = "nonebot_adapter_onebot-2.4.2.tar.gz", hash = "sha256:7ef7eca7b3eaf60f503c7e4f8df8ab0c58506645bbcca8297a9b93159ce98033"},
+    {file = "nonebot_adapter_onebot-2.4.3-py3-none-any.whl", hash = "sha256:e3a38695653226b39d50d1f4f0c4283c63a0a083a07db15d3fc1857fe0f0fa61"},
+    {file = "nonebot_adapter_onebot-2.4.3.tar.gz", hash = "sha256:7a1a9476ce1814eb11599ffcae770c66401e7e8cbec626eb84ed5617d0223020"},
 ]
 
 [package.dependencies]
@@ -2489,13 +2489,13 @@ sqlite = ["aiosqlite (>=0.19,<1.0)"]
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "2.0.0.post1"
+version = "2.0.0.post2"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_picstatus-2.0.0.post1-py3-none-any.whl", hash = "sha256:418a9e35178b642a8405e1b7e0a38e8417b9297c0563f8bc9d35a906258f4dc4"},
-    {file = "nonebot_plugin_picstatus-2.0.0.post1.tar.gz", hash = "sha256:b0b0bb3a939e2597e1dcbf471758ea090e7ff91009e7cc92f5a40482cc622e43"},
+    {file = "nonebot_plugin_picstatus-2.0.0.post2-py3-none-any.whl", hash = "sha256:227a43dfa149ccdab6cf9e125f31eec2419ac237c153d1adc5061ee1932deb42"},
+    {file = "nonebot_plugin_picstatus-2.0.0.post2.tar.gz", hash = "sha256:89d5cdc3f616b7892c4fc6f5af0da9309051ba39147b62b97c7d643319509389"},
 ]
 
 [package.dependencies]
