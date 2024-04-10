@@ -1593,13 +1593,13 @@ stringcase = ">=1.2.0"
 
 [[package]]
 name = "mako"
-version = "1.3.2"
+version = "1.3.3"
 description = "A super-fast templating language that borrows the best ideas from the existing templating languages."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "Mako-1.3.2-py3-none-any.whl", hash = "sha256:32a99d70754dfce237019d17ffe4a282d2d3351b9c476e90d8a60e63f133b80c"},
-    {file = "Mako-1.3.2.tar.gz", hash = "sha256:2a0c8ad7f6274271b3bb7467dd37cf9cc6dab4bc19cb69a4ef10669402de698e"},
+    {file = "Mako-1.3.3-py3-none-any.whl", hash = "sha256:5324b88089a8978bf76d1629774fcc2f1c07b82acdf00f4c5dd8ceadfffc4b40"},
+    {file = "Mako-1.3.3.tar.gz", hash = "sha256:e16c01d9ab9c11f7290eef1cfefc093fb5a45ee4a3da09e2fec2e4d1bae54e73"},
 ]
 
 [package.dependencies]
@@ -2490,13 +2490,13 @@ sqlite = ["aiosqlite (>=0.19,<1.0)"]
 
 [[package]]
 name = "nonebot-plugin-picstatus"
-version = "2.0.0.post2"
+version = "2.0.0.post3"
 description = "A NoneBot2 plugin generates a picture which shows the status of current device"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_picstatus-2.0.0.post2-py3-none-any.whl", hash = "sha256:227a43dfa149ccdab6cf9e125f31eec2419ac237c153d1adc5061ee1932deb42"},
-    {file = "nonebot_plugin_picstatus-2.0.0.post2.tar.gz", hash = "sha256:89d5cdc3f616b7892c4fc6f5af0da9309051ba39147b62b97c7d643319509389"},
+    {file = "nonebot_plugin_picstatus-2.0.0.post3-py3-none-any.whl", hash = "sha256:f4cafd5e6a76ac9edfa63e19e1b54257ae09392641986dc99f70a831801fee9e"},
+    {file = "nonebot_plugin_picstatus-2.0.0.post3.tar.gz", hash = "sha256:6a0a731f29bf975601fc2a4c940dff16a094ce83b9689a2d279e839558326acb"},
 ]
 
 [package.dependencies]
