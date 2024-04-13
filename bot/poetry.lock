@@ -2188,13 +2188,13 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.42.3"
+version = "0.42.4"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nonebot_plugin_alconna-0.42.3-py3-none-any.whl", hash = "sha256:dfb8c22293e7f78e584830c593904153731f58ffd3f77021c745967add73ab47"},
-    {file = "nonebot_plugin_alconna-0.42.3.tar.gz", hash = "sha256:2304121c2ad2996a741cbe45840cc24f7d6e2cc53694aa661eaae515639c8d99"},
+    {file = "nonebot_plugin_alconna-0.42.4-py3-none-any.whl", hash = "sha256:8dd843f37c1d4a13bf58966a6d592c7f685ec6346954d774b12b53e0864b98b0"},
+    {file = "nonebot_plugin_alconna-0.42.4.tar.gz", hash = "sha256:5fe0ea1374bacbf2eaae6eb4a0e41fd8ebc983bab6f0224a4e64fba5984e219d"},
 ]
 
 [package.dependencies]
