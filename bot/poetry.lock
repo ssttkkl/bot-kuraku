@@ -2017,13 +2017,13 @@ wcwidth = ">=0.2,<1.0"
 
 [[package]]
 name = "nepattern"
-version = "0.7.0"
+version = "0.7.1"
 description = "a complex pattern, support typing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nepattern-0.7.0-py3-none-any.whl", hash = "sha256:6cd51145af78a7476486c9f3f3817e8c93a9f4d10e45d8cdcaed62776a9f9a3e"},
-    {file = "nepattern-0.7.0.tar.gz", hash = "sha256:75c3b5b93c3ea8aaff585c282d45c1e4db0ebb92e68eecbcaddd3cb33d16dcee"},
+    {file = "nepattern-0.7.1-py3-none-any.whl", hash = "sha256:e5190a79d398dce72f972ffafc413653414cca12a1dac56d38fcf070d2f034bc"},
+    {file = "nepattern-0.7.1.tar.gz", hash = "sha256:14bae0dfa93241f3c2d8371cfc5e51072a186a295a7d35fbd7a60b08e83b2605"},
 ]
 
 [package.dependencies]
@@ -2188,19 +2188,19 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.42.5"
+version = "0.43.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.42.5-py3-none-any.whl", hash = "sha256:3d1e035f2e17b0a53bfc7c1cb7c56407f41fcd88c288db89343f0094d1f2532b"},
-    {file = "nonebot_plugin_alconna-0.42.5.tar.gz", hash = "sha256:ae820275e77496cc3356c469d2fac3cf5dcbf93271539d2150ce9b88a34627ee"},
+    {file = "nonebot_plugin_alconna-0.43.0-py3-none-any.whl", hash = "sha256:8f9203e8b20315dec108612e27d6a7ba62516b4f775041ae57779425dc0aafa9"},
+    {file = "nonebot_plugin_alconna-0.43.0.tar.gz", hash = "sha256:860798ff9e22da09fd57a08a0730b5ba29164c6fbdd4abc2e903e0229ff02937"},
 ]
 
 [package.dependencies]
 arclet-alconna = ">=1.8.10"
 arclet-alconna-tools = ">=0.7.3"
-nepattern = ">=0.7.0,<0.8.0"
+nepattern = ">=0.7.0"
 nonebot2 = ">=2.2.1"
 
 [[package]]
@@ -2871,18 +2871,19 @@ deprecated = "*"
 
 [[package]]
 name = "platformdirs"
-version = "4.2.0"
-description = "A small Python package for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
+version = "4.2.1"
+description = "A small Python package for determining appropriate platform-specific dirs, e.g. a `user data dir`."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "platformdirs-4.2.0-py3-none-any.whl", hash = "sha256:0614df2a2f37e1a662acbd8e2b25b92ccf8632929bc6d43467e17fe89c75e068"},
-    {file = "platformdirs-4.2.0.tar.gz", hash = "sha256:ef0cc731df711022c174543cb70a9b5bd22e5a9337c8624ef2c2ceb8ddad8768"},
+    {file = "platformdirs-4.2.1-py3-none-any.whl", hash = "sha256:17d5a1161b3fd67b390023cb2d3b026bbd40abde6fdb052dfbd3a29c3ba22ee1"},
+    {file = "platformdirs-4.2.1.tar.gz", hash = "sha256:031cd18d4ec63ec53e82dceaac0417d218a6863f7745dfcc9efe7793b7039bdf"},
 ]
 
 [package.extras]
 docs = ["furo (>=2023.9.10)", "proselint (>=0.13)", "sphinx (>=7.2.6)", "sphinx-autodoc-typehints (>=1.25.2)"]
 test = ["appdirs (==1.4.4)", "covdefaults (>=2.3)", "pytest (>=7.4.3)", "pytest-cov (>=4.1)", "pytest-mock (>=3.12)"]
+type = ["mypy (>=1.8)"]
 
 [[package]]
 name = "playwright"
@@ -3863,13 +3864,13 @@ test = ["Cython (>=0.29.36,<0.30.0)", "aiohttp (==3.9.0b0)", "aiohttp (>=3.8.1)"
 
 [[package]]
 name = "virtualenv"
-version = "20.25.3"
+version = "20.26.0"
 description = "Virtual Python Environment builder"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "virtualenv-20.25.3-py3-none-any.whl", hash = "sha256:8aac4332f2ea6ef519c648d0bc48a5b1d324994753519919bddbb1aff25a104e"},
-    {file = "virtualenv-20.25.3.tar.gz", hash = "sha256:7bb554bbdfeaacc3349fa614ea5bff6ac300fc7c335e9facf3a3bcfc703f45be"},
+    {file = "virtualenv-20.26.0-py3-none-any.whl", hash = "sha256:0846377ea76e818daaa3e00a4365c018bc3ac9760cbb3544de542885aad61fb3"},
+    {file = "virtualenv-20.26.0.tar.gz", hash = "sha256:ec25a9671a5102c8d2657f62792a27b48f016664c6873f6beed3800008577210"},
 ]
 
 [package.dependencies]
