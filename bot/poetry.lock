@@ -224,13 +224,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.10"
+version = "1.8.11"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.8.10-py3-none-any.whl", hash = "sha256:6c4d464e3c1b3c03bce301f51370648fd006df2b820e6f926cb410ced97f0c2f"},
-    {file = "arclet_alconna-1.8.10.tar.gz", hash = "sha256:379e824919a2750f43a2b87a4a523bf06386b4469c5ace859d47213857606c3e"},
+    {file = "arclet_alconna-1.8.11-py3-none-any.whl", hash = "sha256:8a0c188400214abe2b72b2e6f4f23ed8d3021270654c15bc46cad62b725b7a44"},
+    {file = "arclet_alconna-1.8.11.tar.gz", hash = "sha256:3fed5e946709d63b9d7ee7cddf32b145e1f931b8ea9d0b8174cac753d965e9c8"},
 ]
 
 [package.dependencies]
@@ -2188,13 +2188,13 @@ ssttkkl-nonebot-utils = ">=0.1.17"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.43.0"
+version = "0.44.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.43.0-py3-none-any.whl", hash = "sha256:8f9203e8b20315dec108612e27d6a7ba62516b4f775041ae57779425dc0aafa9"},
-    {file = "nonebot_plugin_alconna-0.43.0.tar.gz", hash = "sha256:860798ff9e22da09fd57a08a0730b5ba29164c6fbdd4abc2e903e0229ff02937"},
+    {file = "nonebot_plugin_alconna-0.44.0-py3-none-any.whl", hash = "sha256:2c9a10d8429acfcbeb527d6a9a667ec745651199a0368bb3a096766c33620940"},
+    {file = "nonebot_plugin_alconna-0.44.0.tar.gz", hash = "sha256:284dcebba0d2e73401446987ed592c72d31b5fc8969373ef5878c69a64f4eaa2"},
 ]
 
 [package.dependencies]
@@ -2643,13 +2643,13 @@ sqlalchemy = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
 
 [[package]]
 name = "nonebot-plugin-userinfo"
-version = "0.2.3"
+version = "0.2.4"
 description = "Nonebot2 用户信息获取插件"
 optional = false
-python-versions = ">=3.8,<4.0"
+python-versions = "<4.0,>=3.8"
 files = [
-    {file = "nonebot_plugin_userinfo-0.2.3-py3-none-any.whl", hash = "sha256:40c249f12c017f3bd9c837cd186a39465131af68e901948f04e0d39abf554568"},
-    {file = "nonebot_plugin_userinfo-0.2.3.tar.gz", hash = "sha256:9036fa18881fe62f9ce2168cd19c68eea20f3b9bb20a6742db0a7395b96fd2d4"},
+    {file = "nonebot_plugin_userinfo-0.2.4-py3-none-any.whl", hash = "sha256:f08dac58759b859f8bf1d1c17e96cdcee92b10613631a430405364a40181f9e4"},
+    {file = "nonebot_plugin_userinfo-0.2.4.tar.gz", hash = "sha256:1d49ff00ce38c856be4388fc2a954656f07cc529ce38ef9593e3a0ea40f26b6a"},
 ]
 
 [package.dependencies]
