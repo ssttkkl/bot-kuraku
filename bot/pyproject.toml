@@ -8,7 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.10"
 setuptools = "^68.2.0"
-nonebot2 = { extras = ["fastapi", "httpx"], version = ">=2.0.0" }
+nonebot2 = { extras = ["fastapi", "httpx"], version = "^2.2.0" }
 nb-cli = ">=1.0.5"
 asyncpg = ">=0.27.0"
 cachetools = "^5.2.0"
