@@ -48,7 +48,7 @@ build-backend = "pdm.backend"\n\
 
 RUN git clone https://github.com/Yuri-YuzuChaN/maimaiDX -b nonebot2
 
-RUN wget https://cloud.yuzuchan.moe/f/JjHN/static.zip && unzip -d ./maimaiDX static.zip
+RUN wget https://cloud.yuzuchan.moe/f/DjSw/static.zip && unzip -d ./maimaiDX static.zip
 
 RUN pdm build
 
