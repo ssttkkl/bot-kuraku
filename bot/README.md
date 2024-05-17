@@ -2,9 +2,8 @@
 
 ## How to start
 
-1. generate project using `nb create` .
-2. install plugins using `nb plugin install` .
-3. run your bot using `nb run` .
+1. `poetry install`
+2. `poetry run nb run`
 
 ## Documentation
 
