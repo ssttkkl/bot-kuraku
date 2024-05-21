@@ -224,13 +224,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.12"
+version = "1.8.13"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.8.12-py3-none-any.whl", hash = "sha256:627f88b4933727a85cda6dd9247449033ad55dfc522876f357e379b018da1cc3"},
-    {file = "arclet_alconna-1.8.12.tar.gz", hash = "sha256:c99e7ea166f85919ba49fd1c424c1e2ecce80d6f83d4811a6fe505bf4954d6a5"},
+    {file = "arclet_alconna-1.8.13-py3-none-any.whl", hash = "sha256:7a85d51aa588c40e525f5df3a2e23db757cd051e06dd266401ddb6346cc857db"},
+    {file = "arclet_alconna-1.8.13.tar.gz", hash = "sha256:19aba65958578b3287af9afcf051da903104553460c6198d3f9398de4b8371f7"},
 ]
 
 [package.dependencies]
@@ -2251,20 +2251,20 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.46.0"
+version = "0.46.2"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.46.0-py3-none-any.whl", hash = "sha256:fb19b89ae1cde976c7b38832e1df41fc380e6d3277c38439b9b02f85ece0cd82"},
-    {file = "nonebot_plugin_alconna-0.46.0.tar.gz", hash = "sha256:9a82491d8589b1626059d3a7c728be616cde845f8b42657a6a8e6cdd82b51ae5"},
+    {file = "nonebot_plugin_alconna-0.46.2-py3-none-any.whl", hash = "sha256:b081077f742d277a6e1e6798adee3da7c0f866aa9b923af380d0b8fd12a3cbcf"},
+    {file = "nonebot_plugin_alconna-0.46.2.tar.gz", hash = "sha256:37e83219669e4245b676bdc03d710cfe932084fc4402405e4bfd670bdbf77e29"},
 ]
 
 [package.dependencies]
 arclet-alconna = ">=1.8.12"
 arclet-alconna-tools = ">=0.7.4"
 importlib-metadata = ">=4.13.0"
-nepattern = ">=0.7.3"
+nepattern = ">=0.7.4"
 nonebot2 = ">=2.3.0"
 
 [[package]]
@@ -3439,13 +3439,13 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.32.0"
+version = "2.32.2"
 description = "Python HTTP for Humans."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "requests-2.32.0-py3-none-any.whl", hash = "sha256:f2c3881dddb70d056c5bd7600a4fae312b2a300e39be6a118d30b90bd27262b5"},
-    {file = "requests-2.32.0.tar.gz", hash = "sha256:fa5490319474c82ef1d2c9bc459d3652e3ae4ef4c4ebdd18a21145a47ca4b6b8"},
+    {file = "requests-2.32.2-py3-none-any.whl", hash = "sha256:fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c"},
+    {file = "requests-2.32.2.tar.gz", hash = "sha256:dd951ff5ecf3e3b3aa26b40703ba77495dab41da839ae72ef3c8e5d8e2433289"},
 ]
 
 [package.dependencies]
