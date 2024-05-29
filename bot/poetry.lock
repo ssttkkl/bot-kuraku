@@ -2251,13 +2251,13 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.46.2"
+version = "0.46.3"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.46.2-py3-none-any.whl", hash = "sha256:b081077f742d277a6e1e6798adee3da7c0f866aa9b923af380d0b8fd12a3cbcf"},
-    {file = "nonebot_plugin_alconna-0.46.2.tar.gz", hash = "sha256:37e83219669e4245b676bdc03d710cfe932084fc4402405e4bfd670bdbf77e29"},
+    {file = "nonebot_plugin_alconna-0.46.3-py3-none-any.whl", hash = "sha256:a6be8aca1c63ca26c4675844f90dd5503bb26057a87036352b037156a21fd979"},
+    {file = "nonebot_plugin_alconna-0.46.3.tar.gz", hash = "sha256:f0fb9ea0169979d95cb1033ee7d54139887e585fe81b818055b68cc3d0626867"},
 ]
 
 [package.dependencies]
@@ -2265,6 +2265,7 @@ arclet-alconna = ">=1.8.12"
 arclet-alconna-tools = ">=0.7.4"
 importlib-metadata = ">=4.13.0"
 nepattern = ">=0.7.4"
+nonebot-plugin-waiter = ">=0.6.0"
 nonebot2 = ">=2.3.0"
 
 [[package]]
@@ -2722,6 +2723,20 @@ emoji = ">=2.0.0,<3.0.0"
 httpx = ">=0.20.0,<1.0.0"
 nonebot2 = ">=2.0.0,<3.0.0"
 strenum = ">=0.4.8,<0.5.0"
+
+[[package]]
+name = "nonebot-plugin-waiter"
+version = "0.6.1"
+description = "An alternative for got-and-reject in Nonebot"
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "nonebot_plugin_waiter-0.6.1-py3-none-any.whl", hash = "sha256:0abd678ff7671a2f5cee53b8c96fdbb700a78bbff921e8f37ab1e9388bdc8649"},
+    {file = "nonebot_plugin_waiter-0.6.1.tar.gz", hash = "sha256:ba4da15694ef4eeb23329e7ecde7e9e56df5cbf8e0dc03b8f98747658bbc138f"},
+]
+
+[package.dependencies]
+nonebot2 = ">=2.3.0"
 
 [[package]]
 name = "nonebot2"
@@ -3439,13 +3454,13 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.32.2"
+version = "2.32.3"
 description = "Python HTTP for Humans."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "requests-2.32.2-py3-none-any.whl", hash = "sha256:fc06670dd0ed212426dfeb94fc1b983d917c4f9847c863f313c9dfaaffb7c23c"},
-    {file = "requests-2.32.2.tar.gz", hash = "sha256:dd951ff5ecf3e3b3aa26b40703ba77495dab41da839ae72ef3c8e5d8e2433289"},
+    {file = "requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"},
+    {file = "requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"},
 ]
 
 [package.dependencies]
