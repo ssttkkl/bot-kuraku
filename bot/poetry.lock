@@ -2096,13 +2096,13 @@ typing-extensions = ">=4.5.0"
 
 [[package]]
 name = "nonebot-adapter-console"
-version = "0.5.0"
+version = "0.6.0"
 description = "console adapter for nonebot2"
 optional = false
-python-versions = "<4.0,>=3.8"
+python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_adapter_console-0.5.0-py3-none-any.whl", hash = "sha256:0796579df2b28cddc0394b7c003de6c18aa96007b5195e33bdfe4abcd95ff3e1"},
-    {file = "nonebot_adapter_console-0.5.0.tar.gz", hash = "sha256:efb43ed8684382ae9a38b21652df6e7f4baca0eb66ef88fcb8fefc37b75ecd53"},
+    {file = "nonebot_adapter_console-0.6.0-py3-none-any.whl", hash = "sha256:605ed2635ad593cd6e91228008328b5e7a578ab55e3b3d8fc32ff308ac7711cb"},
+    {file = "nonebot_adapter_console-0.6.0.tar.gz", hash = "sha256:5c708cee111b29579970fe0ad876a711af58d3d8096d7c20e9d0e3a127d1ea07"},
 ]
 
 [package.dependencies]
