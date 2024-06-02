@@ -224,13 +224,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.13"
+version = "1.8.14"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.8.13-py3-none-any.whl", hash = "sha256:7a85d51aa588c40e525f5df3a2e23db757cd051e06dd266401ddb6346cc857db"},
-    {file = "arclet_alconna-1.8.13.tar.gz", hash = "sha256:19aba65958578b3287af9afcf051da903104553460c6198d3f9398de4b8371f7"},
+    {file = "arclet_alconna-1.8.14-py3-none-any.whl", hash = "sha256:e74ec1d0ca6829592a15768f48c6af9e5d9bb75a4476a763550d71594f7019d7"},
+    {file = "arclet_alconna-1.8.14.tar.gz", hash = "sha256:77b4b15b1c6b9873554b0990310f587016d9982b086680150febc21fa17390d6"},
 ]
 
 [package.dependencies]
@@ -422,13 +422,13 @@ tests = ["hypothesis (==6.100.2)", "pytest (==8.2.0)", "pytest-asyncio (==0.23.6
 
 [[package]]
 name = "certifi"
-version = "2024.2.2"
+version = "2024.6.2"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "certifi-2024.2.2-py3-none-any.whl", hash = "sha256:dc383c07b76109f368f6106eee2b593b04a011ea4d55f652c6ca24a754d1cdd1"},
-    {file = "certifi-2024.2.2.tar.gz", hash = "sha256:0569859f95fc761b18b45ef421b1290a0f65f147e92a1e5eb3e635f9a5e4e66f"},
+    {file = "certifi-2024.6.2-py3-none-any.whl", hash = "sha256:ddc6c8ce995e6987e7faf5e3f1b02b302836a0e5d98ece18392cb1a36c72ad56"},
+    {file = "certifi-2024.6.2.tar.gz", hash = "sha256:3cd43f1c6fa7dedc5899d69d3ad0398fd018ad1a17fba83ddaf78aa46c747516"},
 ]
 
 [[package]]
@@ -4056,13 +4056,13 @@ zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "uvicorn"
-version = "0.30.0"
+version = "0.30.1"
 description = "The lightning-fast ASGI server."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "uvicorn-0.30.0-py3-none-any.whl", hash = "sha256:78fa0b5f56abb8562024a59041caeb555c86e48d0efdd23c3fe7de7a4075bdab"},
-    {file = "uvicorn-0.30.0.tar.gz", hash = "sha256:f678dec4fa3a39706bbf49b9ec5fc40049d42418716cea52b53f07828a60aa37"},
+    {file = "uvicorn-0.30.1-py3-none-any.whl", hash = "sha256:cd17daa7f3b9d7a24de3617820e634d0933b69eed8e33a516071174427238c81"},
+    {file = "uvicorn-0.30.1.tar.gz", hash = "sha256:d46cd8e0fd80240baffbcd9ec1012a712938754afcf81bce56c024c1656aece8"},
 ]
 
 [package.dependencies]
