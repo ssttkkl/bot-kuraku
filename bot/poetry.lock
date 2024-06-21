@@ -716,13 +716,13 @@ rich = "*"
 
 [[package]]
 name = "cookit"
-version = "0.6.1"
+version = "0.6.2"
 description = "A toolkit for self use."
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "cookit-0.6.1-py3-none-any.whl", hash = "sha256:2fa86c740d54cef416f6a5b4b1c10a68d1195013b0c94d39fdf87a44710cad97"},
-    {file = "cookit-0.6.1.tar.gz", hash = "sha256:14388c6b9d93326f7e8a1690cfe61d0a29379ac49d7e4e8abe9439803e73e1ea"},
+    {file = "cookit-0.6.2-py3-none-any.whl", hash = "sha256:66753926cb3a2ae5b90ce266b2af4efd291f4af1b5afbfb1e016088b93e01888"},
+    {file = "cookit-0.6.2.tar.gz", hash = "sha256:fa6f5211e77c6aaff68632a91a33b736076a3b007edf01cd80264b04a3913d38"},
 ]
 
 [package.dependencies]
