@@ -1432,13 +1432,13 @@ files = [
 
 [[package]]
 name = "importlib-metadata"
-version = "7.2.1"
+version = "8.0.0"
 description = "Read metadata from Python packages"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "importlib_metadata-7.2.1-py3-none-any.whl", hash = "sha256:ffef94b0b66046dd8ea2d619b701fe978d9264d38f3998bc4c27ec3b146a87c8"},
-    {file = "importlib_metadata-7.2.1.tar.gz", hash = "sha256:509ecb2ab77071db5137c655e24ceb3eee66e7bbc6574165d0d114d9fc4bbe68"},
+    {file = "importlib_metadata-8.0.0-py3-none-any.whl", hash = "sha256:15584cf2b1bf449d98ff8a6ff1abef57bf20f3ac6454f431736cd3e660921b2f"},
+    {file = "importlib_metadata-8.0.0.tar.gz", hash = "sha256:188bd24e4c346d3f0a933f275c2fec67050326a856b9a359881d7c2a697e8812"},
 ]
 
 [package.dependencies]
@@ -3383,13 +3383,13 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "python-socks"
-version = "2.4.4"
+version = "2.5.0"
 description = "Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python"
 optional = false
 python-versions = "*"
 files = [
-    {file = "python-socks-2.4.4.tar.gz", hash = "sha256:e5a8e4f78203612c813946feacd87b98943965a04389fe221fa1e9ab263ad22e"},
-    {file = "python_socks-2.4.4-py3-none-any.whl", hash = "sha256:fda465d3ef229119ee614eb85f2b7c0ad28be6dd40e0ef8dd317c49e8725e514"},
+    {file = "python_socks-2.5.0-py3-none-any.whl", hash = "sha256:68b34379faac94bba3f9959f45cb9ed0b9a0dc65b509eb0799d9c47fb5a9af98"},
+    {file = "python_socks-2.5.0.tar.gz", hash = "sha256:cc4ad990d67bd238e496afefe436af0247793bbe01d1d4a0d37a3b124ff0baa3"},
 ]
 
 [package.dependencies]
