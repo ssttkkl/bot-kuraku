@@ -2265,22 +2265,23 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.47.2"
+version = "0.48.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.47.2-py3-none-any.whl", hash = "sha256:ba46d6ed7438985b0322681c398cc98cf7dceab3713214a8eb7f2e65f6fc141a"},
-    {file = "nonebot_plugin_alconna-0.47.2.tar.gz", hash = "sha256:3bbe5df1b859b8720c648f4d6338d586dac2a78459b07894c62699a80196a0d6"},
+    {file = "nonebot_plugin_alconna-0.48.0-py3-none-any.whl", hash = "sha256:02dcdca744934368246d48373393bcd475d7e4c7182a56a777b0bc45586d557a"},
+    {file = "nonebot_plugin_alconna-0.48.0.tar.gz", hash = "sha256:f5a8a3b9da42f3a6ef2b387d9b5194023178c135d03381b1aa60eead9363d6cc"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.8.15"
+arclet-alconna = ">=1.8.16"
 arclet-alconna-tools = ">=0.7.6"
 importlib-metadata = ">=4.13.0"
 nepattern = ">=0.7.4"
 nonebot-plugin-waiter = ">=0.6.0"
 nonebot2 = ">=2.3.0"
+tarina = ">=0.5.4"
 
 [[package]]
 name = "nonebot-plugin-apscheduler"
