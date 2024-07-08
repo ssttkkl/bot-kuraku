@@ -716,27 +716,27 @@ rich = "*"
 
 [[package]]
 name = "cookit"
-version = "0.6.5"
+version = "0.6.6"
 description = "A toolkit for self use."
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "cookit-0.6.5-py3-none-any.whl", hash = "sha256:4776fd97a9603114b543dc1c4479e501895e7ac28f6b802aa6051c4a5f7ec686"},
-    {file = "cookit-0.6.5.tar.gz", hash = "sha256:00a94f88fada7aadcbd2cf6544af019e057028ed94083763bc2d1cb319b7f038"},
+    {file = "cookit-0.6.6-py3-none-any.whl", hash = "sha256:85cac3ad9a9b74bcbb3edb2047aa4c991635df241f61222a4ac0ed828951cae4"},
+    {file = "cookit-0.6.6.tar.gz", hash = "sha256:272100aaa63f0e1c4f01cd28d4789dc446b2f1712b4bab8a714f363e57af7d2e"},
 ]
 
 [package.dependencies]
 fleep = ">=1.0.1"
 pydantic = {version = ">=1.10.0,<2.5.0 || >2.5.0,<2.5.1 || >2.5.1,<3.0.0", optional = true, markers = "extra == \"pydantic\""}
-typing-extensions = ">=4.10.0"
+typing-extensions = ">=4.12.2"
 
 [package.extras]
 all = ["cookit[jinja,loguru,nonebot,pydantic]"]
 jinja = ["jinja2 (>=3.1.4)"]
 loguru = ["loguru (>=0.7.2)"]
 nonebot = ["cookit[nonebot-alconna]"]
-nonebot-alconna = ["cookit[nonebot-base]", "nonebot-plugin-alconna (>=0.40.1)"]
-nonebot-base = ["nonebot2 (>=2.2.0)"]
+nonebot-alconna = ["cookit[nonebot-base]", "nonebot-plugin-alconna (>=0.48.0)"]
+nonebot-base = ["nonebot2 (>=2.3.1)"]
 pyd = ["cookit[pydantic]"]
 pydantic = ["pydantic (>=1.10.0,!=2.5.0,!=2.5.1,<3.0.0)"]
 
