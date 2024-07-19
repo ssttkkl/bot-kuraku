@@ -2093,13 +2093,13 @@ wcwidth = ">=0.2,<1.0"
 
 [[package]]
 name = "nepattern"
-version = "0.7.4"
+version = "0.7.6"
 description = "a complex pattern, support typing"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "nepattern-0.7.4-py3-none-any.whl", hash = "sha256:ad7287ee2ff46f010b8c758bf9ed8fd8141aa1afce29c5d5a4f94cc85d277e6e"},
-    {file = "nepattern-0.7.4.tar.gz", hash = "sha256:255a042b45e9d2b04f3c2d73b81912c6b856fae1a10a6e4df30b08ed892d2f9c"},
+    {file = "nepattern-0.7.6-py3-none-any.whl", hash = "sha256:233d0befecc190f228ded3651a85faaf53f1308bba40ab8ddec379d0d3c88051"},
+    {file = "nepattern-0.7.6.tar.gz", hash = "sha256:07bd5b2f3b9b9739b703bf723ffd642ca93738a32df7b699d57d6f338d46bad0"},
 ]
 
 [package.dependencies]
@@ -2263,13 +2263,13 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.50.0"
+version = "0.50.1"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.50.0-py3-none-any.whl", hash = "sha256:69423404d29a8bda3506446743d090f5913c2973db2c810d379cb595db7f9a56"},
-    {file = "nonebot_plugin_alconna-0.50.0.tar.gz", hash = "sha256:deccaed139fc4e67eff4c88d0921bc5e5fbeb5235250694be150829304b6388e"},
+    {file = "nonebot_plugin_alconna-0.50.1-py3-none-any.whl", hash = "sha256:3328c554ea1556cc5e33ce2f68e097ffea2cb71292748065dd4db74571d9c61b"},
+    {file = "nonebot_plugin_alconna-0.50.1.tar.gz", hash = "sha256:f47d6bbfd06708cdc86ecdb63a5a3ff40e2d3bba902af2cadb39f33b6ffdcb78"},
 ]
 
 [package.dependencies]
@@ -2739,13 +2739,13 @@ strenum = ">=0.4.8,<0.5.0"
 
 [[package]]
 name = "nonebot-plugin-waiter"
-version = "0.6.2"
+version = "0.7.0"
 description = "An alternative for got-and-reject in Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_waiter-0.6.2-py3-none-any.whl", hash = "sha256:599251f02d074ab7142e2144f68d63f41104bddcd359051f63979a8163538eac"},
-    {file = "nonebot_plugin_waiter-0.6.2.tar.gz", hash = "sha256:02017a1613d1273be3535b28a4d8e823f2dbaba26fab524bc8207f50a25ec8e4"},
+    {file = "nonebot_plugin_waiter-0.7.0-py3-none-any.whl", hash = "sha256:e0f98472b68479765e99e7f6a242611cb7d38e77dd2b74d103a02857f95a68e1"},
+    {file = "nonebot_plugin_waiter-0.7.0.tar.gz", hash = "sha256:698b1a031a154dcf88634f484a33f926966da97b3f055027a948acf6c074914d"},
 ]
 
 [package.dependencies]
