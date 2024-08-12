@@ -236,13 +236,13 @@ zookeeper = ["kazoo"]
 
 [[package]]
 name = "arclet-alconna"
-version = "1.8.24"
+version = "1.8.25"
 description = "A High-performance, Generality, Humane Command Line Arguments Parser Library."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "arclet_alconna-1.8.24-py3-none-any.whl", hash = "sha256:ca6e22ea6e2aba954dfc9c2fe47c4eb86ce975b5e2ee94ec13e1f24be51c6280"},
-    {file = "arclet_alconna-1.8.24.tar.gz", hash = "sha256:aed11334f7b1c2057e7590868a60ac0bbbfaba8e3816ec9e4d1ad236d77dca25"},
+    {file = "arclet_alconna-1.8.25-py3-none-any.whl", hash = "sha256:5f269c547ed2071035c3c53c567f449fa4cbaeb956748c024d2887d73d4da332"},
+    {file = "arclet_alconna-1.8.25.tar.gz", hash = "sha256:99f009b2e02e8db6a9cbd6e4c86b6a513311be33307535f518eb5b693a4e2d8d"},
 ]
 
 [package.dependencies]
@@ -2241,17 +2241,17 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.51.1"
+version = "0.51.3"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.51.1-py3-none-any.whl", hash = "sha256:450a27afa9dcaedb6c82f649d57d42c4ca81596bf6accdf2e163f2dc9befc2c4"},
-    {file = "nonebot_plugin_alconna-0.51.1.tar.gz", hash = "sha256:aaec8206adc9892e284d7ad12c8bb03b43586bbc145d439f0a40a055146ed176"},
+    {file = "nonebot_plugin_alconna-0.51.3-py3-none-any.whl", hash = "sha256:4451a494d9b1e997a2fbe669fda007e63f5e67af5b468072f0bd2204c8cee3d9"},
+    {file = "nonebot_plugin_alconna-0.51.3.tar.gz", hash = "sha256:e5d274cf005819da0829d07f300c72509284186ffedfd344677c15743dc49fa8"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.8.23"
+arclet-alconna = ">=1.8.25"
 arclet-alconna-tools = ">=0.7.9"
 importlib-metadata = ">=4.13.0"
 nepattern = ">=0.7.4"
@@ -2966,18 +2966,18 @@ type = ["mypy (>=1.8)"]
 
 [[package]]
 name = "playwright"
-version = "1.45.1"
+version = "1.46.0"
 description = "A high-level API to automate web browsers"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "playwright-1.45.1-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:360607e37c00cdf97c74317f010e106ac4671aeaec6a192431dd71a30941da9d"},
-    {file = "playwright-1.45.1-py3-none-macosx_11_0_arm64.whl", hash = "sha256:20adc2abf164c5e8969f9066011b152e12c210549edec78cd05bd0e9cf4135b7"},
-    {file = "playwright-1.45.1-py3-none-macosx_11_0_universal2.whl", hash = "sha256:5f047cdc6accf4c7084dfc7587a2a5ef790cddc44cbb111e471293c5a91119db"},
-    {file = "playwright-1.45.1-py3-none-manylinux1_x86_64.whl", hash = "sha256:f06f6659abe0abf263e5f6661d379fbf85c112745dd31d82332ceae914f58df7"},
-    {file = "playwright-1.45.1-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:87dc3b3d17e12c68830c29b7fdf5e93315221bbb4c6090e83e967e154e2c1828"},
-    {file = "playwright-1.45.1-py3-none-win32.whl", hash = "sha256:2b8f517886ef1e2151982f6e7be84be3ef7d8135bdcf8ee705b4e4e99566e866"},
-    {file = "playwright-1.45.1-py3-none-win_amd64.whl", hash = "sha256:0d236cf427784e77de352ba1b7d700693c5fe455b8e5f627f6d84ad5b84b5bf5"},
+    {file = "playwright-1.46.0-py3-none-macosx_10_13_x86_64.whl", hash = "sha256:fa60b95c16f6ce954636229a6c9dd885485326bca52d5ba20d02c0bc731a2bbb"},
+    {file = "playwright-1.46.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:73dcfc24834f4d004bc862ed0d74b4c1406793a8164734238ad035356fddc8ac"},
+    {file = "playwright-1.46.0-py3-none-macosx_11_0_universal2.whl", hash = "sha256:f5acfec1dbdc84d02dc696a17a344227e66c91413eab2036428dab405f195b82"},
+    {file = "playwright-1.46.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:3b418509f45879f1403d070858657a39bd0b333b23d92c37355682b671726df9"},
+    {file = "playwright-1.46.0-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:23580f6a3f99757bb9779d29be37144cb9328cd9bafa178e6db5b3ab4b7faf4c"},
+    {file = "playwright-1.46.0-py3-none-win32.whl", hash = "sha256:85f44dd32a23d02850f0ff4dafe51580e5199531fff5121a62489d9838707782"},
+    {file = "playwright-1.46.0-py3-none-win_amd64.whl", hash = "sha256:f14a7fd7e24e954eec6ce61d787d499e41937ade811a0818e9a088aabe28ebb6"},
 ]
 
 [package.dependencies]
@@ -2986,13 +2986,13 @@ pyee = "11.1.0"
 
 [[package]]
 name = "prettytable"
-version = "3.10.2"
+version = "3.11.0"
 description = "A simple Python library for easily displaying tabular data in a visually appealing ASCII table format"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "prettytable-3.10.2-py3-none-any.whl", hash = "sha256:1cbfdeb4bcc73976a778a0fb33cb6d752e75396f16574dcb3e2d6332fd93c76a"},
-    {file = "prettytable-3.10.2.tar.gz", hash = "sha256:29ec6c34260191d42cd4928c28d56adec360ac2b1208a26c7e4f14b90cc8bc84"},
+    {file = "prettytable-3.11.0-py3-none-any.whl", hash = "sha256:aa17083feb6c71da11a68b2c213b04675c4af4ce9c541762632ca3f2cb3546dd"},
+    {file = "prettytable-3.11.0.tar.gz", hash = "sha256:7e23ca1e68bbfd06ba8de98bf553bf3493264c96d5e8a615c0471025deeba722"},
 ]
 
 [package.dependencies]
