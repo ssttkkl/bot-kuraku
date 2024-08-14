@@ -415,13 +415,13 @@ files = [
 
 [[package]]
 name = "cashews"
-version = "7.1.0"
+version = "7.2.0"
 description = "cache tools with async power"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "cashews-7.1.0-py3-none-any.whl", hash = "sha256:b7c1ae4d49df6fdbff88e5025d3c1156515f58724c5b96fc9a9d081afada82a8"},
-    {file = "cashews-7.1.0.tar.gz", hash = "sha256:058df55a39cb15697d331e7e41c2882b58d0d323f5671316105cc78668af7705"},
+    {file = "cashews-7.2.0-py3-none-any.whl", hash = "sha256:31a203b30d6162ea671268fda9012ebc2053e669761a3112906aa7ec988f09eb"},
+    {file = "cashews-7.2.0.tar.gz", hash = "sha256:55be8f13845a17fc859c09b53d2105dd236340a5571610820b592e58835f62c2"},
 ]
 
 [package.extras]
@@ -430,7 +430,7 @@ diskcache = ["diskcache (>=5.0.0)"]
 lint = ["mypy (>=1.5.0)", "types-redis"]
 redis = ["redis (>=4.3.1,!=5.0.1)"]
 speedup = ["bitarray (<3.0.0)", "hiredis", "xxhash (<4.0.0)"]
-tests = ["hypothesis (==6.100.2)", "pytest (==8.2.0)", "pytest-asyncio (==0.23.6)", "pytest-cov (==5.0.0)", "pytest-rerunfailures (==14.0)"]
+tests = ["hypothesis (==6.111.0)", "pytest (==8.3.2)", "pytest-asyncio (==0.23.7)", "pytest-cov (==5.0.0)", "pytest-rerunfailures (==14.0)"]
 
 [[package]]
 name = "certifi"
@@ -3791,13 +3791,13 @@ files = [
 
 [[package]]
 name = "tomlkit"
-version = "0.13.0"
+version = "0.13.2"
 description = "Style preserving TOML library"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "tomlkit-0.13.0-py3-none-any.whl", hash = "sha256:7075d3042d03b80f603482d69bf0c8f345c2b30e41699fd8883227f89972b264"},
-    {file = "tomlkit-0.13.0.tar.gz", hash = "sha256:08ad192699734149f5b97b45f1f18dad7eb1b6d16bc72ad0c2335772650d7b72"},
+    {file = "tomlkit-0.13.2-py3-none-any.whl", hash = "sha256:7a974427f6e119197f670fbbbeae7bef749a6c14e793db934baefc1b5f03efde"},
+    {file = "tomlkit-0.13.2.tar.gz", hash = "sha256:fff5fe59a87295b278abd31bec92c15d9bc4a06885ab12bcea52c71119392e79"},
 ]
 
 [[package]]
