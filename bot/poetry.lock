@@ -2271,13 +2271,13 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.52.0"
+version = "0.52.1"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.52.0-py3-none-any.whl", hash = "sha256:e187a355be39c0fbaeecea358d60b591d0bc2b06849a10387f370a695f880aa7"},
-    {file = "nonebot_plugin_alconna-0.52.0.tar.gz", hash = "sha256:f6146163fd2d69cee32cfbbb740ff32a0eaba118b306a212421410661c638ecc"},
+    {file = "nonebot_plugin_alconna-0.52.1-py3-none-any.whl", hash = "sha256:96a4fad2cead82d12864f3ae272dd3e2699b4c06c3f61562df5bc6a1a2254e68"},
+    {file = "nonebot_plugin_alconna-0.52.1.tar.gz", hash = "sha256:4df212c61a25be44762e3258162ef3f6b1f0b05545fac0e088b2d689614bbf39"},
 ]
 
 [package.dependencies]
@@ -3255,13 +3255,13 @@ extra = ["pygments (>=2.12)"]
 
 [[package]]
 name = "pyparsing"
-version = "3.1.2"
+version = "3.1.4"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
 optional = false
 python-versions = ">=3.6.8"
 files = [
-    {file = "pyparsing-3.1.2-py3-none-any.whl", hash = "sha256:f9db75911801ed778fe61bb643079ff86601aca99fcae6345aa67292038fb742"},
-    {file = "pyparsing-3.1.2.tar.gz", hash = "sha256:a1bac0ce561155ecc3ed78ca94d3c9378656ad4c94c1270de543f621420f94ad"},
+    {file = "pyparsing-3.1.4-py3-none-any.whl", hash = "sha256:a6a7ee4235a3f944aa1fa2249307708f893fe5717dc603503c6c7969c070fb7c"},
+    {file = "pyparsing-3.1.4.tar.gz", hash = "sha256:f86ec8d1a83f11977c9a6ea7598e8c27fc5cddfa5b07ea2241edbbde1d7bc032"},
 ]
 
 [package.extras]
