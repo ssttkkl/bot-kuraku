@@ -38,6 +38,7 @@ services:
       - NAPCAT_GID=0
       - NAPCAT_UID=0
       - WS_ENABLE=true
+      - WS_URLS=["ws://bot:8080/onebot/v11/ws/"]
     volumes:
       - bot-napcat-config:/app/napcat/config
       - bot-napcat-data:/app/.config/QQ
