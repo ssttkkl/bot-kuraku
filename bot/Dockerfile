@@ -35,7 +35,7 @@ RUN apt update\
 # 安装whl包
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt && pip install /tmp/*.whl
+RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 COPY ./ /app/
 
