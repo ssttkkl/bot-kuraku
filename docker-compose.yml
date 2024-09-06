@@ -6,7 +6,8 @@ secrets:
 
 services:
   bot:
-    image: "ssttkkl/bot-kuraku-bot:latest"
+    # image: "ssttkkl/bot-kuraku-bot:latest"
+    build: bot
     container_name: "bot"
     environment:
       - "HOST=0.0.0.0"
@@ -24,22 +25,24 @@ services:
     secrets:
       - db_passwd
 
-  bot-chronocat:
-    image: "yuukinya/chronocat-docker:latest"
-    tty: true
-    container_name: "bot-chronocat"
+  bot-napcat:
+    image: "mlikiowa/napcat-docker:latest"
+    container_name: "bot-napcat"
     restart: always
     ports:
-      - "5900:5900"
-      - "6081:6081"
-      - "16530:16530"
+      - "3001:3001"
+      - "6099:6099"
     environment:
       - TZ=Asia/Shanghai
+      - ACCOUNT=${QQ_ACCOUNT}
+      - NAPCAT_GID=0
+      - NAPCAT_UID=0
+      - WS_ENABLE=true
     volumes:
-      - bot-chronocat-config:/root/.chronocat/config
-      - bot-chronocat-data:/root/.config/QQ
+      - bot-napcat-config:/app/napcat/config
+      - bot-napcat-data:/app/.config/QQ
 
 volumes:
   bot-postgres-data:
-  bot-chronocat-config:
-  bot-chronocat-data:
+  bot-napcat-config:
+  bot-napcat-data:
