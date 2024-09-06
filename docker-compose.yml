@@ -6,8 +6,8 @@ secrets:
 
 services:
   bot:
-    # image: "ssttkkl/bot-kuraku-bot:latest"
-    build: bot
+    image: "ssttkkl/bot-kuraku-bot:latest"
+    # build: bot
     container_name: "bot"
     environment:
       - "HOST=0.0.0.0"
