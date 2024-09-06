@@ -1,10 +1,11 @@
 from nonebot import require
 from nonebot.plugin import PluginMetadata
-from ssttkkl_nonebot_utils.nonebot import default_command_start
 
 require("ssttkkl_nonebot_utils")
 require("nonebot_plugin_htmlrender")
 require("nonebot_plugin_saa")
+
+from ssttkkl_nonebot_utils.nonebot import default_command_start
 
 __usage__ = f"""
 - {default_command_start}新建超能力对局：为四家生成超能力麻将技能牌组
