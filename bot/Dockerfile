@@ -4,7 +4,7 @@ FROM python:3.11 as requirements-stage
 
 WORKDIR /tmp
 
-RUN pip install poetry && poetry update
+RUN pip install poetry
 
 COPY ./pyproject.toml ./poetry.lock* /tmp/
 
