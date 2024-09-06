@@ -33,8 +33,6 @@ RUN apt update\
  && playwright install-deps
 
 # 安装whl包
-COPY --from=maimaidx-stage /tmp/maimaiDX/dist/* /tmp
-
 COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt && pip install /tmp/*.whl
