@@ -1360,13 +1360,13 @@ files = [
 
 [[package]]
 name = "idna"
-version = "3.9"
+version = "3.10"
 description = "Internationalized Domain Names in Applications (IDNA)"
 optional = false
 python-versions = ">=3.6"
 files = [
-    {file = "idna-3.9-py3-none-any.whl", hash = "sha256:69297d5da0cc9281c77efffb4e730254dd45943f45bbfb461de5991713989b1e"},
-    {file = "idna-3.9.tar.gz", hash = "sha256:e5c5dafde284f26e9e0f28f6ea2d6400abd5ca099864a67f576f3981c6476124"},
+    {file = "idna-3.10-py3-none-any.whl", hash = "sha256:946d195a0d259cbba61165e88e65941f16e9b36ea6ddb97f00452bae8b1287d3"},
+    {file = "idna-3.10.tar.gz", hash = "sha256:12f65c9b470abda6dc35cf8e63cc574b1c52b11df2c86030af0ac09b01b13ea9"},
 ]
 
 [package.extras]
@@ -2070,13 +2070,13 @@ typing-extensions = ">=4.0.0,<5.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "1.2.1b4"
+version = "1.2.1"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_access_control-1.2.1b4-py3-none-any.whl", hash = "sha256:1180c5c9884cabb827653b61278fb77646bf8630564944fe2837009a0f3cd933"},
-    {file = "nonebot_plugin_access_control-1.2.1b4.tar.gz", hash = "sha256:d3ef7206a0db8a46bd7118c4687bdd6acfe8d04876798decd744acff1c9019d5"},
+    {file = "nonebot_plugin_access_control-1.2.1-py3-none-any.whl", hash = "sha256:a5b13c68e25b2f6dab48cb8084747bc0868e25bedf0eba2e3d176d636a03dfc8"},
+    {file = "nonebot_plugin_access_control-1.2.1.tar.gz", hash = "sha256:0c033ab0f96afedf1bb419d8cdac9b00389896bfe696b78b0031aa0839a4127f"},
 ]
 
 [package.dependencies]
@@ -2351,13 +2351,13 @@ snapshot-phantomjs = ">=0.0.1,<1.0.0"
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.5"
+version = "0.2.6"
 description = "NoneBot2 雀魂信息查询插件"
 optional = false
-python-versions = ">=3.9,<4.0"
+python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.5-py3-none-any.whl", hash = "sha256:08c70bd4516e664f5249a14ce27908152551651a90c13fb2e22b78ebee2c5af0"},
-    {file = "nonebot_plugin_majsoul-0.2.5.tar.gz", hash = "sha256:f3f5b7eca1e7cc7e73f50aad6f22bfe1c99ef6bdb8fefbc7e0436f9512e209bf"},
+    {file = "nonebot_plugin_majsoul-0.2.6-py3-none-any.whl", hash = "sha256:99b3e4be19708e203e4408ebe47a3f750b3ea08c19a6fd55af28a8d4813ec297"},
+    {file = "nonebot_plugin_majsoul-0.2.6.tar.gz", hash = "sha256:7f3ec87a27926fa2bc615c88019a8857a8fc1f43c636a1be2e888e550fa542c5"},
 ]
 
 [package.dependencies]
@@ -2365,8 +2365,8 @@ icmplib = ">=3.0.3"
 matplotlib = ">=3.6.2"
 monthdelta = ">=0.9.1"
 nonebot-plugin-send-anything-anywhere = ">=0.2.1"
-nonebot2 = {version = ">=2.0.0,<3.0.0", extras = ["httpx"]}
-ssttkkl-nonebot-utils = ">=0.1.5"
+nonebot2 = {version = ">=2.0.0", extras = ["httpx"]}
+ssttkkl-nonebot-utils = ">=0.1.22"
 tensoul = ">=0.1.0"
 tzlocal = ">=4.2"
 
@@ -2428,13 +2428,13 @@ yarl = ">=1.9.4"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.1.4"
+version = "2.1.5"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_pixivbot-2.1.4-py3-none-any.whl", hash = "sha256:78b873e0ea99456fc10c53111f53b9a49e4594106596fbb99a388175501a173f"},
-    {file = "nonebot_plugin_pixivbot-2.1.4.tar.gz", hash = "sha256:1cbc42a47a42142246816f309b81fef373bb2d9eaa5afe9d4df1f0078b1fc0bf"},
+    {file = "nonebot_plugin_pixivbot-2.1.5-py3-none-any.whl", hash = "sha256:8ffc32467f50c40d57a43a49c2ee7f0af29b926d4b4b5109746d8d2bf96b90f5"},
+    {file = "nonebot_plugin_pixivbot-2.1.5.tar.gz", hash = "sha256:b1c71fb52ca5c2d24b7d64e23e6fb3f49c1d7da7585236084db0beafc098f599"},
 ]
 
 [package.dependencies]
@@ -2451,13 +2451,13 @@ nonebot-plugin-send-anything-anywhere = ">=0.3.0"
 nonebot-plugin-session = ">=0.2.0"
 nonebot-plugin-session-orm = ">=0.1.1"
 nonebot-plugin-session-saa = ">=0.1.0"
-nonebot2 = ">=2.0,<3.0"
+nonebot2 = ">=2.3,<3.0"
 numpy = ">=1.23.1"
 Pillow = ">=10.3.0"
 PixivPy-Async = ">=1.2.14,<2.0.0"
 shortuuid = ">=1.0.9"
 SQLAlchemy = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
-ssttkkl-nonebot-utils = ">=0.1.14"
+ssttkkl-nonebot-utils = ">=0.1.21"
 tzlocal = ">=5.0.1"
 
 [[package]]
@@ -3577,8 +3577,8 @@ files = [
 
 [package.dependencies]
 aiosqlite = {version = "*", optional = true, markers = "extra == \"aiosqlite\""}
-greenlet = {version = "!=0.4.17", optional = true, markers = "python_version < \"3.13\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"aiosqlite\""}
-typing-extensions = {version = ">=4.6.0", optional = true, markers = "extra == \"aiosqlite\""}
+greenlet = {version = "!=0.4.17", optional = true, markers = "python_version < \"3.13\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"asyncio\""}
+typing-extensions = {version = ">=4.6.0", optional = true}
 
 [package.extras]
 aiomysql = ["aiomysql (>=0.2.0)", "greenlet (!=0.4.17)"]
@@ -3607,13 +3607,13 @@ sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.21"
+version = "0.1.22"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.8"
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.21-py3-none-any.whl", hash = "sha256:c6d63fd539be5247e585b561d87046f347c3fae43dd8fa83eec60507219873df"},
-    {file = "ssttkkl_nonebot_utils-0.1.21.tar.gz", hash = "sha256:aec48a7ea25a36f2d2d1c669fc6d5e82354e87e53a6793043001979fab618521"},
+    {file = "ssttkkl_nonebot_utils-0.1.22-py3-none-any.whl", hash = "sha256:6f86efb1f77184d6098256fbf713960b6cc089dc7c0a73adc662a9cbc1958621"},
+    {file = "ssttkkl_nonebot_utils-0.1.22.tar.gz", hash = "sha256:cbb97b2ef5419453bdc1ef532c768d29c47914bf5d097de75f5c12ba367c53fd"},
 ]
 
 [package.dependencies]
