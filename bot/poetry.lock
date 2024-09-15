@@ -2428,13 +2428,13 @@ yarl = ">=1.9.4"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.1.5"
+version = "2.1.5.post1"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_pixivbot-2.1.5-py3-none-any.whl", hash = "sha256:8ffc32467f50c40d57a43a49c2ee7f0af29b926d4b4b5109746d8d2bf96b90f5"},
-    {file = "nonebot_plugin_pixivbot-2.1.5.tar.gz", hash = "sha256:b1c71fb52ca5c2d24b7d64e23e6fb3f49c1d7da7585236084db0beafc098f599"},
+    {file = "nonebot_plugin_pixivbot-2.1.5.post1-py3-none-any.whl", hash = "sha256:f7549abd520f1a0110c0130fd231e4f07df11a391f99a44f134af3ac9ac8d30b"},
+    {file = "nonebot_plugin_pixivbot-2.1.5.post1.tar.gz", hash = "sha256:07ff60df8a89e6eea8839ff551e10ff919900dad154b3b4578aa0a5bb055e71a"},
 ]
 
 [package.dependencies]
