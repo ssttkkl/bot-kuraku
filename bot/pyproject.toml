@@ -30,7 +30,7 @@ nonebot-plugin-send-anything-anywhere = ">=0.3.0"
 nonebot-plugin-follow-withdraw = ">=0.2.0"
 nonebot-plugin-htmlrender = ">=0.2.2"
 nonebot-plugin-githubcard = ">=0.1.5"
-nonebot-plugin-maimaidx = "^1.0.13"
+nonebot-plugin-maimaidx = ">=1.0.13"
 
 [tool.nonebot]
 plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
