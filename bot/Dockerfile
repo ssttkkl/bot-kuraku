@@ -10,8 +10,6 @@ COPY ./pyproject.toml ./poetry.lock* /tmp/
 
 RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
 
-RUN curl -o static.zip https://share.yuzuchan.moe/d/aria/Update.zip?sign=PFnIZpgyB_HptU-hHIQ-S_qhuuGTNDlmEEtmaEpmJlA=:0
-
 # ========== main ==========
 FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
 
@@ -27,9 +25,9 @@ ENV LC_ALL zh_CN.UTF-8
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 WORKDIR /app
 
-# 安装必要依赖（git、gcc、bzip2、playwright）
+# 安装必要依赖（git、gcc、bzip2、playwright、curl）
 RUN apt update\
- && apt install git gcc bzip2 -y\
+ && apt install git gcc bzip2 curl -y\
  && pip install playwright\
  && playwright install chromium\
  && playwright install-deps
@@ -50,8 +48,8 @@ COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
-# 解压静态数据
-COPY --from=requirements-stage /tmp/static.zip /tmp/static.zip
+# 下载maimaidx静态数据
+RUN curl -o /tmp/static.zip https://share.yuzuchan.moe/d/aria/Update.zip?sign=PFnIZpgyB_HptU-hHIQ-S_qhuuGTNDlmEEtmaEpmJlA=:0
 RUN unzip /tmp/static.zip -d /app/data/maimaidx/static && rm /tmp/static.zip
 
 COPY ./ /app/
