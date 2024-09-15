@@ -25,9 +25,9 @@ ENV LC_ALL zh_CN.UTF-8
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
 WORKDIR /app
 
-# 安装必要依赖（git、gcc、bzip2、playwright、curl）
+# 安装必要依赖（git、gcc、bzip2、playwright、unzip、curl）
 RUN apt update\
- && apt install git gcc bzip2 curl -y\
+ && apt install git gcc bzip2 curl unzip -y\
  && pip install playwright\
  && playwright install chromium\
  && playwright install-deps
