@@ -50,7 +50,7 @@ RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
 # 下载maimaidx静态数据
 RUN curl -o /tmp/static.zip https://share.yuzuchan.moe/d/aria/Update.zip?sign=PFnIZpgyB_HptU-hHIQ-S_qhuuGTNDlmEEtmaEpmJlA=:0
-RUN mkdir -p /app/data/maimaidx/static && unzip /tmp/static.zip -d /app/data/maimaidx/static && rm /tmp/static.zip
+RUN mkdir -p /app/data/maimaidx && unzip /tmp/static.zip -d /app/data/maimaidx/static && rm /tmp/static.zip
 
 COPY ./ /app/
 
