@@ -49,7 +49,7 @@ services:
     volumes:
       - bot-napcat-config:/app/napcat/config
       - bot-napcat-data:/app/.config/QQ
-
+    mac_address: 02:42:ac:12:00:02
 volumes:
   bot-postgres-data:
   bot-napcat-config:
