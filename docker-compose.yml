@@ -32,7 +32,7 @@ services:
       - db_passwd
 
   bot-napcat:
-    image: "mlikiowa/napcat-docker:latest"
+    image: "mlikiowa/napcat-docker:v2.6.20"
     container_name: "bot-napcat"
     restart: always
     ports:
