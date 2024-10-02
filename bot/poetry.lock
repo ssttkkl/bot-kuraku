@@ -2354,13 +2354,13 @@ snapshot-phantomjs = ">=0.0.1,<1.0.0"
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.6"
+version = "0.2.7"
 description = "NoneBot2 雀魂信息查询插件"
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.6-py3-none-any.whl", hash = "sha256:99b3e4be19708e203e4408ebe47a3f750b3ea08c19a6fd55af28a8d4813ec297"},
-    {file = "nonebot_plugin_majsoul-0.2.6.tar.gz", hash = "sha256:7f3ec87a27926fa2bc615c88019a8857a8fc1f43c636a1be2e888e550fa542c5"},
+    {file = "nonebot_plugin_majsoul-0.2.7-py3-none-any.whl", hash = "sha256:6ce52d2a215cd0c6e81218a0d6dcd1dd7086ac12ae2d020400428941a13defb1"},
+    {file = "nonebot_plugin_majsoul-0.2.7.tar.gz", hash = "sha256:8da5f943bda5d676d86ad31af245cbd3c5fdc065aedeaf6a19001cf3fff96972"},
 ]
 
 [package.dependencies]
