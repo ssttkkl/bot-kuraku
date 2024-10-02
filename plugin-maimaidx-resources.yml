@@ -1,0 +1,36 @@
+name: Download nonebot-plugin-maimaidx Resources
+
+on:
+  schedule:
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+
+jobs:
+  download:
+
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Download
+      run: |
+        apt install apt unzip -y
+        curl -o /tmp/static.zip https://share.yuzuchan.moe/d/aria/Update.zip?sign=PFnIZpgyB_HptU-hHIQ-S_qhuuGTNDlmEEtmaEpmJlA=:0
+        curl -o /tmp/static2.zip https://share.yuzuchan.moe/d/aria/Resource.zip?sign=LOqwqDVm95dYnkEDYKX2E-VGj0xc_JxrsFnuR1BcvtI=:0
+        mkdir -p /tmp/maimaidx
+        unzip /tmp/static.zip -d /tmp/maimaidx/
+        unzip /tmp/static2.zip -d /tmp/maimaidx/
+        rm -rf ./bot/data/maimaidx || true
+        mkdir -p ./bot/data/maimaidx
+        cp -r /tmp/maimaidx/Resource/static/* ./bot/data/maimaidx
+        cp -r /tmp/maimaidx/Update/static/* ./bot/data/maimaidx
+
+    - name: Commit
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Update nonebot-plugin-maimaidx Resources
