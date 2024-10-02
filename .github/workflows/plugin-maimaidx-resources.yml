@@ -16,10 +16,14 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
-
+      
+    - name: Cache APT Packages
+      uses: awalsh128/cache-apt-pkgs-action@v1.4.2
+      with:
+        packages: "unzip curl"
+          
     - name: Download
       run: |
-        apt install apt unzip -y
         curl -o /tmp/static.zip https://share.yuzuchan.moe/d/aria/Update.zip?sign=PFnIZpgyB_HptU-hHIQ-S_qhuuGTNDlmEEtmaEpmJlA=:0
         curl -o /tmp/static2.zip https://share.yuzuchan.moe/d/aria/Resource.zip?sign=LOqwqDVm95dYnkEDYKX2E-VGj0xc_JxrsFnuR1BcvtI=:0
         mkdir -p /tmp/maimaidx
