@@ -2354,13 +2354,13 @@ htmlrender = ["nonebot-plugin-htmlrender (>=0.2.0.3,<0.3.0.0)", "nonebot-plugin-
 
 [[package]]
 name = "nonebot-plugin-mahjong-utils"
-version = "0.4.6"
+version = "0.4.7"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "nonebot_plugin_mahjong_utils-0.4.6-py3-none-any.whl", hash = "sha256:97bf3fa2f4a633c8f6b7fdbbe33ef6d24092df4f27216379a534f93caac5c98e"},
-    {file = "nonebot_plugin_mahjong_utils-0.4.6.tar.gz", hash = "sha256:3cc1269cb646a7e6759cf17121948d3a203c5137c837a67abf2701364346c48d"},
+    {file = "nonebot_plugin_mahjong_utils-0.4.7-py3-none-any.whl", hash = "sha256:2c709b31934be9404156d87d15172ae23f4c915d23227e0562d30c08d0d0cf0d"},
+    {file = "nonebot_plugin_mahjong_utils-0.4.7.tar.gz", hash = "sha256:d5439d58401c118c9a2bac30b2c832914a3617cb7934644abfbf82e8e1b2dcc4"},
 ]
 
 [package.dependencies]
