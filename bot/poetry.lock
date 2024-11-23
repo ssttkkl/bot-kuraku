@@ -2196,20 +2196,20 @@ nonebot2 = ">=2.2.0,<3.0.0"
 
 [[package]]
 name = "nonebot-plugin-alconna"
-version = "0.53.1"
+version = "0.54.0"
 description = "Alconna Adapter for Nonebot"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "nonebot_plugin_alconna-0.53.1-py3-none-any.whl", hash = "sha256:a7734d4c7f1b2fedec586b7d235da119ffaa23d0e17a8aa0a0acc0e76a1662d0"},
-    {file = "nonebot_plugin_alconna-0.53.1.tar.gz", hash = "sha256:dc9eef228bb819d05ce9816f8a5a1bead455ee85d1ea7d5e409f9fb11665805e"},
+    {file = "nonebot_plugin_alconna-0.54.0-py3-none-any.whl", hash = "sha256:d117c6e2906a7ca27e004ac21b6c7ce96e3a7a4903b0fddd879358a1d690b49c"},
+    {file = "nonebot_plugin_alconna-0.54.0.tar.gz", hash = "sha256:3e80ff59e997b386af65785b7d37b56ebabe7cd52236d603bbdf97b85f8151d6"},
 ]
 
 [package.dependencies]
-arclet-alconna = ">=1.8.31,<2.0"
+arclet-alconna = ">=1.8.34,<2.0"
 arclet-alconna-tools = ">=0.7.10"
 importlib-metadata = ">=4.13.0"
-nepattern = ">=0.7.4,<1.0"
+nepattern = ">=0.7.7,<1.0"
 nonebot-plugin-waiter = ">=0.6.0"
 nonebot2 = ">=2.3.0"
 tarina = ">=0.6.3,<0.7"
