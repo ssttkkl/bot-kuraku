@@ -699,13 +699,13 @@ rich = "*"
 
 [[package]]
 name = "cookit"
-version = "0.8.2.post2"
+version = "0.8.3"
 description = "A toolkit for self use."
 optional = false
 python-versions = "<4.0,>=3.9"
 files = [
-    {file = "cookit-0.8.2.post2-py3-none-any.whl", hash = "sha256:2fe37ce37bf6cb5c60a1d944ad81c1716d2eff231c58a8b2c99cab586507df58"},
-    {file = "cookit-0.8.2.post2.tar.gz", hash = "sha256:1cff72e15c36279825d2d92a86610d4ae7e9a243ab3d5e0720f5bf1b5601c22d"},
+    {file = "cookit-0.8.3-py3-none-any.whl", hash = "sha256:d18dc1005ce5c29a724c460c3337f35c3388f1c57113e4e0b43b4a0511c64a0a"},
+    {file = "cookit-0.8.3.tar.gz", hash = "sha256:ef9af308536915fb4cc523ae84766832b2e01b17115263f67ef0732955cd3de7"},
 ]
 
 [package.dependencies]
