@@ -122,13 +122,13 @@ speedups = ["Brotli", "aiodns (>=3.2.0)", "brotlicffi"]
 
 [[package]]
 name = "aiohttp-socks"
-version = "0.10.0"
+version = "0.10.1"
 description = "Proxy connector for aiohttp"
 optional = false
 python-versions = ">=3.8.0"
 files = [
-    {file = "aiohttp_socks-0.10.0-py3-none-any.whl", hash = "sha256:5f60410e748e943d6a6bd50993bb6eafbff74fa68c94abcb7a9b803e0a63410d"},
-    {file = "aiohttp_socks-0.10.0.tar.gz", hash = "sha256:9275c47cc7dac185c82754b70921f1ea243d093c79c7b21554c2ee6905f42379"},
+    {file = "aiohttp_socks-0.10.1-py3-none-any.whl", hash = "sha256:6fd4d46c09f952f971a011ff446170daab8d539cf5310c0627f8423df2fb15ea"},
+    {file = "aiohttp_socks-0.10.1.tar.gz", hash = "sha256:49f2e1f8051f2885719beb1b77e312b5a27c3e4b60f0b045a388f194d995e068"},
 ]
 
 [package.dependencies]
@@ -3333,23 +3333,23 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "python-socks"
-version = "2.5.3"
-description = "Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python"
+version = "2.6.0"
+description = "Proxy (SOCKS4, SOCKS5, HTTP CONNECT) client for Python"
 optional = false
-python-versions = "*"
+python-versions = ">=3.8.0"
 files = [
-    {file = "python_socks-2.5.3-py3-none-any.whl", hash = "sha256:6bc428d0e19f8043e7b8fbc8af33417e690238bd8c9c1e9215871ac18c6136ad"},
-    {file = "python_socks-2.5.3.tar.gz", hash = "sha256:4414b2a24777e439758a5f4644f81509ee634e6893115fe7fd1ec482b4b5c979"},
+    {file = "python_socks-2.6.0-py3-none-any.whl", hash = "sha256:e159639f2a3d05c8462983c2b098cad418d2decbe3c4bf5b6d1c380ccccca32f"},
+    {file = "python_socks-2.6.0.tar.gz", hash = "sha256:40e50f268c38130eee97d18ddaef8992282df035b9e7afccbf1c5333bd3ba1ef"},
 ]
 
 [package.dependencies]
-async-timeout = {version = ">=3.0.1", optional = true, markers = "python_version < \"3.11\" and extra == \"asyncio\""}
+async-timeout = {version = ">=4.0", optional = true, markers = "python_version < \"3.11\" and extra == \"asyncio\""}
 
 [package.extras]
 anyio = ["anyio (>=3.3.4,<5.0.0)"]
-asyncio = ["async-timeout (>=3.0.1)"]
+asyncio = ["async-timeout (>=4.0)"]
 curio = ["curio (>=1.4)"]
-trio = ["trio (>=0.16.0)"]
+trio = ["trio (>=0.24)"]
 
 [[package]]
 name = "pytimeparser"
