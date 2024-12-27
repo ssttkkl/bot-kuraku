@@ -3333,13 +3333,13 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "python-socks"
-version = "2.6.0"
+version = "2.6.1"
 description = "Proxy (SOCKS4, SOCKS5, HTTP CONNECT) client for Python"
 optional = false
 python-versions = ">=3.8.0"
 files = [
-    {file = "python_socks-2.6.0-py3-none-any.whl", hash = "sha256:e159639f2a3d05c8462983c2b098cad418d2decbe3c4bf5b6d1c380ccccca32f"},
-    {file = "python_socks-2.6.0.tar.gz", hash = "sha256:40e50f268c38130eee97d18ddaef8992282df035b9e7afccbf1c5333bd3ba1ef"},
+    {file = "python_socks-2.6.1-py3-none-any.whl", hash = "sha256:7fe9324c1834bb9cdce46ddb6721cf42a05a00da5f1fb87f8507ac0c6f305e1d"},
+    {file = "python_socks-2.6.1.tar.gz", hash = "sha256:9743929aab6ffe0bab640ecfbbee7130af92408ad86e4aa2984789f742f3ec9e"},
 ]
 
 [package.dependencies]
