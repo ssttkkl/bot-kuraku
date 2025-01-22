@@ -2447,14 +2447,14 @@ yaml = ["pyyaml (>=6.0)"]
 
 [[package]]
 name = "nonebot-plugin-escape-url"
-version = "0.1.4"
+version = "0.1.5"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_escape_url-0.1.4-py3-none-any.whl", hash = "sha256:aa9c0a1901cae4d9a73a7d93c01d20c10badb2fe0c70e3d0412e02e45a69904d"},
-    {file = "nonebot_plugin_escape_url-0.1.4.tar.gz", hash = "sha256:934ff547ad16e98b36aa88e0944e9d4a6f2cc823de7b7aa3db69626b15728c15"},
+    {file = "nonebot_plugin_escape_url-0.1.5-py3-none-any.whl", hash = "sha256:a736873bb8d6a7d2a53d6a13a7fffd1d0576252c99487d560cb7bb7860f3f1d8"},
+    {file = "nonebot_plugin_escape_url-0.1.5.tar.gz", hash = "sha256:45048341488ac45cf9459235006751c0370264b1fce25d2055167bf464c54270"},
 ]
 
 [package.dependencies]
@@ -2622,14 +2622,14 @@ snapshot_phantomjs = ">=0.0.1,<1.0.0"
 
 [[package]]
 name = "nonebot-plugin-majsoul"
-version = "0.2.8"
+version = "0.2.9"
 description = "NoneBot2 雀魂信息查询插件"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_majsoul-0.2.8-py3-none-any.whl", hash = "sha256:9efd38e88682cf372278eef45b92bb9e841ec57b3327543ef57fbba0ba72c359"},
-    {file = "nonebot_plugin_majsoul-0.2.8.tar.gz", hash = "sha256:3575866ed9c6388032aa74050bfe63b8e20736999ee194767666209bc8e5fe7b"},
+    {file = "nonebot_plugin_majsoul-0.2.9-py3-none-any.whl", hash = "sha256:67706318ca1303d40df6acbcafabc72c76ad99eb2729e4e2f7e60135950d2cd3"},
+    {file = "nonebot_plugin_majsoul-0.2.9.tar.gz", hash = "sha256:75aa925e4b84c479dd5e7e9409386580b5875b0e731ee8625e6089d439154913"},
 ]
 
 [package.dependencies]
@@ -2640,7 +2640,7 @@ nonebot-plugin-orm = ">=0.7.0,<1.0.0"
 nonebot-plugin-send-anything-anywhere = ">=0.2.1"
 nonebot-plugin-user = ">=0.4.3,<0.5.0"
 nonebot2 = {version = ">=2.0.0", extras = ["httpx"]}
-ssttkkl-nonebot-utils = ">=0.1.22"
+ssttkkl-nonebot-utils = ">=0.1.23"
 tensoul = ">=0.1.0"
 tzlocal = ">=4.2"
 
@@ -2704,14 +2704,14 @@ yarl = ">=1.9.4"
 
 [[package]]
 name = "nonebot-plugin-pixivbot"
-version = "2.1.5.post1"
+version = "2.1.6"
 description = "Nonebot Plugin PixivBot"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_pixivbot-2.1.5.post1-py3-none-any.whl", hash = "sha256:f7549abd520f1a0110c0130fd231e4f07df11a391f99a44f134af3ac9ac8d30b"},
-    {file = "nonebot_plugin_pixivbot-2.1.5.post1.tar.gz", hash = "sha256:07ff60df8a89e6eea8839ff551e10ff919900dad154b3b4578aa0a5bb055e71a"},
+    {file = "nonebot_plugin_pixivbot-2.1.6-py3-none-any.whl", hash = "sha256:3171271025bd149c9c469e2ab14639287f0c1c6a86d8c9b1322775bab477315f"},
+    {file = "nonebot_plugin_pixivbot-2.1.6.tar.gz", hash = "sha256:bb1b704458e706170690516ad07b425b6e408f2dfa0c9874b6e2e152fcb5ba51"},
 ]
 
 [package.dependencies]
@@ -2732,9 +2732,10 @@ nonebot2 = ">=2.3,<3.0"
 numpy = ">=1.23.1"
 Pillow = ">=10.3.0"
 PixivPy-Async = ">=1.2.14,<2.0.0"
+pytz = ">=2024.2"
 shortuuid = ">=1.0.9"
 SQLAlchemy = {version = ">=2.0.0,<3.0.0", extras = ["asyncio"]}
-ssttkkl-nonebot-utils = ">=0.1.21"
+ssttkkl-nonebot-utils = ">=0.1.23"
 tzlocal = ">=5.0.1"
 
 [[package]]
@@ -3665,6 +3666,18 @@ files = [
 ]
 
 [[package]]
+name = "pytz"
+version = "2024.2"
+description = "World timezone definitions, modern and historical"
+optional = false
+python-versions = "*"
+groups = ["main"]
+files = [
+    {file = "pytz-2024.2-py2.py3-none-any.whl", hash = "sha256:31c7c1817eb7fae7ca4b8c7ee50c72f93aa2dd863de768e1ef4245d426aa0725"},
+    {file = "pytz-2024.2.tar.gz", hash = "sha256:2aa355083c50a0f93fa581709deac0c9ad65cca8a9e9beac660adcbd493c798a"},
+]
+
+[[package]]
 name = "pyyaml"
 version = "6.0.2"
 description = "YAML parser and emitter for Python"
@@ -4035,7 +4048,7 @@ files = [
 [package.dependencies]
 aiosqlite = {version = "*", optional = true, markers = "extra == \"aiosqlite\""}
 greenlet = [
-    {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"asyncio\""},
+    {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"aiosqlite\""},
     {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"aiosqlite\""},
     {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"asyncio\""},
 ]
@@ -4071,14 +4084,14 @@ sqlcipher = ["sqlcipher3_binary"]
 
 [[package]]
 name = "ssttkkl-nonebot-utils"
-version = "0.1.22"
-description = ""
+version = "0.1.23"
+description = "ssttkkl-nonebot-utils"
 optional = false
 python-versions = "<4.0,>=3.8"
 groups = ["main"]
 files = [
-    {file = "ssttkkl_nonebot_utils-0.1.22-py3-none-any.whl", hash = "sha256:6f86efb1f77184d6098256fbf713960b6cc089dc7c0a73adc662a9cbc1958621"},
-    {file = "ssttkkl_nonebot_utils-0.1.22.tar.gz", hash = "sha256:cbb97b2ef5419453bdc1ef532c768d29c47914bf5d097de75f5c12ba367c53fd"},
+    {file = "ssttkkl_nonebot_utils-0.1.23-py3-none-any.whl", hash = "sha256:b235704bd7a354e418f3dabcc604cfda4dfacd79719197cb24f942f2fd1e6f95"},
+    {file = "ssttkkl_nonebot_utils-0.1.23.tar.gz", hash = "sha256:765747a103a2c4fe740b7831ace0ae7749a3369afd77b1fc8892109d8a968de5"},
 ]
 
 [package.dependencies]
