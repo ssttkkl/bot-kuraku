@@ -14,7 +14,7 @@ services:
     environment:
       - HOST=0.0.0.0
       - PORT=8080
-      - MAHJONG_UTILS_BRIDGE=http
+      - ENV_MAHJONG_UTILS_BRIDGE=http
       - ENV_MAHJONG_UTILS_HTTP_PORT=10021
       - ENV_MAHJONG_UTILS_HTTP_HOST=bot-mahjong-utils-webapi
     volumes:
@@ -36,7 +36,7 @@ services:
     mac_address: 02:42:ac:12:00:04
 
   bot-napcat:
-    image: "mlikiowa/napcat-docker:v2.6.20"
+    image: "mlikiowa/napcat-docker:v4.4.4"
     container_name: "bot-napcat"
     restart: always
     ports:
