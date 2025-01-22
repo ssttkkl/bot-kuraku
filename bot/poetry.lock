@@ -2329,14 +2329,14 @@ yarl = ">=1.9.0,<2.0.0"
 
 [[package]]
 name = "nonebot-plugin-access-control"
-version = "1.2.2"
+version = "1.2.3"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_access_control-1.2.2-py3-none-any.whl", hash = "sha256:48fe48e36f6f5e5ec4ea58dd27f39494628113079d8e39d2a8366c76f74feca2"},
-    {file = "nonebot_plugin_access_control-1.2.2.tar.gz", hash = "sha256:a125197fc1cc09eb5f9102b9dfe64b2e0c687a92dec81f88e5695b05670ff662"},
+    {file = "nonebot_plugin_access_control-1.2.3-py3-none-any.whl", hash = "sha256:b8b3e49a7f84dd1f6e468da51d389bd9b8af5fad6ca5600a63a479f98232d32d"},
+    {file = "nonebot_plugin_access_control-1.2.3.tar.gz", hash = "sha256:916cf6b6bbfd156c48e11c299e1ef949f35f16e04b70eed7068b9e8bdc1072ab"},
 ]
 
 [package.dependencies]
@@ -2447,14 +2447,14 @@ yaml = ["pyyaml (>=6.0)"]
 
 [[package]]
 name = "nonebot-plugin-escape-url"
-version = "0.1.5"
+version = "0.1.5.post1"
 description = ""
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_escape_url-0.1.5-py3-none-any.whl", hash = "sha256:a736873bb8d6a7d2a53d6a13a7fffd1d0576252c99487d560cb7bb7860f3f1d8"},
-    {file = "nonebot_plugin_escape_url-0.1.5.tar.gz", hash = "sha256:45048341488ac45cf9459235006751c0370264b1fce25d2055167bf464c54270"},
+    {file = "nonebot_plugin_escape_url-0.1.5.post1-py3-none-any.whl", hash = "sha256:c3ad8529a372d85f3e9cf0af49c9ad619477fffbdd6a6295a5d54074b3d0ceef"},
+    {file = "nonebot_plugin_escape_url-0.1.5.post1.tar.gz", hash = "sha256:293d84fbc01855bd78cc7b38f16a7efae83feed24f9b1496a793819a8737bf1c"},
 ]
 
 [package.dependencies]
@@ -4048,7 +4048,7 @@ files = [
 [package.dependencies]
 aiosqlite = {version = "*", optional = true, markers = "extra == \"aiosqlite\""}
 greenlet = [
-    {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"aiosqlite\""},
+    {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"asyncio\""},
     {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"aiosqlite\""},
     {version = "!=0.4.17", optional = true, markers = "python_version < \"3.14\" and (platform_machine == \"aarch64\" or platform_machine == \"ppc64le\" or platform_machine == \"x86_64\" or platform_machine == \"amd64\" or platform_machine == \"AMD64\" or platform_machine == \"win32\" or platform_machine == \"WIN32\") or extra == \"asyncio\""},
 ]
