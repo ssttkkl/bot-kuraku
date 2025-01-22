@@ -13,7 +13,7 @@ data = []
 
 @get_driver().on_startup
 def load_data():
-    with open('./data/super_ability_mahjong/superMahjongData.json', 'r') as json_file:
+    with open('./data/super_ability_mahjong/superMahjongData.json', 'r', encoding='utf-8') as json_file:
         data.extend(json.load(json_file))
 
 
