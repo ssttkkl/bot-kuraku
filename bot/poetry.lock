@@ -1350,19 +1350,18 @@ files = [
 
 [[package]]
 name = "h2"
-version = "4.1.0"
-description = "HTTP/2 State-Machine based protocol implementation"
+version = "4.2.0"
+description = "Pure-Python HTTP/2 protocol implementation"
 optional = false
-python-versions = ">=3.6.1"
+python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "h2-4.1.0-py3-none-any.whl", hash = "sha256:03a46bcf682256c95b5fd9e9a99c1323584c3eec6440d379b9903d709476bc6d"},
-    {file = "h2-4.1.0.tar.gz", hash = "sha256:a83aca08fbe7aacb79fec788c9c0bac936343560ed9ec18b82a13a12c28d2abb"},
+    {file = "h2-4.2.0-py3-none-any.whl", hash = "sha256:479a53ad425bb29af087f3458a61d30780bc818e4ebcf01f0b536ba916462ed0"},
 ]
 
 [package.dependencies]
-hpack = ">=4.0,<5"
-hyperframe = ">=6.0,<7"
+hpack = ">=4.1,<5"
+hyperframe = ">=6.1,<7"
 
 [[package]]
 name = "hpack"
@@ -3538,14 +3537,14 @@ files = [
 
 [[package]]
 name = "pymdown-extensions"
-version = "10.14.2"
+version = "10.14.3"
 description = "Extension pack for Python Markdown."
 optional = false
 python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "pymdown_extensions-10.14.2-py3-none-any.whl", hash = "sha256:f45bc5892410e54fd738ab8ccd736098b7ff0cb27fdb4bf24d0a0c6584bc90e1"},
-    {file = "pymdown_extensions-10.14.2.tar.gz", hash = "sha256:7a77b8116dc04193f2c01143760a43387bd9dc4aa05efacb7d838885a7791253"},
+    {file = "pymdown_extensions-10.14.3-py3-none-any.whl", hash = "sha256:05e0bee73d64b9c71a4ae17c72abc2f700e8bc8403755a00580b49a4e9f189e9"},
+    {file = "pymdown_extensions-10.14.3.tar.gz", hash = "sha256:41e576ce3f5d650be59e900e4ceff231e0aed2a88cf30acaee41e02f063a061b"},
 ]
 
 [package.dependencies]
@@ -3635,14 +3634,14 @@ unidecode = ["Unidecode (>=1.1.1)"]
 
 [[package]]
 name = "python-socks"
-version = "2.7.0"
+version = "2.7.1"
 description = "Proxy (SOCKS4, SOCKS5, HTTP CONNECT) client for Python"
 optional = false
 python-versions = ">=3.8.0"
 groups = ["main"]
 files = [
-    {file = "python_socks-2.7.0-py3-none-any.whl", hash = "sha256:eea4d29dfc83b0a5eff65f560ecb9b7a139e1ab7268becc919faf81536f50cb6"},
-    {file = "python_socks-2.7.0.tar.gz", hash = "sha256:e0e86854805cb8c35b06bfdc027790a48b73f918288568731026b799eb45cfe8"},
+    {file = "python_socks-2.7.1-py3-none-any.whl", hash = "sha256:2603c6454eeaeb82b464ad705be188989e8cf1a4a16f0af3c921d6dd71a49cec"},
+    {file = "python_socks-2.7.1.tar.gz", hash = "sha256:f1a0bb603830fe81e332442eada96757b8f8dec02bd22d1d6f5c99a79704c550"},
 ]
 
 [package.dependencies]
