@@ -795,23 +795,23 @@ rich = "*"
 
 [[package]]
 name = "cookit"
-version = "0.8.5"
+version = "0.9.1"
 description = "A toolkit for self use."
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "cookit-0.8.5-py3-none-any.whl", hash = "sha256:0b4ee7cd45e8a098bc356264e92590fa13409dc93de59ade2339639ba2d78141"},
-    {file = "cookit-0.8.5.tar.gz", hash = "sha256:1b8c62eeb28d5502abb2d5594cdf4c3f6cadaa8897c1f0640675badc579581f7"},
+    {file = "cookit-0.9.1-py3-none-any.whl", hash = "sha256:913f2e4f05aec31283e9551d86f5940360c0ef40fe75deb5c819cbd174d52559"},
+    {file = "cookit-0.9.1.tar.gz", hash = "sha256:6a1d3434e1f0765576e1bd7db284673aeed9533914be321f322e94ba6b12add1"},
 ]
 
 [package.dependencies]
-fleep = ">=1.0.1"
 pydantic = {version = ">=1.10.0,<2.5.0 || >2.5.0,<2.5.1 || >2.5.1,<3.0.0", optional = true, markers = "extra == \"pydantic\""}
 typing-extensions = ">=4.12.2"
 
 [package.extras]
-all = ["cookit[jinja,loguru,nonebot,playwright,pydantic]"]
+all = ["cookit[common,jinja,loguru,nonebot,playwright,pydantic]"]
+common = ["fleep (>=1.0.1)"]
 jinja = ["jinja2 (>=3.1.4)"]
 loguru = ["loguru (>=0.7.2)"]
 nonebot = ["cookit[nonebot-alconna]"]
@@ -1011,17 +1011,6 @@ groups = ["main"]
 files = [
     {file = "filetype-1.2.0-py2.py3-none-any.whl", hash = "sha256:7ce71b6880181241cf7ac8697a2f1eb6a8bd9b429f7ad6d27b8db9ba5f1c2d25"},
     {file = "filetype-1.2.0.tar.gz", hash = "sha256:66b56cd6474bf41d8c54660347d37afcc3f7d1970648de365c102ef77548aadb"},
-]
-
-[[package]]
-name = "fleep"
-version = "1.0.1"
-description = "File format determination library"
-optional = false
-python-versions = ">=3.1"
-groups = ["main"]
-files = [
-    {file = "fleep-1.0.1.tar.gz", hash = "sha256:c8f62b258ee5364d7f6c1ed1f3f278e99020fc3f0a60a24ad1e10846e31d104c"},
 ]
 
 [[package]]
@@ -1357,6 +1346,7 @@ python-versions = ">=3.9"
 groups = ["main"]
 files = [
     {file = "h2-4.2.0-py3-none-any.whl", hash = "sha256:479a53ad425bb29af087f3458a61d30780bc818e4ebcf01f0b536ba916462ed0"},
+    {file = "h2-4.2.0.tar.gz", hash = "sha256:c8a52129695e88b1a0578d8d2cc6842bbd79128ac685463b887ee278126ad01f"},
 ]
 
 [package.dependencies]
