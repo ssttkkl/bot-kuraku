@@ -800,14 +800,14 @@ rich = "*"
 
 [[package]]
 name = "cookit"
-version = "0.9.9"
+version = "0.9.10"
 description = "A toolkit for self use."
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "cookit-0.9.9-py3-none-any.whl", hash = "sha256:eaa9d7456adfd7550740c42bb92f928a43cf46436476c288f6fc1acdd1b7704f"},
-    {file = "cookit-0.9.9.tar.gz", hash = "sha256:42ba2d71b31af0e3cb3a4f5dd2edf9bfb10134d844533699463d209e4a9dd845"},
+    {file = "cookit-0.9.10-py3-none-any.whl", hash = "sha256:22248cd972441c067b6d3395673cfac50ebffb15af54bd863e7e0261308498a2"},
+    {file = "cookit-0.9.10.tar.gz", hash = "sha256:990d63cfda7f4cb0b4ac9db678987892e95208c7d082ec500f5b638d587f7656"},
 ]
 
 [package.dependencies]
@@ -819,9 +819,10 @@ all = ["cookit[common,jinja,loguru,nonebot,playwright,pydantic]"]
 common = ["fleep (>=1.0.1)"]
 jinja = ["jinja2 (>=3.1.5)"]
 loguru = ["loguru (>=0.7.3)"]
-nonebot = ["cookit[nonebot-alconna]"]
+nonebot = ["cookit[nonebot-alconna,nonebot-localstore]"]
 nonebot-alconna = ["cookit[nonebot-base]", "nonebot-plugin-alconna (>=0.54.2)"]
 nonebot-base = ["nonebot2 (>=2.4.1)"]
+nonebot-localstore = ["cookit[nonebot-base]", "nonebot-plugin-localstore (>=0.7.4)"]
 playwright = ["anyio (>=4.8.0)", "playwright (>=1.50.0)", "yarl (>=1.18.3)"]
 pw = ["cookit[playwright]"]
 pyd = ["cookit[pydantic]"]
@@ -2533,14 +2534,14 @@ python-markdown-math = ">=0.8"
 
 [[package]]
 name = "nonebot-plugin-localstore"
-version = "0.7.3"
+version = "0.7.4"
 description = "Local Storage Support for NoneBot2"
 optional = false
 python-versions = "<4.0,>=3.9"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_localstore-0.7.3-py3-none-any.whl", hash = "sha256:1bc239b4b5320df0dc08eada7c4f8ba4cb92d4dc3134bf4646ab5e297bd7e575"},
-    {file = "nonebot_plugin_localstore-0.7.3.tar.gz", hash = "sha256:1aff10e2dacfc5bc9ce239fd34849f8d7172a118135dbc5aeba1c97605d9959d"},
+    {file = "nonebot_plugin_localstore-0.7.4-py3-none-any.whl", hash = "sha256:3b08030878eadcdd8b9ce3d079da0dc2d0e41dc91f0b2d8cf7fa862a27de9090"},
+    {file = "nonebot_plugin_localstore-0.7.4.tar.gz", hash = "sha256:85ddc13814bfcd484ab311306823651390020bf44f4fb4733b343a58e72723ce"},
 ]
 
 [package.dependencies]
