@@ -180,23 +180,23 @@ docs = ["sphinx (==8.1.3)", "sphinx-mdinclude (==0.6.1)"]
 
 [[package]]
 name = "alembic"
-version = "1.15.1"
+version = "1.14.1"
 description = "A database migration tool for SQLAlchemy."
 optional = false
-python-versions = ">=3.9"
+python-versions = ">=3.8"
 groups = ["main"]
 files = [
-    {file = "alembic-1.15.1-py3-none-any.whl", hash = "sha256:197de710da4b3e91cf66a826a5b31b5d59a127ab41bd0fc42863e2902ce2bbbe"},
-    {file = "alembic-1.15.1.tar.gz", hash = "sha256:e1a1c738577bca1f27e68728c910cd389b9a92152ff91d902da649c192e30c49"},
+    {file = "alembic-1.14.1-py3-none-any.whl", hash = "sha256:1acdd7a3a478e208b0503cd73614d5e4c6efafa4e73518bb60e4f2846a37b1c5"},
+    {file = "alembic-1.14.1.tar.gz", hash = "sha256:496e888245a53adf1498fcab31713a469c65836f8de76e01399aa1c3e90dd213"},
 ]
 
 [package.dependencies]
 Mako = "*"
-SQLAlchemy = ">=1.4.0"
-typing-extensions = ">=4.12"
+SQLAlchemy = ">=1.3.0"
+typing-extensions = ">=4"
 
 [package.extras]
-tz = ["tzdata"]
+tz = ["backports.zoneinfo ; python_version < \"3.9\"", "tzdata"]
 
 [[package]]
 name = "anyio"
@@ -2650,18 +2650,18 @@ tzlocal = ">=4.2"
 
 [[package]]
 name = "nonebot-plugin-orm"
-version = "0.7.6"
+version = "0.7.7"
 description = "SQLAlchemy ORM support for nonebot"
 optional = false
 python-versions = "<4.0,>=3.8"
 groups = ["main"]
 files = [
-    {file = "nonebot_plugin_orm-0.7.6-py3-none-any.whl", hash = "sha256:6ce808d7e847eb7c1a738609b0e94bb612488650c5150ae1b2d67463034bb255"},
-    {file = "nonebot_plugin_orm-0.7.6.tar.gz", hash = "sha256:3ae4ac362a8ea6e6467666f654287855a30447f8fa457af88f1760f155c5d68c"},
+    {file = "nonebot_plugin_orm-0.7.7-py3-none-any.whl", hash = "sha256:645ba90f24969ce8bebb6841cdd0a0fb823e27a5d256989e332ec9f6608bbde5"},
+    {file = "nonebot_plugin_orm-0.7.7.tar.gz", hash = "sha256:61705c59bbac51521738259efbe51223847a0e0389807267fff7a5167f8c8c85"},
 ]
 
 [package.dependencies]
-alembic = ">=1.13,<2.0"
+alembic = ">=1.13,<1.15"
 click = ">=8.1,<9.0"
 importlib-resources = {version = ">=6.1,<7.0", markers = "python_version < \"3.12\""}
 nonebot-plugin-localstore = ">=0.6,<1.0"
