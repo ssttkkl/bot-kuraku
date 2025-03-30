@@ -38,7 +38,7 @@ COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
 RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
 
  # 下载maimaidx静态数据
-RUN curl -o /tmp/static.7z "https://cloud.yuzuchan.moe/api/v3/file/get/12/Resource.7z?sign=6YnG6RXRjQIykXRd1bVYUQvblth4a1qc1UsgsHGFkE0%3D%3A1743335436"\
+RUN curl -o /tmp/static.7z "https://share.yuzuchan.moe/p/Resource.7z?sign=EvCwaGwJrneyD1Olq00NG3HXNK7fQKpx_sa3Ck9Uzjs=:0"\
  && 7z x /tmp/static.7z -o/app/data/maimaidx\
  && rm /tmp/static.zip
 
