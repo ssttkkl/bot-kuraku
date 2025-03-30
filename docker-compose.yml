@@ -1,0 +1,71 @@
+version: "3.3"
+
+secrets:
+  db_passwd:
+    file: db_passwd.txt
+
+services:
+  bot:
+    image: "ssttkkl/bot-kuraku-bot:latest"
+    container_name: "bot"
+    restart: always
+    expose:
+      - 8080
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8080
+      - ENV_MAHJONG_UTILS_BRIDGE=http
+      - ENV_MAHJONG_UTILS_HTTP_PORT=10021
+      - ENV_MAHJONG_UTILS_HTTP_HOST=bot-mahjong-utils-webapi
+    volumes:
+      - ./.env.prod:/app/.env.prod
+    mac_address: 02:42:ac:12:00:03
+
+  bot-postgres:
+    image: "postgres:15"
+    container_name: "bot-postgres"
+    restart: always
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_PASSWORD_FILE=/run/secrets/db_passwd
+    volumes:
+      - "bot-postgres-data:/var/lib/postgresql/data"
+    secrets:
+      - db_passwd
+    mac_address: 02:42:ac:12:00:04
+
+  bot-napcat:
+    image: "mlikiowa/napcat-docker:v4.7.10"
+    container_name: "bot-napcat"
+    restart: always
+    ports:
+      - "6099:6099"
+    expose:
+      - 6099
+      - 3001
+    environment:
+      - TZ=Asia/Shanghai
+      - ACCOUNT=${QQ_ACCOUNT}
+      - NAPCAT_GID=0
+      - NAPCAT_UID=0
+      - WSR_ENABLE=true
+      - WS_URLS=["ws://bot:8080/onebot/v11/ws/"]
+    volumes:
+      - bot-napcat-config:/app/napcat/config
+      - bot-napcat-data:/app/.config/QQ
+    mac_address: 02:42:ac:12:00:02
+
+  bot-mahjong-utils-webapi:
+    image: "ssttkkl/mahjong-utils-webapi:latest"
+    container_name: "bot-mahjong-utils-webapi"
+    restart: always
+    expose:
+      - 10021
+    environment:
+      - PORT=10021
+    mac_address: 02:42:ac:12:00:05
+volumes:
+  bot-postgres-data:
+  bot-napcat-config:
+  bot-napcat-data:

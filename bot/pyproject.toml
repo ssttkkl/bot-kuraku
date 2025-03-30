@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "bot-kuraku-bot"
+version = "1.0.0"
+description = "bot-kuraku-bot"
+authors = ["ssttkkl <huang.wen.long@hotmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.10"
+setuptools = "^70.0.0"
+nonebot2 = { extras = ["fastapi", "httpx"], version = "^2.3.0" }
+nb-cli = ">=1.0.5"
+asyncpg = ">=0.27.0"
+cachetools = "^5.2.0"
+httpx = { version = ">=0.23.0", extras = ["socks"] }
+aiohttp-socks = ">=0.9.0"
+nonebot-adapter-onebot = ">=2.1.5"
+nonebot-adapter-qq = ">=1.6.1"
+nonebot-plugin-escape-url = ">=0.1.0"
+nonebot-plugin-pixivbot = ">=2.1.4"
+nonebot-plugin-mahjong-utils = { extras = ["htmlrender"], version = ">=0.3.0" }
+nonebot-plugin-mahjong-scoreboard = ">=0.3.0"
+nonebot-plugin-majsoul = ">=0.2.4"
+#nonebot-plugin-nagabus = ">=0.3.0"
+nonebot-plugin-access-control = ">=1.2.1b4"
+nonebot_plugin_picstatus = ">=0.3.0"
+nonebot-plugin-revoke = ">=0.1.0"
+nonebot-plugin-session = ">=0.2.0"
+nonebot-plugin-autoreply = ">=0.2.3"
+nonebot-plugin-apscheduler = ">=0.2.0"
+nonebot-plugin-send-anything-anywhere = ">=0.3.0"
+nonebot-plugin-follow-withdraw = ">=0.2.0"
+nonebot-plugin-htmlrender = ">=0.2.2"
+nonebot-plugin-githubcard = ">=0.1.5"
+nonebot-plugin-maimaidx = ">=1.0.13"
+tatarubot2 = ">=1.0"
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_escape_url", "nonebot_plugin_mahjong_scoreboard", "nonebot_plugin_mahjong_utils", "nonebot_plugin_majsoul",
+    "nonebot_plugin_pixivbot",
+    "nonebot_plugin_autoreply", "nonebot_plugin_follow_withdraw",
+    "nonebot_plugin_access_control", "nonebot_plugin_picstatus", "nonebot_plugin_revoke",
+#    "nonebot_plugin_nagabus",
+    "nonebot_plugin_githubcard",
+    "tatarubot2", "nonebot_plugin_maimaidx"
+]
+
+[build-system]
+requires = ["poetry_core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
