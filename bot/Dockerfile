@@ -16,7 +16,7 @@ WORKDIR /project
 RUN pdm install --check --prod --no-editable
 
 # ========== main ==========
-FROM python:python3.11-slim
+FROM python:$PYTHON_BASE
 
 ENV TZ=Asia/Shanghai
 
