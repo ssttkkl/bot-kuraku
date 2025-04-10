@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Optional
 
 import nonebot
+import yaml
 from nonebot import logger, Bot, Adapter
 from nonebot.internal.adapter import Event
 from nonebot.plugin import PluginMetadata
@@ -18,20 +19,20 @@ _metadata = {}
 
 @nonebot.get_driver().on_startup
 def prepare_metadata():
-    metadata_mixin = {}
+    # 兼容格式：https://github.com/bot-ssttkkl/nonebot_plugin_llm_plugins_call?tab=readme-ov-file#%E4%BF%AE%E6%94%B9%E6%8F%92%E4%BB%B6metadata%E4%B8%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9
+    metadata_mixin_file = Path(os.getcwd()) / "data" / "metadata_mixin.yaml"
 
-    for metadata_mixin_file in (Path(os.getcwd()) / "data" / "metadata_mixin").iterdir():
-        if not metadata_mixin_file.is_file():
-            continue
+    if metadata_mixin_file.exists():
         with open(metadata_mixin_file, "r", encoding="utf-8") as f:
-            plugin_name = metadata_mixin_file.name.split('.')[0]
-            metadata = json.load(f)
-            if "config" in metadata:
-                metadata["config"] = eval(metadata["config"])
-            if "supported_adapters" in metadata:
-                metadata["supported_adapters"] = set(metadata["supported_adapters"])
-            metadata_mixin[plugin_name] = metadata
-            logger.opt(colors=True).success(f"Loaded metadata mixin for plugin \"<y>{plugin_name}</y>\"")
+            metadata_mixin = yaml.load(f, Loader=yaml.CLoader)
+            for metadata in metadata_mixin:
+                plugin_name = metadata["module_name"]
+                if "config" in metadata:
+                    metadata["config"] = eval(metadata["config"])
+                if "supported_adapters" in metadata:
+                    metadata["supported_adapters"] = set(metadata["supported_adapters"])
+                metadata_mixin[plugin_name] = metadata
+                logger.opt(colors=True).success(f"Loaded metadata mixin for plugin \"<y>{plugin_name}</y>\"")
 
     for plugin in nonebot.get_loaded_plugins():
         if plugin.name in help_conf.kuraku_help_ignore_plugin or plugin.name == "nonebot_plugin_kuraku_help":
