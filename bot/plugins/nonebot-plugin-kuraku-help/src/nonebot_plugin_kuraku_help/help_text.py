@@ -21,12 +21,14 @@ _metadata = {}
 def prepare_metadata():
     # 兼容格式：https://github.com/bot-ssttkkl/nonebot_plugin_llm_plugins_call?tab=readme-ov-file#%E4%BF%AE%E6%94%B9%E6%8F%92%E4%BB%B6metadata%E4%B8%BA%E8%87%AA%E5%AE%9A%E4%B9%89%E5%86%85%E5%AE%B9
     metadata_mixin_file = Path(os.getcwd()) / "data" / "metadata_mixin.yaml"
+    metadata_mixin = {}
 
     if metadata_mixin_file.exists():
         with open(metadata_mixin_file, "r", encoding="utf-8") as f:
-            metadata_mixin = yaml.load(f, Loader=yaml.CLoader)
-            for metadata in metadata_mixin:
+            for metadata in yaml.load(f, Loader=yaml.CLoader):
                 plugin_name = metadata["module_name"]
+                del metadata["module_name"]
+
                 if "config" in metadata:
                     metadata["config"] = eval(metadata["config"])
                 if "supported_adapters" in metadata:

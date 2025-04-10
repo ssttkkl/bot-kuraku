@@ -63,6 +63,6 @@ plugins = [
 #    "nonebot_plugin_nagabus",
     "nonebot_plugin_githubcard",
     "tatarubot2",
-    "nonebot-plugin-llm-plugins-call"
+    "nonebot_plugin_llm_plugins_call"
 #    "nonebot_plugin_maimaidx"
 ]
