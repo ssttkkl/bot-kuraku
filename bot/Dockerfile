@@ -24,12 +24,12 @@ ENV PDM_CHECK_UPDATE=false
 RUN pip install -U pdm
 
 # set command/entrypoint, adapt to fit your needs
-WORKDIR /project
+WORKDIR /app
 
-COPY ./ /project/
+COPY ./ /app/
 RUN chmod +x start.sh
 RUN pdm install --check
-ENV PATH="/project/.venv/bin:$PATH"
+ENV PATH="/app/.venv/bin:$PATH"
 
-ENTRYPOINT ["/project/start.sh"]
+ENTRYPOINT ["/app/start.sh"]
 
