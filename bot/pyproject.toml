@@ -31,7 +31,7 @@ readme = "README.md"
 license = {text = "MIT"}
 
 [dependency-groups]
-dev = [
+plugins = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-access-control",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-access-control-api",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-escape-url",
