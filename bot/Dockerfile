@@ -1,24 +1,6 @@
-ARG PYTHON_BASE=3.11-slim
-
-# ========== build-stage ==========
-FROM python:$PYTHON_BASE AS builder
-
-# install PDM
-RUN pip install -U pdm
-# disable update check
-ENV PDM_CHECK_UPDATE=false
-# copy files
-COPY pyproject.toml pdm.lock README.md /project/
-
-# install dependencies and project into the local packages directory
-WORKDIR /project
-RUN pdm install --check --group plugins --no-editable
-
-# ========== main ==========
-FROM python:$PYTHON_BASE
+FROM python:3.11-slim
 
 ENV TZ=Asia/Shanghai
-
 ENV LANG zh_CN.UTF-8
 ENV LANGUAGE zh_CN.UTF-8
 ENV LC_ALL zh_CN.UTF-8
@@ -37,13 +19,15 @@ RUN apt update\
 #  && 7z x /tmp/static.7z -mcp=65001 -o/app/data/maimaidx\
 #  && rm /tmp/static.zip
 
-# retrieve packages from build stage
-COPY --from=builder /project/.venv/ /project/.venv
-ENV PATH="/project/.venv/bin:$PATH"
-# set command/entrypoint, adapt to fit your needs
-COPY ./ /project/
+# install PDM
+ENV PDM_CHECK_UPDATE=false
+RUN pip install -U pdm && pdm install --check
 
+# set command/entrypoint, adapt to fit your needs
+ENV PATH="/project/.venv/bin:$PATH"
 WORKDIR /project
+
+COPY ./ /project/
 RUN chmod +x start.sh
 CMD ["start.sh"]
 
