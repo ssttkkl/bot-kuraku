@@ -9,7 +9,6 @@ RUN pip install -U pdm
 ENV PDM_CHECK_UPDATE=false
 # copy files
 COPY pyproject.toml pdm.lock README.md /project/
-COPY src/ /project/src
 
 # install dependencies and project into the local packages directory
 WORKDIR /project
