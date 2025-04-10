@@ -21,13 +21,15 @@ RUN apt update\
 
 # install PDM
 ENV PDM_CHECK_UPDATE=false
-RUN pip install -U pdm && pdm install --check
+RUN pip install -U pdm
 
 # set command/entrypoint, adapt to fit your needs
-ENV PATH="/project/.venv/bin:$PATH"
 WORKDIR /project
 
 COPY ./ /project/
 RUN chmod +x start.sh
+RUN pdm install --check
+ENV PATH="/project/.venv/bin:$PATH"
+
 CMD ["start.sh"]
 
