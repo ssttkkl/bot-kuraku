@@ -12,7 +12,7 @@ COPY pyproject.toml pdm.lock README.md /project/
 
 # install dependencies and project into the local packages directory
 WORKDIR /project
-RUN pdm install --check --prod --no-editable
+RUN pdm install --check --group plugins --no-editable
 
 # ========== main ==========
 FROM python:$PYTHON_BASE
