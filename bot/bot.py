@@ -17,7 +17,6 @@ driver.register_adapter(QQAdapter)
 
 # 加载插件
 nonebot.load_from_toml("pyproject.toml")
-nonebot.load_plugins("plugins")
 
 if __name__ == "__main__":
     nonebot.run(app="__mp_main__:app")

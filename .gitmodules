@@ -1,0 +1,21 @@
+[submodule "bot/plugins/ssttkkl-nonebot-utils"]
+	path = bot/plugins/ssttkkl-nonebot-utils
+	url = https://github.com/bot-ssttkkl/ssttkkl-nonebot-utils
+[submodule "bot/plugins/nonebot-plugin-pixivbot"]
+	path = bot/plugins/nonebot-plugin-pixivbot
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-pixivbot
+[submodule "bot/plugins/nonebot-plugin-escape-url"]
+	path = bot/plugins/nonebot-plugin-escape-url
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-escape-url
+[submodule "bot/plugins/nonebot-plugin-majsoul"]
+	path = bot/plugins/nonebot-plugin-majsoul
+	url = http://github.com/ssttkkl/nonebot-plugin-majsoul
+[submodule "bot/plugins/nonebot-plugin-mahjong-scoreboard"]
+	path = bot/plugins/nonebot-plugin-mahjong-scoreboard
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-mahjong-scoreboard
+[submodule "bot/plugins/nonebot-plugin-access-control"]
+	path = bot/plugins/nonebot-plugin-access-control
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-access-control
+[submodule "bot/plugins/nonebot-plugin-access-control-api"]
+	path = bot/plugins/nonebot-plugin-access-control-api
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-access-control-api

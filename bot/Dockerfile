@@ -1,20 +1,22 @@
-# ========== requirements-stage ==========
-# 从poetry.lock生成requirements.txt
-FROM python:3.11 as requirements-stage
+ARG PYTHON_BASE=3.11-slim
 
-WORKDIR /tmp
+# ========== build-stage ==========
+FROM python:$PYTHON_BASE AS builder
 
-RUN pip install poetry==1.8.5
+# install PDM
+RUN pip install -U pdm
+# disable update check
+ENV PDM_CHECK_UPDATE=false
+# copy files
+COPY pyproject.toml pdm.lock README.md /project/
+COPY src/ /project/src
 
-COPY ./pyproject.toml ./poetry.lock* /tmp/
-
-RUN poetry export -f requirements.txt --output requirements.txt --without-hashes
+# install dependencies and project into the local packages directory
+WORKDIR /project
+RUN pdm install --check --prod --no-editable
 
 # ========== main ==========
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.11-slim
-
-ENV APP_MODULE=bot:app
-ENV MAX_WORKERS=1
+FROM python:python3.11-slim
 
 ENV TZ=Asia/Shanghai
 
@@ -23,24 +25,26 @@ ENV LANGUAGE zh_CN.UTF-8
 ENV LC_ALL zh_CN.UTF-8
 
 RUN ln -fs /usr/share/zoneinfo/${TZ} /etc/localtime
-WORKDIR /app
 
 # 安装必要依赖（git、gcc、bzip2、playwright、unzip、curl）
 RUN apt update\
- && apt install git gcc bzip2 curl unzip p7zip-full -y\
+ && apt install git gcc bzip2 curl unzip p7zip-full nano -y\
  && pip install playwright\
  && playwright install chromium\
  && playwright install-deps
 
-# 安装whl包
-COPY --from=requirements-stage /tmp/requirements.txt /app/requirements.txt
+#  # 下载maimaidx静态数据
+# RUN curl -o /tmp/static.7z "https://share.yuzuchan.moe/p/Resource.7z?sign=EvCwaGwJrneyD1Olq00NG3HXNK7fQKpx_sa3Ck9Uzjs=:0"\
+#  && 7z x /tmp/static.7z -mcp=65001 -o/app/data/maimaidx\
+#  && rm /tmp/static.zip
 
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+# retrieve packages from build stage
+COPY --from=builder /project/.venv/ /project/.venv
+ENV PATH="/project/.venv/bin:$PATH"
+# set command/entrypoint, adapt to fit your needs
+COPY ./ /project/
 
- # 下载maimaidx静态数据
-RUN curl -o /tmp/static.7z "https://share.yuzuchan.moe/p/Resource.7z?sign=EvCwaGwJrneyD1Olq00NG3HXNK7fQKpx_sa3Ck9Uzjs=:0"\
- && 7z x /tmp/static.7z -mcp=65001 -o/app/data/maimaidx\
- && rm /tmp/static.zip
-
-COPY ./ /app/
+WORKDIR /project
+RUN chmod +x start.sh
+CMD ["start.sh"]
 

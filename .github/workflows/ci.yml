@@ -16,38 +16,7 @@ env:
   IMAGE_NAME: ssttkkl/bot-kuraku
 
 jobs:
-  poetry-update:
-
-    runs-on: ubuntu-latest
-
-    permissions:
-      contents: write
-
-    steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3
-
-    - name: Set up Python
-      uses: actions/setup-python@v3
-
-    - name: Install Poetry
-      run: |
-        python -m pip install --upgrade pip
-        python -m pip install poetry
-
-    - name: Poetry Update (bot)
-      run: |
-        poetry update
-      working-directory: ./bot
-
-    - name: Commit
-      uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: Automated Poetry Update
-
   build:
-
-    needs: poetry-update
     
     strategy:
       matrix:
