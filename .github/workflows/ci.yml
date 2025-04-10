@@ -31,15 +31,15 @@ jobs:
       with: 
         python-version: "3.11"
 
-    - name: Pdm Update
+    - name: Pdm Lock
       run: |
-        pdm update -d
+        pdm lock -d
       working-directory: ./bot
 
     - name: Commit
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Automated Pdm Update
+        commit_message: Automated Pdm Lock
 
   build:
     needs: update
