@@ -28,7 +28,7 @@ WORKDIR /app
 
 COPY ./ /app/
 RUN chmod +x start.sh
-RUN pdm install --check
+RUN pdm update
 ENV PATH="/app/.venv/bin:$PATH"
 
 ENTRYPOINT ["/app/start.sh"]
