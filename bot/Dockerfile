@@ -31,5 +31,5 @@ RUN chmod +x start.sh
 RUN pdm install --check
 ENV PATH="/project/.venv/bin:$PATH"
 
-CMD ["start.sh"]
+ENTRYPOINT ["/project/start.sh"]
 
