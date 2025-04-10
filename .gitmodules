@@ -13,6 +13,9 @@
 [submodule "bot/plugins/nonebot-plugin-mahjong-scoreboard"]
 	path = bot/plugins/nonebot-plugin-mahjong-scoreboard
 	url = https://github.com/bot-ssttkkl/nonebot-plugin-mahjong-scoreboard
+[submodule "bot/plugins/nonebot-plugin-mahjong-utils"]
+	path = bot/plugins/nonebot-plugin-mahjong-utils
+	url = https://github.com/bot-ssttkkl/nonebot-plugin-mahjong-utils
 [submodule "bot/plugins/nonebot-plugin-access-control"]
 	path = bot/plugins/nonebot-plugin-access-control
 	url = https://github.com/bot-ssttkkl/nonebot-plugin-access-control
