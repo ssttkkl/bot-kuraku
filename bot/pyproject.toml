@@ -21,7 +21,7 @@ dependencies = [
     "nonebot-plugin-revoke>=0.1.0",
     "nonebot-plugin-autoreply>=0.2.3",
     "nonebot-plugin-follow-withdraw>=0.2.0",
-    "nonebot-plugin-htmlrender>=0.2.2",
+    "nonebot-plugin-htmlrender==0.6.0",  # https://github.com/kexue-z/nonebot-plugin-htmlrender/issues/94
     "nonebot-plugin-githubcard>=0.1.5",
 #    "nonebot-plugin-maimaidx>=1.0.13",
     "tatarubot2>=1.0",
