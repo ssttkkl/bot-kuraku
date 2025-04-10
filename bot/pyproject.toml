@@ -25,6 +25,7 @@ dependencies = [
     "nonebot-plugin-githubcard>=0.1.5",
 #    "nonebot-plugin-maimaidx>=1.0.13",
     "tatarubot2>=1.0",
+    "nonebot-plugin-llm-plugins-call>=0.1.0",
 ]
 requires-python = "<4.0,>=3.10"
 readme = "README.md"
@@ -62,5 +63,6 @@ plugins = [
 #    "nonebot_plugin_nagabus",
     "nonebot_plugin_githubcard",
     "tatarubot2",
+    "nonebot-plugin-llm-plugins-call"
 #    "nonebot_plugin_maimaidx"
 ]
