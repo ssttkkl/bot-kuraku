@@ -1,7 +1,6 @@
 from nonebot import require
 from nonebot.plugin import PluginMetadata
 
-from . import matcher
 from .utils import default_cmd_start
 
 require("nonebot_plugin_access_control_api")
@@ -12,8 +11,7 @@ help_text = f"""
 """.strip()
 
 __plugin_meta__ = PluginMetadata(
-    name="帮助",
-    description="获取帮助信息",
-    usage=help_text,
-    type="application"
+    name="帮助", description="获取帮助信息", usage=help_text, type="application"
 )
+
+from . import matcher  # noqa
