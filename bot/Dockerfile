@@ -19,16 +19,16 @@ RUN apt update\
 #  && 7z x /tmp/static.7z -mcp=65001 -o/app/data/maimaidx\
 #  && rm /tmp/static.zip
 
-# install PDM
+# install PDM && uv
 ENV PDM_CHECK_UPDATE=false
-RUN pip install -U pdm
+RUN pip install -U pdm uv && pdm config use_uv true
 
 # set command/entrypoint, adapt to fit your needs
 WORKDIR /app
 
 COPY ./ /app/
 RUN chmod +x start.sh
-RUN pdm install
+RUN pdm install -G:all
 ENV PATH="/app/.venv/bin:$PATH"
 
 ENTRYPOINT ["/app/start.sh"]

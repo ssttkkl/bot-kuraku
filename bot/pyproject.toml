@@ -24,15 +24,15 @@ dependencies = [
     "nonebot-plugin-htmlrender==0.6.0",  # https://github.com/kexue-z/nonebot-plugin-htmlrender/issues/94
     "nonebot-plugin-githubcard>=0.1.5",
 #    "nonebot-plugin-maimaidx>=1.0.13",
-    "tatarubot2>=1.0",
-    "nonebot-plugin-llm-plugins-call>=0.1.0",
+    "tatarubot2>=1.0"
 ]
-requires-python = "<4.0,>=3.10"
+requires-python = ">=3.11, <3.12"
 readme = "README.md"
 license = {text = "MIT"}
 
 [dependency-groups]
 dev = [
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot_plugin_llm_plugins_call",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-access-control",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-access-control-api",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-escape-url",
@@ -44,6 +44,9 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-qq-monitor",
     "-e file:///${PROJECT_ROOT}/plugins/ssttkkl-nonebot-utils"
 ]
+
+[tool.pdm.resolution.overrides]
+nonebot-plugin-send-anything-anywhere = "0.7.1"  # exact version
 
 [tool.nonebot]
 plugins = [

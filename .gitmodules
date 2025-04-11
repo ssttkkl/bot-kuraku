@@ -22,3 +22,6 @@
 [submodule "bot/plugins/nonebot-plugin-access-control-api"]
 	path = bot/plugins/nonebot-plugin-access-control-api
 	url = https://github.com/bot-ssttkkl/nonebot-plugin-access-control-api
+[submodule "bot/plugins/nonebot_plugin_llm_plugins_call"]
+	path = bot/plugins/nonebot_plugin_llm_plugins_call
+	url = https://github.com/bot-ssttkkl/nonebot_plugin_llm_plugins_call.git
