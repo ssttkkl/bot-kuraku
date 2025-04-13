@@ -47,6 +47,7 @@ dev = [
 
 [tool.pdm.resolution.overrides]
 nonebot-plugin-send-anything-anywhere = "0.7.1"  # exact version
+tflite-runtime = "https://github.com/feranick/TFlite-builds/releases/download/v2.17.1/tflite_runtime-2.17.1-cp312-cp312-linux_x86_64.whl"
 
 [tool.nonebot]
 plugins = [
