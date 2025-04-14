@@ -10,7 +10,10 @@ context.set_ciphers(
 )
 
 # 设置为全局默认上下文
-ssl.create_default_context = lambda: context
+def new_create_default_context(*args, **kwargs):
+    return context
+
+ssl.create_default_context = new_create_default_context
 
 
 import nonebot
