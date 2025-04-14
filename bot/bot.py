@@ -1,6 +1,18 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+# hook方式解决[SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] sslv3 alert handshake failure (_ssl.c:1010)
+import ssl
+
+context = ssl.create_default_context()
+context.set_ciphers(
+    "@SECLEVEL=2:ECDH+AESGCM:ECDH+CHACHA20:ECDH+AES:DHE+AES:AESGCM:!aNULL:!eNULL:!aDSS:!SHA1:!AESCCM:!PSK"
+)
+
+# 设置为全局默认上下文
+ssl.create_default_context = lambda: context
+
+
 import nonebot
 
 # 初始化nonebot
