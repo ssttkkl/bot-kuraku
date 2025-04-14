@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:ad997f212d5204c2ba1237f4e5e4453af17b5dd7888aa15bdb4b2fa55030b4ed"
+content_hash = "sha256:d71e3f94f0cc25dc7b0d31b82399affa3dbdedfaa94149e71df4dd0971bb88b2"
 
 [[metadata.targets]]
 requires_python = "==3.12.*"
@@ -1037,18 +1037,18 @@ files = [
 
 [[package]]
 name = "mahjong-detector"
-version = "0.0.4"
+version = "0.0.6"
 requires_python = ">=3.9"
 summary = "Detect mahjong tiles from image"
 groups = ["dev"]
 dependencies = [
     "Pillow>=11.2.1",
     "numpy>=2.2.4",
-    "onnxruntime>=1.21.0",
+    "onnxruntime>=1.19.0",
 ]
 files = [
-    {file = "mahjong_detector-0.0.4-py3-none-any.whl", hash = "sha256:7a893de156bde89305771cdea9d8c9381ac0eb14e565592264a338e148b3d8d8"},
-    {file = "mahjong_detector-0.0.4.tar.gz", hash = "sha256:0376dd4f20b493b4c53ccdef687aad86fc7bf151e088b9c604368127be836d5e"},
+    {file = "mahjong_detector-0.0.6-py3-none-any.whl", hash = "sha256:f47639492a55a1adc64bb1f21c0b33c7412fa37b14ffb3411906532bbfa2313d"},
+    {file = "mahjong_detector-0.0.6.tar.gz", hash = "sha256:d87c0f3d065eabeb2d490079805109faa4488e297002b474402d8995038253b9"},
 ]
 
 [[package]]
@@ -1608,13 +1608,27 @@ path = "./plugins/nonebot-plugin-mahjong-utils"
 summary = ""
 groups = ["dev"]
 dependencies = [
-    "mahjong-detector>=0.0.4",
     "mahjong-utils<1.0.0,>=0.7.4",
+    "nonebot-plugin-access-control-api>=1.2.1",
     "nonebot-plugin-alconna>=0.57.2",
     "nonebot-plugin-htmlrender<1.0.0.0,>=0.2.0.3",
     "nonebot-plugin-send-anything-anywhere>=0.3.0",
     "nonebot2<3.0.0,>=2.0.0",
     "ssttkkl-nonebot-utils<1.0.0,>=0.1.22",
+]
+
+[[package]]
+name = "nonebot-plugin-mahjong-utils"
+version = "0.5.0b1"
+extras = ["detect"]
+requires_python = "<3.13,>=3.10"
+editable = true
+path = "./plugins/nonebot-plugin-mahjong-utils"
+summary = ""
+groups = ["dev"]
+dependencies = [
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-mahjong-utils#egg=nonebot-plugin-mahjong-utils",
+    "mahjong-detector>=0.0.6",
 ]
 
 [[package]]
@@ -2707,7 +2721,7 @@ dependencies = [
     "emoji",
     "icalendar",
     "nonebot-adapter-onebot",
-    "nonebot2<3.0.0.0,>=2.0.0-beta.1",
+    "nonebot2<3.0.0,>=2.0.0-beta.1",
 ]
 files = [
     {file = "tatarubot2-1.0.tar.gz", hash = "sha256:041dc8c9b92ec97219f812f6a9804d9a0de351b7d1e1c6515865d19436440d52"},

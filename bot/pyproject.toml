@@ -38,7 +38,7 @@ dev = [
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-escape-url",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-kuraku-help",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-mahjong-scoreboard",
-    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-mahjong-utils",
+    "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-mahjong-utils[detect]",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-majsoul",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-pixivbot",
     "-e file:///${PROJECT_ROOT}/plugins/nonebot-plugin-qq-monitor",
